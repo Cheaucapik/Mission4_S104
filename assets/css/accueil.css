@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,900;1,900&display=swap');
+
+:root {
+    --primary-color: #A3B288;
+    --hover-color: #7C8B66;
+    --text-color: #333333;
+    --background-color: #f7f7f7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: var(--primary-color);
+    padding: 26px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#accueil{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: merriweather, sans-serif;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    padding: .3em 1em;
+    border-radius: 7px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a:hover{
+    color: var(--background-color);
+    background-color: var(--hover-color);
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+footer{
+    background-color: var(--primary-color);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding: 26px;
+    color: var(--text-color);
+    font-family: merriweather, sans-serif;
+}
