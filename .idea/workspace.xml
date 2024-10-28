@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="1.1">
+    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="1.2&#10;améllioration du nav et de la page d'accueil&#10;nav : hover passant de chapitres en chapitres">
+      <change afterPath="$PROJECT_DIR$/mission4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/accueil.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icon.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -91,7 +91,8 @@
       <workItem from="1730056853261" duration="1150000" />
       <workItem from="1730067585583" duration="1522000" />
       <workItem from="1730112711898" duration="2890000" />
-      <workItem from="1730116420624" duration="13562000" />
+      <workItem from="1730116420624" duration="14263000" />
+      <workItem from="1730135096236" duration="11467000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />
@@ -125,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730056959290</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1.2&#10;améllioration du nav et de la page d'accueil&#10;nav : hover passant de chapitres en chapitres">
+      <option name="closed" value="true" />
+      <created>1730133796450</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730133796450</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +154,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="premier commit" />
     <MESSAGE value="1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.1" />
+    <MESSAGE value="1.2&#10;améllioration du nav et de la page d'accueil&#10;nav : hover passant de chapitres en chapitres" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.2&#10;améllioration du nav et de la page d'accueil&#10;nav : hover passant de chapitres en chapitres" />
   </component>
 </project>

@@ -11,60 +11,87 @@
         <nav>
             <a href="accueil.html"><img id="logo" alt="logo" src="assets/logo_entier.svg" height="60px" width="118px"></a>
             <ul id="nav">
-                    <li id="accueilhov"><a href="accueil.html" id="accueil">accueil</a>
-                        <ul class="navhov">
-                            <li><a href="#quiSommesNous">Qui Sommes Nous ?</a></li>
-                            <hr>
-                            <li><a href="#notreTravail">Notre Travail</a></li>
-                        </ul>
-                    </li>
+                <li id="accueilhov"><a href="accueil.html" id="accueil">accueil</a>
+                    <ul class="navhov">
+                        <li><a href="#quiSommesNous">Qui Sommes Nous ?</a></li>
+                        <hr>
+                        <li><a href="#notreTravail">Notre Travail</a></li>
+                    </ul>
+                </li>
                 <li><a href="mission1.html">mission 1</a></li>
                 <li><a href="mission2.html">mission 2</a></li>
                 <li><a href="mission3.html">mission 3</a></li>
+                <li><a href="mission4.html">mission 4</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <section class="secondaryBack">
+            <img id="food" src="assets/food.jpg" alt="food">
+            <span id="KDou">KDou</span>
+        </section>
         <section id="quiSommesNous">
-            <h1>QUI SOMMES-NOUS ?</h1>
-            <hr>
-            <span id="presentation">
-                <a href="#oceane"><img src="assets/rond.png" alt="pfp" height="200px" width="200px"></a>
-                <a href="#talina"><img src="assets/rond.png" alt="pfp" height="200px" width="200px"></a>
-                <a href="#reda"><img src="assets/rond.png" alt="pfp" height="200px" width="200px"></a>
-                <a href="#damien"><img src="assets/rond.png" alt="pfp" height="200px" width="200px"></a>
-            </span>
+            <div class="secondaryBack">
+                <h1>QUI SOMMES-NOUS ?</h1>
+                <hr>
+                <span id="presentation">
+                    <div class="profile">
+                        <a href="#oceane"><img src="assets/rond.png" alt="pfpOceane" height="200px" width="200px"></a>
+                        <span>Huynh Océane</span>
+                    </div>
+                    <div class="profile">
+                        <a href="#talina"><img src="assets/rond.png" alt="pfpTalina" height="200px" width="200px"></a>
+                        <span>Lux Talina</span>
+                    </div>
+                    <div class="profile">
+                        <a href="#reda"><img src="assets/rond.png" alt="pfpReda" height="200px" width="200px"></a>
+                        <span>Boukhima Reda</span>
+                    </div>
+                    <div class="profile">
+                        <a href="#damien"><img src="assets/rond.png" alt="pfpDamien" height="200px" width="200px"></a>
+                        <span>Maurer Damien</span>
+                    </div>
+                </span>
+            </div>
+
 
             <section id="oceane">
+                <a href="#oceane"><img src="assets/rond.png" alt="pfpOceane" height="200px" width="200px"></a>
                 <span>Océane</span>
             </section>
             <section id="talina">
-                <span>Talina</span>
+                <a href="#talina"><img src="assets/rond.png" alt="pfpTalina" height="200px" width="200px"></a>
+                <span>Lux Talina</span>
             </section>
             <section id="reda">
-                <span>Reda</span>
+                <a href="#reda"><img src="assets/rond.png" alt="pfpReda" height="200px" width="200px"></a>
+                <span>Boukhima Reda</span>
             </section>
             <section id="damien">
-                <span>Damien</span>
+                <a href="#damien"><img src="assets/rond.png" alt="pfpDamien" height="200px" width="200px"></a>
+                <span>Maurer Damien</span>
             </section>
-
-
-
         </section>
 
-        <section id="notreTravail">
+        <section class="secondaryBack" id="notreTravail">
             <h1>NOTRE TRAVAIL</h1>
             <hr>
-            <p></p>
+            <p>Au travers de cette SAE, nous avons étudié le cas de l'entreprise <strong>KDou</strong>. Cette dernière vend en France des produits alimentaires et cela aux restaurants. Nous avons étudié <strong>les ventes</strong> de l'entreprise, son <strong>chiffre d'affaires, les fournissuers, les clients</strong>... Tout cela au travers de requêtes <strong>QBE et SQL</strong> sur ACCESS, mais aussi pour la première mission sur un tableur EXCEL. Nous avons pu voir les moyens les plus efficaces d'analyser une base de donnée afin d'obtenir un résultat répondant à des questionnements concernant KDou.</p>
+            <span id="mission">
+                <a class="mission" href="mission1.html">> mission 1</a>
+                <a class="mission" href="mission2.html">> mission 2</a>
+                <a class="mission" href="mission3.html">> mission 3</a>
+                <a class="mission" href="mission4.html">> mission 4</a>
+            </span>
         </section>
     </main>
 
 
     <footer>
         <div>
-            <span>Huynh Océane, Lux Talina, Boukhima Reda, Maurer Damien</span>
-            <span id="copyright">&copy2024 Groupe 02A</span>
+            <span>&copy2024 Groupe 02A : Huynh Océane, Lux Talina, Boukhima Reda, Maurer Damien &copy2024</span>
+            <img src="assets/logo_entier.svg" height="60px" width="118px" alt="logo">
         </div>
     </footer>
 

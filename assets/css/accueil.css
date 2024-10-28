@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,900;1,900&family=Oswald:wght@200..700&display=swap');
 
 :root {
     --primary-color: #A3B288;
     --hover-color: #7C8B66;
     --text-color: #333333;
     --background-color: #f7f7f7;
+    --secondary-backgroud-color: #edf2e4;
 }
 
 *{
@@ -14,18 +16,29 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: var(--background-color);
+    padding-top: 82px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 4;
+}
+
 nav{
     background-color: var(--primary-color);
     padding: 26px;
     display: flex;
-    align-items: flex-start;
 }
 
 #nav{
     list-style-type: none;
     display: flex;
     align-self: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     width: 100%;
 }
 
@@ -50,18 +63,23 @@ hr{
     margin: 5px 0;
 }
 
+#nav li{
+    margin-left: 25px;
+}
+
 .navhov{
     display: none;
     position: absolute;
     background-color: var(--primary-color);
     padding: 10px;
     margin-top: 5px;
-    border-radius: 7px;
+    border-radius: 15px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2), -1px 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .navhov li{
     margin: 10px 0;
+    text-align: left;
 }
 
 #accueilhov:hover .navhov{
@@ -76,7 +94,7 @@ ul a{
     font-variant: small-caps;
     font-size: 1.5em;
     padding: .3em 1em;
-    border-radius: 7px;
+    border-radius: 30px;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -86,15 +104,30 @@ ul a:hover{
     text-decoration: underline;
 }
 
-body{
-    background-color: var(--background-color);
+#food{
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
 }
 
-main{
-    padding: 50px;
+#KDou{
+    color: var(--text-color);
+    font-family: oswald, sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.secondaryBack{
+    background-color: var(--secondary-backgroud-color);
 }
 
 h1{
+    padding: 40px;
     text-align: center;
     font-family: Arial, sans-serif;
     color: var(--hover-color);
@@ -104,12 +137,56 @@ h1{
 #presentation{
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    padding: 0 50px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile span {
+    margin-top: 10px;
+    font-size: 1.7em;
+    font-family: Oswald, sans-serif;
+    color: var(--text-color);
+    padding-bottom: 50px;
 }
 
 section hr{
-    margin: 50px;
+    margin: 0 50px 50px 50px;
     border-color: var(--hover-color);
+}
+
+section p{
+    color: var(--text-color);
+    text-align: justify;
+    font-size: 1.5em;
+    margin: 0 100px 50px 100px;
+    font-family: arial, sans-serif;
+}
+
+#mission{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+.mission{
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 2em;
+    padding: .3em 1em;
+    font-variant: small-caps;
+}
+
+.mission:hover{
+    color: var(--background-color);
+    background-color: var(--hover-color);
 }
 
 footer{
@@ -120,6 +197,8 @@ footer{
     font-family: merriweather, sans-serif;
 }
 
-#copyright{
-    float: right;
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
