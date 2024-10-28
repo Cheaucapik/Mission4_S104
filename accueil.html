@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <title>Accueil</title>
     <link rel="stylesheet" href="assets/css/accueil.css">
-    <link rel="icon" href="assets/icon.svg">
+    <link rel="icon" href="assets/logo.svg">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="accueil.html" id="accueil">accueil</a></li>
+            <a href="accueil.html"><img id="logo" alt="logo" src="assets/logo_entier.svg" height="60px" width="118px"></a>
+            <ul id="nav">
+                    <li id="accueilhov"><a href="accueil.html" id="accueil">accueil</a>
+                        <ul class="navhov">
+                            <li><a href="#quiSommesNous">Qui Sommes Nous ?</a></li>
+                            <hr>
+                            <li><a href="#notreTravail">Notre Travail</a></li>
+                        </ul>
+                    </li>
                 <li><a href="mission1.html">mission 1</a></li>
                 <li><a href="mission2.html">mission 2</a></li>
                 <li><a href="mission3.html">mission 3</a></li>
@@ -18,9 +25,46 @@
         </nav>
     </header>
 
+    <main>
+        <section id="quiSommesNous">
+            <h1>QUI SOMMES-NOUS ?</h1>
+            <hr>
+            <span id="presentation">
+                <a href="#oceane"><img src="assets/rond.png" alt="pfp" height="200px" width="200px"></a>
+                <a href="#talina"><img src="assets/rond.png" alt="pfp" height="200px" width="200px"></a>
+                <a href="#reda"><img src="assets/rond.png" alt="pfp" height="200px" width="200px"></a>
+                <a href="#damien"><img src="assets/rond.png" alt="pfp" height="200px" width="200px"></a>
+            </span>
+
+            <section id="oceane">
+                <span>Océane</span>
+            </section>
+            <section id="talina">
+                <span>Talina</span>
+            </section>
+            <section id="reda">
+                <span>Reda</span>
+            </section>
+            <section id="damien">
+                <span>Damien</span>
+            </section>
+
+
+
+        </section>
+
+        <section id="notreTravail">
+            <h1>NOTRE TRAVAIL</h1>
+            <hr>
+            <p></p>
+        </section>
+    </main>
+
+
     <footer>
         <div>
-            <p>&copy2024 Groupe 02A </p>
+            <span>Huynh Océane, Lux Talina, Boukhima Reda, Maurer Damien</span>
+            <span id="copyright">&copy2024 Groupe 02A</span>
         </div>
     </footer>
 
