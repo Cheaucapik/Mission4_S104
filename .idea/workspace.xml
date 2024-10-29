@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="1.6&#10;Page d'accueil presque finalisée&#10;--&gt; responsive sauf pour le profile2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/accueil.css" afterDir="false" />
-    </list>
+    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="1.7&#10;page accueil responsive" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +92,7 @@
       <workItem from="1730135096236" duration="11995000" />
       <workItem from="1730156567144" duration="7936000" />
       <workItem from="1730164682431" duration="69000" />
-      <workItem from="1730198428874" duration="18823000" />
+      <workItem from="1730198428874" duration="18947000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />
@@ -170,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730218162694</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="1.7&#10;page accueil responsive">
+      <option name="closed" value="true" />
+      <created>1730222485451</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730222485451</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +199,7 @@
     <MESSAGE value="1.4&#10;Page d'accueil presque finalisée&#10;--&gt; profils presque complets&#10;--&gt; Partie mission finalisée" />
     <MESSAGE value="1.5&#10;Media screen header" />
     <MESSAGE value="1.6&#10;Page d'accueil presque finalisée&#10;--&gt; responsive sauf pour le profile2" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.6&#10;Page d'accueil presque finalisée&#10;--&gt; responsive sauf pour le profile2" />
+    <MESSAGE value="1.7&#10;page accueil responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.7&#10;page accueil responsive" />
   </component>
 </project>
