@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="assets/css/accueil.css">
     <link rel="icon" href="assets/logo.svg">
@@ -10,6 +11,8 @@
     <header>
         <nav>
             <a href="accueil.html"><img id="logo" alt="logo" src="assets/logo_entier.svg" height="60px" width="118px"></a>
+            <label for="toggle" id="icon-burger">☰</label>
+            <input type="checkbox" id="toggle">
             <ul id="nav">
                 <li id="accueilhov"><a href="accueil.html" id="accueil">accueil</a>
                     <ul class="navhov">
@@ -18,10 +21,14 @@
                         <li><a href="#notreTravail">Notre Travail</a></li>
                     </ul>
                 </li>
+                <hr class="hr-nav">
                 <li><a href="mission1.html">mission 1</a></li>
+                <hr class="hr-nav">
                 <li><a href="mission2.html">mission 2</a></li>
+                <hr class="hr-nav">
                 <li><a href="mission3.html">mission 3</a></li>
-                <li id="mission4"><a href="mission4.html">mission 4</a></li>
+                <hr class="hr-nav">
+                <li><a href="mission4.html">mission 4</a></li>
             </ul>
         </nav>
     </header>

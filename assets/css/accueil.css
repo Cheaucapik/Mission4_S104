@@ -4,6 +4,7 @@
 :root{
     --primary-color: #A3B288;
     --hover-color: #7C8B66;
+    --secondary-hover-color: #515c41;
     --text-color: #333333;
     --background-color: #f7f7f7;
     --secondary-backgroud-color: #edf2e4;
@@ -69,6 +70,10 @@ hr{
     margin-left: 25px;
 }
 
+#accueilhov{
+    position: relative;
+}
+
 .navhov{
     display: none;
     position: absolute;
@@ -78,11 +83,13 @@ hr{
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2), -1px 0 10px rgba(0, 0, 0, 0.2);
     font-size: .8em;
+    right: 0;
+    width: max-content;
 }
 
 .navhov li{
     margin: 10px 0;
-    text-align: left;
+    text-align: right;
 }
 
 #accueilhov:hover .navhov{
@@ -107,6 +114,82 @@ ul a:hover{
     text-decoration: underline;
 }
 
+ul a:active{
+    background-color: var(--secondary-hover-color);
+}
+
+label, #toggle{
+    display: none;
+}
+
+.hr-nav{
+    display: none;
+}
+
+/* header mobile */
+@media screen and (max-width: 992px){
+
+    .hr-nav{
+        display: flex;
+    }
+
+    #nav li{
+        padding: 15px;
+        margin: 0 !important;
+    }
+
+    label{
+        display: flex;
+        color: white;
+        font-size: 32px;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .navhov{
+        display: none;
+        border-radius: 0;
+        position: absolute;
+        background-color: var(--primary-color);
+        padding: 5px;
+        margin-top: 5px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2), -1px 0 10px rgba(0, 0, 0, 0.2);
+        font-size: .7em;
+        right: 0;
+        width: max-content;
+    }
+
+    .navhov li{
+        margin: 5px 0;
+    }
+
+    #logo{
+        display: flex;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #nav{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 82px;
+        right: 0;
+        padding: 20px;
+        width: max-content;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2), -1px 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #toggle:checked ~ #nav {
+        display: flex;
+        background-color: var(--primary-color);
+    }
+}
+
 /* main */
 
 #food{
@@ -118,7 +201,7 @@ ul a:hover{
 #KDou{
     color: var(--text-color);
     font-family: oswald, sans-serif;
-    font-size: 5em;
+    font-size: 6vw;
     font-weight: bold;
     position: absolute;
     top: 50%;
@@ -132,7 +215,7 @@ h1{
     text-align: center;
     font-family: Arial, sans-serif;
     color: var(--hover-color);
-    font-size: 2em;
+    font-size: 4vw;
 }
 
 #presentation{
@@ -188,6 +271,7 @@ h1{
 
 .secondaryBack{
     background-color: var(--secondary-backgroud-color);
+    position: relative;
 }
 
 section hr{
@@ -225,10 +309,18 @@ section p{
     text-decoration: underline;
 }
 
+.mission:active{
+    background-color: var(--secondary-hover-color);
+}
+
 #titre{
     font-family: Oswald, sans-serif;
     font-size: 2.5em;
     padding-top: 25px;
+}
+
+@media screen and (max-width: 768px){
+
 }
 
 /* footer */
