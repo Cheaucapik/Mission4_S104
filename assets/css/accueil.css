@@ -126,8 +126,30 @@ label, #toggle{
     display: none;
 }
 
+nav a img{
+    width: 100%;
+    max-width: 118px;
+    height: auto;
+}
+
 /* header mobile */
 @media screen and (max-width: 992px){
+
+    body{
+        padding-top: 72px;
+    }
+
+    nav{
+        padding: 16px;
+    }
+
+    nav a img{
+        max-width: 98px;
+    }
+
+    ul a{
+        font-size: 1.3em;
+    }
 
     .hr-nav{
         display: flex;
@@ -148,16 +170,7 @@ label, #toggle{
     }
 
     .navhov{
-        display: none;
         border-radius: 0;
-        position: absolute;
-        background-color: var(--primary-color);
-        padding: 5px;
-        margin-top: 5px;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2), -1px 0 10px rgba(0, 0, 0, 0.2);
-        font-size: .7em;
-        right: 0;
-        width: max-content;
     }
 
     .navhov li{
@@ -220,8 +233,9 @@ h1{
 
 #presentation{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 50px;
+    flex-wrap: wrap;
 }
 
 .profile{
@@ -229,6 +243,14 @@ h1{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 0 40px;
+}
+
+.profile img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
 }
 
 .profile span{
@@ -240,7 +262,7 @@ h1{
 }
 
 .profile2{
-    padding: 60px 60px 60px 60px;
+    padding: 60px;
 }
 
 .profile2 span{
@@ -291,6 +313,7 @@ section p{
     display: flex;
     justify-content: space-evenly;
     padding: 0 40px 40px 40px;
+    flex-wrap: wrap;
 }
 
 .mission{
@@ -301,6 +324,7 @@ section p{
     font-size: 2em;
     padding: .3em 1em;
     font-variant: small-caps;
+    margin: 10px;
 }
 
 .mission:hover{
@@ -317,10 +341,41 @@ section p{
     font-family: Oswald, sans-serif;
     font-size: 2.5em;
     padding-top: 25px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px){
 
+    h1{
+        padding: 25px;
+    }
+
+    .profile img{
+        max-width: 150px;
+    }
+
+    .profile span{
+        font-size: 1.4em;
+        padding-bottom: 30px;
+    }
+
+    .mission, #titre{
+        font-size: 1.5em;
+    }
+
+    #titre{
+        margin-bottom: 10px;
+    }
+
+    section hr{
+        margin: 0 50px 25px 50px;
+    }
+
+    section p{
+        font-size: 1em;
+        margin: 0 50px 25px 50px;
+    }
 }
 
 /* footer */
@@ -337,4 +392,20 @@ footer div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+footer div img{
+    width: 100%;
+    max-width: 118px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        font-size: .8em;
+        padding: 16px;
+    }
+    footer div img{
+        max-width: 98px;
+    }
 }
