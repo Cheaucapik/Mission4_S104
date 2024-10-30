@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="1.7&#10;page accueil responsive">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="1.7&#10;page accueil responsive" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +95,7 @@
       <workItem from="1730198428874" duration="18947000" />
       <workItem from="1730222647132" duration="23000" />
       <workItem from="1730230052116" duration="144000" />
-      <workItem from="1730249419375" duration="513000" />
+      <workItem from="1730249419375" duration="840000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />
@@ -187,7 +185,31 @@
       <option name="project" value="LOCAL" />
       <updated>1730222658802</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1.7&#10;page accueil responsive">
+      <option name="closed" value="true" />
+      <created>1730250065465</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1730250065465</updated>
+    </task>
+    <task id="LOCAL-00013" summary="1.7&#10;page accueil responsive">
+      <option name="closed" value="true" />
+      <created>1730250078404</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730250078404</updated>
+    </task>
+    <task id="LOCAL-00014" summary="1.7&#10;page accueil responsive">
+      <option name="closed" value="true" />
+      <created>1730250126484</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1730250126484</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
