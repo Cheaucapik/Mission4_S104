@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="1.7&#10;page accueil responsive" />
+    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="1.8&#10;Ajout header-footer.css pour ne pas avoir à le répéter">
+      <change afterPath="$PROJECT_DIR$/assets/css/header-footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/accueil.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +100,7 @@
       <workItem from="1730198428874" duration="18947000" />
       <workItem from="1730222647132" duration="23000" />
       <workItem from="1730230052116" duration="144000" />
-      <workItem from="1730249419375" duration="840000" />
+      <workItem from="1730249419375" duration="1147000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />
@@ -209,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730250126484</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="1.8&#10;Ajout header-footer.css pour ne pas avoir à le répéter">
+      <option name="closed" value="true" />
+      <created>1730250577775</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1730250577775</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +248,7 @@
     <MESSAGE value="1.5&#10;Media screen header" />
     <MESSAGE value="1.6&#10;Page d'accueil presque finalisée&#10;--&gt; responsive sauf pour le profile2" />
     <MESSAGE value="1.7&#10;page accueil responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.7&#10;page accueil responsive" />
+    <MESSAGE value="1.8&#10;Ajout header-footer.css pour ne pas avoir à le répéter" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.8&#10;Ajout header-footer.css pour ne pas avoir à le répéter" />
   </component>
 </project>
