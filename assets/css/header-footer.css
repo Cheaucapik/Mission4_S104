@@ -52,6 +52,12 @@ nav{
     top: 10px;
 }
 
+.separator{
+    height: 2px;
+    background-color: var(--text-color);
+    margin: 5px 0;
+}
+
 ul{
     list-style-type: none;
 }
@@ -59,11 +65,6 @@ ul{
 #accueil, #mission1, #mission2, #mission3, #mission4{
     text-decoration: underline;
     font-weight: bold;
-}
-
-hr{
-    border-color: var(--text-color);
-    margin: 5px 0;
 }
 
 #nav li:not(:first-child){
@@ -122,10 +123,6 @@ label, #toggle{
     display: none;
 }
 
-.hr-nav{
-    display: none;
-}
-
 nav a img{
     width: 100%;
     max-width: 118px;
@@ -149,10 +146,6 @@ nav a img{
 
     ul a{
         font-size: 1.3em;
-    }
-
-    .hr-nav{
-        display: flex;
     }
 
     #nav li{
@@ -200,6 +193,18 @@ nav a img{
     #toggle:checked ~ #nav {
         display: flex;
         background-color: var(--primary-color);
+    }
+
+    .separator-nav{
+        height: 2px;
+        background-color: var(--text-color);
+        margin: 5px 0;
+        padding: 0 !important;
+    }
+
+    .separator{
+        height: 1px;
+        padding: 0 !important;
     }
 }
 
