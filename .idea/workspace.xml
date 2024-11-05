@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="1.9&#10;header &amp; footer sur toutes les pages&#10;link vers les bonnes pages css&#10;lang = &quot;fr&quot;">
+    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="2.0&#10;checker html &amp; css corrections">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/header-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/header-footer.css" afterDir="false" />
@@ -106,7 +106,10 @@
       <workItem from="1730249419375" duration="4243000" />
       <workItem from="1730254520777" duration="1202000" />
       <workItem from="1730333491523" duration="1399000" />
-      <workItem from="1730336950899" duration="2306000" />
+      <workItem from="1730336950899" duration="2375000" />
+      <workItem from="1730403646364" duration="131000" />
+      <workItem from="1730576255869" duration="140000" />
+      <workItem from="1730842134902" duration="1482000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />
@@ -244,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730253496615</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="2.0&#10;checker html &amp; css corrections">
+      <option name="closed" value="true" />
+      <created>1730339342013</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1730339342013</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +283,7 @@
     <MESSAGE value="1.7&#10;page accueil responsive" />
     <MESSAGE value="1.8&#10;Ajout header-footer.css pour ne pas avoir à le répéter" />
     <MESSAGE value="1.9&#10;header &amp; footer sur toutes les pages&#10;link vers les bonnes pages css&#10;lang = &quot;fr&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.9&#10;header &amp; footer sur toutes les pages&#10;link vers les bonnes pages css&#10;lang = &quot;fr&quot;" />
+    <MESSAGE value="2.0&#10;checker html &amp; css corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0&#10;checker html &amp; css corrections" />
   </component>
 </project>
