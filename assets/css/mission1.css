@@ -1,8 +1,329 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,900;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,900;1,900&family=Oswald:wght@200..700&display=swap');
+
+:root {
     --primary-color: #A3B288;
     --hover-color: #7C8B66;
     --secondary-hover-color: #515c41;
     --text-color: #333333;
     --background-color: #f7f7f7;
     --secondary-backgroud-color: #edf2e4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7f7f7;
+    padding-top: 82px;
+}
+
+/*    MAIN    */
+div {
+    height: 250px;
+    width: 100%;
+    padding: 50px;
+    margin: 10px;
+}
+/* Tableau= image css*/
+.tableau {
+    position: relative;
+    z-index: -1;
+}
+
+img {
+    max-width: 100%;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text {
+    position: absolute;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-left: 15px;
+    left: 10%;
+    top: 100px;
+    color: #edf2e4;
+    justify-content: end;
+}
+/*Tableau avc liste à puces + texte css*/
+.tableau-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 200px;
+    margin-left: 20px;
+    gap: 20px;
+
+}
+
+table {
+    border-collapse: separate;
+    border: 3px solid #A3B288;
+    border-radius: 7px;
+    margin-top: 200px;
+    max-width: 100%;
+
+}
+.p h1{
+    color:  #515c41;
+}
+.p{
+    margin-top: 200px;
+    font-size: 1.4em;
+    border: 3px dotted #A3B288;
+    height: 320px;
+    padding-top: 50px;
+    max-width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.table-puce li {
+    padding: 8px;
+}
+
+.keys {
+    list-style-image: url(assets/img/clé_primaire.svg);
+    list-style-position: inside;
+}
+
+.e-keys {
+    list-style-image: url(assets/img/key__etranger____.svg);
+    list-style-position: inside;
+}
+/*KDOO DONNEE structure css*/
+/*.Kdoo-titre{
+
+}*/
+
+.client{
+    padding: 0;
+    margin-top: 800px;
+}
+.highlight {
+    background-color: rgb(253, 202, 225);
+}
+.K-DATA{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.K-DATA > img {
+    border-radius: 5%;
+    box-shadow:1px  3px 4px 5px #A3B288;
+    margin-top: 700px;
+    padding: 3px;
+    max-width: 100%;
+}
+.K-DATA > h1{
+    position: absolute;
+    top: 1300px;
+    left: 175px;
+    font-size: 3em;
+    font-family: Oswald, sans-serif;
+    color: #fefefc;
+}
+.K-DATA > h2 {
+    text-align: center;
+}
+
+.K-DATA > p{
+    position: absolute;
+    left: 80px;
+    top: 1370px;
+    font-size: 1.3em;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    color: #fefefc;
+}
+.K-DATA >ul{
+    list-style-image: url(assets/img/key__etranger____.svg);
+}
+.C_reponses{
+    background: linear-gradient(#a0d874,#4bba74);
+    border-radius: 15px;
+    height: 540px;
+    margin-top: 710px;
+    position: relative;
+
+}
+.C_reponses > h2{
+    text-align: center;
+    color: #fefefc;
+    text-shadow: rgb(253, 202, 225) 3px 3px 3px;
+    margin-top: -38px;
+}
+.C_reponses > table{
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 30px;
+    border:#fefefc solid 3px ;
+    color: #fefefc;
+}
+.C_reponses > p{
+    font-size: 1.3em;
+    color: #fefefc;
+}
+.C_reponses > th,td {
+}
+.logo_localisation{
+    list-style-image: url("assets/img/Paris_logo (1).png");
+}
+.logo_localisation > ul{
+    margin-left:72px;
+}
+.logo_localisation_n > ul{
+    margin-left:585px;
+    margin-top:-48px;
+}
+.logo_localisation_n{
+    list-style-image: url("assets/img/cathedrale.png");
+}
+h3{
+    text-align: center;
+    margin-right: 20px;
+    color: #fefefc;
+    text-shadow: rgb(253, 202, 225) 3px 3px 3px;
+    font-size: 1.8em;
+    margin-top: 12px;
+}
+.Fournisseur{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 350px;
+}
+.Fournisseur > img{
+    border-radius: 5%;
+    box-shadow:1px  3px 4px 5px #A3B288;
+    margin-top: 700px;
+    padding: 3px;
+    /*z-index: -1;*/
+    max-width: 100%;
+
+}
+.Fournisseur> h1{
+    position: absolute;
+    top: 1890px;
+    left: 138px;
+    font-size: 3em;
+    font-family: Oswald, sans-serif;
+    color: #fefefc;
+}
+.Fournisseur > p{
+    position: absolute;
+    left: 80px;
+    top: 1957px;
+    font-size: 1.3em;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    color: #fefefc;
+}
+.F_reponses{
+    background-color: #d4f6c8;
+    border-radius: 15px;
+    height: 540px;
+    margin-top: 710px;
+    position: relative;
+    background: linear-gradient(#a0d874,#4bba74);
+}
+.Produits {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Produits > img {
+    border-radius: 5%;
+    box-shadow:1px  3px 4px 5px #A3B288;
+    margin-top: 1400px;
+    padding: 3px;
+    max-width: 100%;
+}
+.Produits > h1{
+    position: absolute;
+    top: 2500px;
+    left: 160px;
+    font-size: 3em;
+    font-family: Oswald, sans-serif;
+    color: #fefefc;
+}
+.Produits > p{
+    position: absolute;
+    left: 77px;
+    top: 2580px;
+    font-size: 1.3em;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    color: #fefefc;
+}
+.P_reponses{
+    background-color: #d4f6c8;
+    border-radius: 15px;
+    height: 540px;
+    margin-top: 1400px;
+    position: relative;
+    background: linear-gradient(#a0d874,#4bba74);
+}
+@media screen and (max-width: 992px) {
+    div {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .text {
+        position: absolute;
+        top: 60px;
+        padding: 35px;
+        border-radius: 5px;
+        left: 4%;
+        font-size: 1.2em;
+    }
+    .tableau-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+        margin: 20px 0;
+
+
+    }
+
+    .p {
+        width: 100%;
+        margin: 20px 0;
+        padding: 10px;
+        border-width: 5px;
+        font-size: 1.3em;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }

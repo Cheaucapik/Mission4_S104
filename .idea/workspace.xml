@@ -4,9 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="2.1&#10;Ajout des pfp + correctif taille de l'écran">
+    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="2.2&#10;Ajout Reda accueil">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Damien.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Oceane.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Reda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Talina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/mission1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/food.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logo_entier.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/rond.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission1.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission3.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission4.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +118,11 @@
       <workItem from="1730403646364" duration="131000" />
       <workItem from="1730576255869" duration="140000" />
       <workItem from="1730842134902" duration="1912000" />
-      <workItem from="1730913092700" duration="425000" />
+      <workItem from="1730913092700" duration="500000" />
+      <workItem from="1731108557385" duration="40000" />
+      <workItem from="1731145776031" duration="806000" />
+      <workItem from="1731151042604" duration="68000" />
+      <workItem from="1731151125550" duration="1012000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />
@@ -259,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730843817267</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="2.2&#10;Ajout Reda accueil">
+      <option name="closed" value="true" />
+      <created>1730913550154</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1730913550154</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +314,7 @@
     <MESSAGE value="1.9&#10;header &amp; footer sur toutes les pages&#10;link vers les bonnes pages css&#10;lang = &quot;fr&quot;" />
     <MESSAGE value="2.0&#10;checker html &amp; css corrections" />
     <MESSAGE value="2.1&#10;Ajout des pfp + correctif taille de l'écran" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.1&#10;Ajout des pfp + correctif taille de l'écran" />
+    <MESSAGE value="2.2&#10;Ajout Reda accueil" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.2&#10;Ajout Reda accueil" />
   </component>
 </project>
