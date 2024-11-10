@@ -205,3 +205,14 @@ h2 { /*titre details spécifiques*/
     max-width: 100%;
     width: 100%;
 } */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+    padding-bottom: 20px;
+}
