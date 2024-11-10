@@ -33,184 +33,84 @@
 </header>
 
 <main>
-    <section class="image-container">
-        <div class="tableau">
-            <img src="assets/img/Bandeau-1.png" alt="CONTEXTE" />
-            <p class="text">
-                L'objectif de cette première mission est<br />
-                de nous familiariser au monde de Kdoo.<br />
-                Pour cela nous allons naviguer de donées en donées<br/>
-                via le logiciel excel. Pour analyser le dynamisme<br/>
-                de l'entreprise et en déduire des approches économiques<br/>
-                plus eco-freindly<br/>
-                .
-                Nous utiliserons le logiciel excel<br />
-                pour extraire les données suivantes.<br />
-            </p>
-        </div>
-    </section>
-    <div class="tableau-container">
-        <table>
-            <colgroup>
-                <col />
-                <col />
-            </colgroup>
-            <tr>
-                <th>Table</th>
-                <th>Clé primaire</th>
-                <th>Clé étrangère</th>
-            </tr>
-            <tr>
-                <td class="table-puce">
-                    <ul>
-                        <li>Fournisseur</li>
-                        <li>Produit</li>
-                        <li>Catégorie</li>
-                        <li>Clientèle</li>
-                        <li>Commande</li>
-                        <li>Detail Commande</li>
-                    </ul>
-                </td>
-                <td class="keys">
-                    <ul>
-                        <li>N° fournisseur</li>
-                        <li>Ref produit</li>
-                        <li>Code catégorie</li>
-                        <li>Code client</li>
-                        <li>N° commande</li>
-                        <li>Ref produit, N° commande</li>
-                    </ul>
-                </td>
-                <td class="e-keys">
-                    <ul>
-                        <li>❌</li>
-                        <li>N° fournisseur, Code catégorie</li>
-                        <li>❌</li>
-                        <li>❌</li>
-                        <li>Code client</li>
-                        <li>N° commande, Ref produit</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-        <div class="p">
-            <h1>important‼️</h1>
-            <br>
-            Il est plus que nécessaire de bien comprendre les relations entre les différentes tables
-            Dans la question 1 et 2, il nous est demandé d'identifier les colonnes correspondant aux
-            <strong>clé primaire</strong> et <strong>étrangère </strong> dans les 6 différentes tables.<br> Il est important de bien comprendre le<br />
-            contenu de chaque table et de comprendre les liens entre les tables pour bien manipuler les données.<br />
-        </div>
-    </div>
-    <article>
-        <section>
-            <div class="K-DATA">
-                <img src="assets/img/Clients.png" alt="client_">
-                <h1> Clients</h1>
-                <p>Cette base donées concentre de nombreuses<br>
-                    informations axée sur les clients : <br>Dans cette vignette
-                    nous allons en <br>extraire quelques une</p>
-                <div class="C_reponses">
-                    <h2>📍LOCALISATION :</h2>
-                    <span class="logo_localisation">
-                        <ul>
-                            <li>Situé à paris</li>
+    <section>
+        <div class="K-DATA">
+            <div class="C1">
+                <img id="logo_client" src="assets/img/Clients.png" alt="client_" width="376" height="544">
+                <span id="Client"> Clients</span>
+                <div id="client_description">Cette base donées concentre de nombreuses
+                    informations axée sur les clients : Dans cette vignette
+                    nous allons en extraire quelques une.
+                </div>
+            </div>
+            <div class="C_reponses">
+                <h1>📍LOCALISATION :</h1>
+                    <div class="localisation">
+                        <ul class="logo_paris">
+                            <li>Situé à Paris</li>
                         </ul>
-                    </span>
-                    <span class="logo_localisation_n">
-                        <ul>
+                        <table class="paris">
+                            <tr>
+                                <th>Code client</th>
+                                <th>Contact</th>
+                                <th>Ville</th>
+                            </tr>
+                            <tr>
+                                <td>ALYAD</td>
+                                <td>Alyssa Duranta</td>
+                                <td class="highlight">Paris</td>
+                            </tr>
+                            <tr>
+                                <td>COMMI</td>
+                                <td>Pedro Afonso</td>
+                                <td class="highlight">Paris</td>
+                            </tr>
+                            <tr>
+                                <td>FAMIA</td>
+                                <td>Aria Cruz</td>
+                                <td class="highlight">Paris</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="localisation">
+                        <ul class="logo_nantes">
                             <li>Situé à Nantes</li>
                         </ul>
-                    </span>
-                    <table>
-                        <tr>
-                            <th>Code client</th>
-                            <th>Contact</th>
-                            <th>Ville</th>
-                        </tr>
-                        <tr>
-                            <td>ALYAD</td>
-                            <td>Alyssa Duranta</td>
-                            <td class="highlight"> Paris</td>
-                        </tr>
-                        <tr>
-                            <td>COMMI</td>
-                            <td>Pedro Afonso</td>
-                            <td class="highlight">Paris</td>
-                        </tr>
-                        <tr>
-                            <td>FAMIA</td>
-                            <td>Aria Cruz</td>
-                            <td class="highlight">Paris</td>
-                        </tr>
-                    </table>
-                    <table class="nantes">
-                        <tr>
-                            <th>Code client</th>
-                            <th>Contact</th>
-                            <th>Ville</th>
-                        </tr>
-                        <tr>
-                            <td>COMMI</td>
-                            <td>Pedro Afonso</td>
-                            <td class="highlight">Nantes</td>
-                        </tr>
-                        <tr>
-                            <td>DRACD</td>
-                            <td>Sven Ottlieb</td>
-                            <td class="highlight">Nantes</td>
-                        </tr>
-                        <tr>
-                            <td>FURIB</td>
-                            <td>Lino Rodriguez</td>
-                            <td class="highlight">Nantes</td>
-                        </tr>
-                    </table>
-                    <h3><img src="assets/img/description_logo.png" alt="=logo">Details spécifiques </h3>
-                    <p><br><img src="assets/img/mobile.png" alt="téléphone">Maël Sporto : 07.78.52.22.86
-                        <br><img src="assets/img/address-location.png" alt="adresse_maison">Marie Delamare (adresse fournisseur) : 22 rue H. Voiron.
-                        <br>❌ Maël Sporto : n'a toujours pas commandé un produit.
-                        <br>❌Julie Kas : n'a toujours pas commandé un produit.
-                        <br>❌ Isra Dubois : n'a toujours pas commandé un produit
-                    </p>
-
-                </div>
-
+                        <table class="nantes">
+                            <tr>
+                                <th>Code client</th>
+                                <th>Contact</th>
+                                <th>Ville</th>
+                            </tr>
+                            <tr>
+                                <td>COMMI</td>
+                                <td>Pedro Afonso</td>
+                                <td class="highlight">Nantes</td>
+                            </tr>
+                            <tr>
+                                <td>DRACD</td>
+                                <td>Sven Ottlieb</td>
+                                <td class="highlight">Nantes</td>
+                            </tr>
+                            <tr>
+                                <td>FURIB</td>
+                                <td>Lino Rodriguez</td>
+                                <td class="highlight">Nantes</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details">
+                        <h2><img src="assets/img/description_logo.png" alt="=logo">Details spécifiques </h2>
+                        <p><img src="assets/img/mobile.png" alt="téléphone">Maël Sporto : 07.78.52.22.86</p>
+                        <p><img src="assets/img/address-location.png" alt="adresse_maison">Marie Delamare (adresse
+                            fournisseur) : 22 rue H. Voiron.</p>
+                        <p>❌ Maël Sporto, Julie Kas, Isra Dubois : n'on toujours pas commandé un produit.</p>
+                    </div>
             </div>
-        </section>
-        <section>
-            <div class="Fournisseur">
-                <img src="assets/img/PicsFourni.png" alt="fournisseurs">
-                <h1> Fournisseurs</h1>
-                <p>Cette base donées concentre de nombreuses<br>
-                    informations axée sur les fournisseurs : <br>Dans cette vignette
-                    nous allons en <br>extraire quelques une</p>
-                <div class="F_reponses">
-
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="Produits">
-                <img src="assets/img/Produits.png" alt="Produits">
-                <h1> Produits</h1>
-                <p>Cette base donées concentre de nombreuses<br>
-                    informations axée sur les clients : <br>Dans cette vignette
-                    nous allons en <br>extraire quelques une</p>
-                <div class="P_reponses">
-
-                </div>
-
-            </div>
-        </section>
-    </article>
+        </div>
+    </section>
 </main>
 
-<footer>
-    <div>
-        <span>&copy;2024 Groupe 02A : Huynh Océane, Lux Talina, Boukhima Reda, Maurer Damien &copy2024</span>
-        <img src="assets/img/logo_entier.svg" alt="" height="60" width="118">
-    </div>
-</footer>
 </body>
 </html>
