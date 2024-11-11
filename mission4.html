@@ -47,19 +47,67 @@
 
             <li class="separator-nav"></li>
 
-            <li><a href="mission4.html" id="mission4">mission 4</a></li>
+            <li id="mission4hov"><a href="mission4.html" id="mission4">mission 4</a>
+                <ul class="navhov">
+                    <li><a href="mission4.html#intro">Introduction</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission4.html#header-footer">Header & Footer</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission4.html#accueilm4">Accueil</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission4.html#mission1m4">Mission 1</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission4.html#mission2m4">Mission 2</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission4.html#mission3m4">Mission 3</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <p id="intro">
-        Pour la mission 4, nous avons commencé par la page d’accueil puisque c’est la page principale. Mais avant cela, nous nous sommes répartis les tâches (chacun doit faire une page), de ce fait personne n'empiète sur le code de l’autre.
-        <br>
-        Toutes les pages sont composées du même footer et du même header qui lui permet de naviguer entre les pages. Les pages sont dites responsives grâce aux media queries.
-        <br>
-        Le site s’appelle KDou en référence à l’entreprise que nous devions étudier tout au long de cette SAE.
-    </p>
+    <div class="secondaryBack">
+        <img id="fond" src="assets/img/fond.jpeg" alt="fond">
+        <span id="missionfond">Mission 4</span>
+    </div>
+    <section id="intro">
+        <h1>Introduction</h1>
+        <hr>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pour la mission 4, nous avons commencé par la page d’accueil puisque
+            c’est la page principale. Mais avant cela, nous nous sommes répartis les tâches (chacun doit faire une
+            page), de ce fait personne n'empiète sur le code de l’autre.
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toutes les pages sont composées du même footer et du même header qui lui
+            permet de naviguer entre les pages. Les pages sont dites responsives grâce aux media queries.
+            <br><br>
+            Le site s’appelle KDou en référence à l’entreprise que nous devions étudier tout au long de cette SAE.
+        </p>
+    </section>
+    <section id="header-footer">
+        <h1>Header & Footer</h1>
+        <hr>
+        <p>Lorsqu’on rétrécit la taille de la page, le header est modifié et un menu burger apparaît.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pour ce dernier, nous avons utilisé le même principe utilisé dans un des TP. On utilise une checkbox et si cette dernière est considérée comme check, on affiche le contenu du menu burger. On utilise par ailleurs la propriété “cursor” avec comme valeur “pointer” afin de montrer que ce menu est cliquable. Pour le header (pour un grand écran), le nav est composé du logo du site, situé tout à gauche et à droite de toutes les pages. On applique un a:hover et un a:active, permettant de rendre la page plus interactive. Ainsi lorsqu’on survole les pages du nav, on obtient un style différent, de même lorsque l’on clique sur ces dernières.
+            <br><br>
+            Le footer est quant à lui composé que du logo et du copyright avec les crédits des auteurs du projet.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous avons créé un fichier css rien que pour le header et le footer (header-footer.css) de manière à ce que cela nous évite de copier coller incessamment le même css. Sinon pour chaque page, nous avons un fichier css lui correspondant.
+        </p>
+    </section>
+    <section id="accueilm4">
+        <h1>Accueil</h1>
+        <hr>
+        <p>La page d’accueil est composée de 2 chapitres : Qui sommes nous et Notre travail.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La partie qui sommes nous est constituée de la présentation de nos 4 membres. Les 4 premières photos sont cliquables permettant d’accéder plus rapidement à la présentation de chaque membre (possible par l’assignation d’un id à une section).
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ce même principe est utilisé dans le header lors du hover au-dessus d’une certaine catégorie. Les images deviennent de plus en plus petites selon la taille de l’écran. Dépendant desquelles, nous avons fait le choix de plus ou moins les rétrécir, tout cela dans un but esthétique. On affecte donc une max-width de plus en plus petite selon la taille de l’écran. Par ailleurs, ayant commencé par l’écran le plus grand, nous avons décidé d'organiser le fichier css de la media query la plus grande à la plus petite. Outre les images, les textes ont également changé de taille s’adaptant à la taille de l’écran, tout comme les marges, toujours dans un but esthétique.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La partie Notre travail comporte une courte introduction au travail que nous avons fait pour la SAE S104. Il y a également un bref plan des missions 1 à 4 avec les liens des autres pages pour pouvoir accéder aux missions. Comme pour le reste, la police devient plus petite s’adaptant à l’écran tout comme les “boutons” les autres missions qui eux sont mis l’un en dessous de l’autre.</p>
+    </section>
 </main>
 
 <footer>

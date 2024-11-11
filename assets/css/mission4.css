@@ -1,8 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,900;1,900&family=Oswald:wght@200..700&display=swap');
+
 :root{
     --primary-color: #A3B288;
     --hover-color: #7C8B66;
     --secondary-hover-color: #515c41;
     --text-color: #333333;
     --background-color: #f7f7f7;
-    --secondary-backgroud-color: #edf2e4;
+    --secondary-background-color: #edf2e4;
+}
+
+p{
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+h1{
+    padding-bottom: 30px;
+    font-family: Oswald, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#intro, #accueilm4{
+    background: var(--secondary-background-color);
+    padding: 50px;
+}
+
+#header-footer, #accueilm4{
+    padding: 40px 60px 60px 60px;
+}
+
+hr{
+    margin: 0 200px 40px 200px;
+    border: solid 0.1em var(--hover-color);
 }

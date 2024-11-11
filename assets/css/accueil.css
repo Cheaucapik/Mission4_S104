@@ -7,7 +7,7 @@
     --secondary-hover-color: #515c41;
     --text-color: #333333;
     --background-color: #f7f7f7;
-    --secondary-backgroud-color: #edf2e4;
+    --secondary-background-color: #edf2e4;
 }
 
 *{
@@ -112,18 +112,13 @@ h1{
     display: flex;
     justify-content: flex-start;
     text-align: left;
-    background-color: var(--secondary-backgroud-color);
+    background-color: var(--secondary-background-color);
 }
 
 .profile2 p{
     margin: 0 100px;
     display: flex;
     align-items: center;
-}
-
-.secondaryBack{
-    background-color: var(--secondary-backgroud-color);
-    position: relative;
 }
 
 section hr{

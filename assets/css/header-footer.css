@@ -7,7 +7,7 @@
     --secondary-hover-color: #515c41;
     --text-color: #333333;
     --background-color: #f7f7f7;
-    --secondary-backgroud-color: #edf2e4;
+    --secondary-background-color: #edf2e4;
 }
 
 *{
@@ -20,6 +20,33 @@
 body{
     background-color: var(--background-color);
     padding-top: 82px;
+}
+
+#missionfond{
+    color: var(--background-color);
+    font-family: oswald, sans-serif;
+    font-size: 6vw;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#fond{
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+
+#clients{
+    background-color: var(--secondary-background-color);
+    padding: 50px;
+}
+
+.secondaryBack{
+    background-color: var(--secondary-background-color);
 }
 
 /* header */
@@ -72,7 +99,7 @@ nav ul{
     margin-left: 25px;
 }
 
-#accueilhov, #mission1hov{
+#accueilhov, #mission1hov, #mission2hov, #mission3hov, #mission4hov{
     position: relative;
 }
 
@@ -94,7 +121,7 @@ nav ul{
     text-align: right;
 }
 
-#accueilhov:hover .navhov, #mission1hov:hover .navhov{
+#accueilhov:hover .navhov, #mission1hov:hover .navhov, #mission1hov:hover .navhov, #mission2hov:hover .navhov, #mission3hov:hover .navhov, #mission4hov:hover .navhov{
     display: flex;
     flex-direction: column;
     z-index: 4;
@@ -206,7 +233,7 @@ nav a img{
     }
 
     .separator{
-        height: 1.5px;
+        height: 0.1em;
         padding: 0 !important;
     }
 }
