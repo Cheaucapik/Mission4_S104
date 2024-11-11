@@ -39,7 +39,17 @@
 
             <li class="separator-nav"></li>
 
-            <li><a href="mission2.html" id="mission2">mission 2</a></li>
+            <li id="mission2hov"><a href="mission2.html" id="mission2">mission 2</a>
+                <ul class="navhov">
+                    <li><a href="mission2.html#contexte">Contexte</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission2.html#1indicateur">1er indicateur</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission2.html#2indicateur">2nd indicateur</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission2.html#3indicateur">3e indicateur</a></li>
+                </ul>
+            </li>
 
             <li class="separator-nav"></li>
 
@@ -68,8 +78,310 @@
 
 <main>
     <div class="secondaryBack">
-        <img id="fond" src="assets/img/fond.jpeg" alt="fond">
-        <span id="missionfond">Mission 2</span>
+        <div class="image-container">
+            <img id="fond" src="assets/img/fond.jpeg" alt="fond">
+            <span id="missionfond">Mission 2</span>
+        </div>
+    </div>
+    <div id="all">
+        <div id="contexte" class="context">
+            <h1>Contexte</h1>
+            <p>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L'objectif principal de cette mission est d'explorer et d'analyser la base de données de l'entreprise
+                KDou en utilisant une interface <strong>low-code</strong>, plus précisément le logiciel <strong>Microsoft
+                Access</strong>. Ce dernier
+                permet de créer et d'exécuter des requêtes à l'aide d'une interface graphique (QBE - Query By Example)
+                qui génère automatiquement le code SQL correspondant. Cela permet une exploitation plus rapide et
+                accessible des données sans nécessiter une maîtrise approfondie du langage SQL.
+            </p>
+            <p>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dans cette mission, la base de données KDou contient plusieurs tables reliées entre elles, représentant
+                des informations sur les produits, les fournisseurs, les clients et les commandes. L'analyse des données
+                vise à produire des indicateurs commerciaux et logistiques permettant d'évaluer les performances de
+                l'entreprise.
+            </p>
+            <p>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ainsi, l’objectif est de réaliser diverses requêtes afin d’extraire des informations utiles pour
+                l’entreprise, tout en s’assurant de la cohérence et de la qualité des données. Ces requêtes permettront
+                de répondre à un ensemble de questions pratiques concernant les fournisseurs, les produits, les ventes
+                et les clients de l'entreprise.
+            </p>
+        </div>
+        <div id="1indicateur" class="indicateur">
+            <div class="first_indicateur">
+                <div class="presentation">
+                    <h2>1er indicateur : Classement des 3 Villes avec la Plus Grande Clientèle</h2>
+                    <br>
+                    <p>
+                        <br>
+                        Un classement des 3 premières villes avec le plus de clients est demandé.
+                    </p>
+                    <p>
+                        Cet indicateur permet de savoir dans quelles villes la clientèle est la plus importante,
+                        ce qui peut aider dans la prise de décisions de marketing et de logistique.
+                    </p>
+                    <h2>Code SQL généré :</h2>
+                    <p>
+                        <br>
+                        <br>SELECT TOP 3 Client.VilleCli, Count(Client.CodeCli) AS CompteDeCodeCli<br>
+                        FROM Client<br>
+                        GROUP BY Client.VilleCli<br>
+                        ORDER BY Count(Client.CodeCli) DESC;<br>
+                    </p>
+                </div>
+                <div class="resultat">
+                    <h2>Résultat :</h2>
+                    <br>
+                    <table>
+                        <thead>
+                            <th>VilleCli</th>
+                            <th>CompteDeCodeCli</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Agen</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Paris</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Nantes</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Lille</td>
+                            <td>3</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="2indicateur" class="second_indicateur">
+                <div class="presentation">
+                    <h2>2e indicateur : Produits Italiens ou Allemands de 50€ ou Moins</h2>
+                    <br>
+                    <p>
+                        <br>
+                        Cet indicateur permet d’identifier les produits de fournisseurs européens (Italie et Allemagne)
+                        vendus à un prix attractif (50 € ou moins).<br>
+                        Cela peut aider à proposer des produits européens à prix abordable dans les campagnes de vente.
+                    </p>
+                    <p>
+                        <br>
+                    <h2>Code SQL généré :</h2>
+                    <p>
+                    <br>SELECT Produit.NomProd, Produit.PrixUnit, Fournisseur.Ville, Fournisseur.Pays,
+                    Fournisseur.Societe, Fournisseur.Contact<br>
+                    FROM Fournisseur INNER JOIN Produit ON Fournisseur.NoFour = Produit.NoFour<br>
+                    WHERE (((Produit.PrixUnit)<=50) AND ((Fournisseur.Pays)="Italie" Or (Fournisseur.Pays)="Allemagne"))<br>
+                    ORDER BY Fournisseur.Pays;<br>
+                    </p>
+                </div>
+                <div class="resultat">
+                    <h2>Résultat :</h2>
+                    <br>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>NomProd</th>
+                            <th>PrixUnit</th>
+                            <th>Ville</th>
+                            <th>Pays</th>
+                            <th>Societe</th>
+                            <th>Contact</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Original Frankfurter grüne Soße</td>
+                            <td>10,83 €</td>
+                            <td>Frankfurt</td>
+                            <td>Allemagne</td>
+                            <td>Plusspar Lebensmittelgroßmärkte AG</td>
+                            <td>Maric Bein</td>
+                        </tr>
+                        <tr>
+                            <td>Wimmers gute Semmelknödel</td>
+                            <td>27,71 €</td>
+                            <td>Frankfurt</td>
+                            <td>Allemagne</td>
+                            <td>Plusspar Lebensmittelgroßmärkte AG</td>
+                            <td>Maric Bein</td>
+                        </tr>
+                        <tr>
+                            <td>Singaporean Hokkien Fried Mee</td>
+                            <td>11,67 €</td>
+                            <td>Cuxhaven</td>
+                            <td>Allemagne</td>
+                            <td>Nord-Ost-Fisch Handelsgesellschaft mbH</td>
+                            <td>Sven Petersen</td>
+                        </tr>
+                        <tr>
+                            <td>Nord-Ost Matjeshering</td>
+                            <td>21,58 €</td>
+                            <td>Cuxhaven</td>
+                            <td>Allemagne</td>
+                            <td>Nord-Ost-Fisch Handelsgesellschaft mbH</td>
+                            <td>Sven Petersen</td>
+                        </tr>
+                        <tr>
+                            <td>Rössle Sauerkraut</td>
+                            <td>38,00 €</td>
+                            <td>Frankfurt</td>
+                            <td>Allemagne</td>
+                            <td>Plusspar Lebensmittelgroßmärkte AG</td>
+                            <td>Maric Bein</td>
+                        </tr>
+                        <tr>
+                            <td>Schoggi Schokolade</td>
+                            <td>36,58 €</td>
+                            <td>Berlin</td>
+                            <td>Allemagne</td>
+                            <td>Heli Süßwaren GmbH & Co. KG</td>
+                            <td>Petra Winkler</td>
+                        </tr>
+                        <tr>
+                            <td>Gumbär Gummibärchen</td>
+                            <td>26,03 €</td>
+                            <td>Berlin</td>
+                            <td>Allemagne</td>
+                            <td>Heli Süßwaren GmbH & Co. KG</td>
+                            <td>Petra Winkler</td>
+                        </tr>
+                        <tr>
+                            <td>NuNuCa Nuß-Nougat-Creme</td>
+                            <td>11,67 €</td>
+                            <td>Berlin</td>
+                            <td>Allemagne</td>
+                            <td>Heli Süßwaren GmbH & Co. KG</td>
+                            <td>Petra Winkler</td>
+                        </tr>
+                        <tr>
+                            <td>Gustaf's Knäckebröd</td>
+                            <td>17,50 €</td>
+                            <td>Frankfurt</td>
+                            <td>Allemagne</td>
+                            <td>Plusspar Lebensmittelgroßmärkte AG</td>
+                            <td>Maric Bein</td>
+                        </tr>
+                        <tr>
+                            <td>Mozzarella di Giovanni</td>
+                            <td>29,00 €</td>
+                            <td>Ravenna</td>
+                            <td>Italie</td>
+                            <td>Formaggi Fortini s.r.l.</td>
+                            <td>Elio Rossi</td>
+                        </tr>
+                        <tr>
+                            <td>Ravioli Angelo</td>
+                            <td>16,25 €</td>
+                            <td>Salerno</td>
+                            <td>Italie</td>
+                            <td>Pasta Buttini s.r.l.</td>
+                            <td>Giovanni Giudici</td>
+                        </tr>
+                        <tr>
+                            <td>Gnocchi di nonna Alice</td>
+                            <td>31,67 €</td>
+                            <td>Salerno</td>
+                            <td>Italie</td>
+                            <td>Pasta Buttini s.r.l.</td>
+                            <td>Giovanni Giudici</td>
+                        </tr>
+                        <tr>
+                            <td>Mascarpone Fabioli</td>
+                            <td>26,67 €</td>
+                            <td>Ravenna</td>
+                            <td>Italie</td>
+                            <td>Formaggi Fortini s.r.l.</td>
+                            <td>Elio Rossi</td>
+                        </tr>
+                        <tr>
+                            <td>Gorgonzola Telino</td>
+                            <td>10,42 €</td>
+                            <td>Ravenna</td>
+                            <td>Italie</td>
+                            <td>Formaggi Fortini s.r.l.</td>
+                            <td>Elio Rossi</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="3indicateur" class="third_indicateur">
+                <div class="presentation">
+                    <h2>3e indicateur : Chiffre d’Affaires Total Généré</h2>
+                    <br>
+                    <p>
+                        <br>
+                        Calculer le chiffre d’affaires total permet de savoir combien de revenus ont été générés à partir des informations de vente.<br>
+                        Cela donne un aperçu de la performance globale des ventes de l’entreprise.
+                    </p>
+                    <p>
+                        <br>
+                    <h2>Code SQL généré :</h2>
+                    <p>
+                    <br>SELECT Sum(PrixUnitCli*QteCom*(1-Remise)) AS [Chiffre d'affaire]<br>
+                    FROM Client INNER JOIN (Commande INNER JOIN DetailCommande ON Commande.NoCom = DetailCommande.NoCom)
+                    <br>ON Client.CodeCli = Commande.CodeCli;
+                    </p>
+                </div>
+                <div class="resultat">
+                    <h2>Résultat :</h2>
+                    <br>
+                    <table>
+                        <thead>
+                        <th>Chiffre d'affaire</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1541632,27670534</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="fourth_indicateur">
+                <div class="presentation">
+                    <h2>4e indicateur : Prix Moyen, Minimum et Maximum des Produits</h2>
+                    <br>
+                    <p>
+                        <br>Cet indicateur permet d’analyser les gammes de prix des produits de l’entreprise.<br>
+                        Connaître le prix moyen, ainsi que les prix minimum et maximum, permet d’évaluer l’éventail des prix proposés et d’identifier les extrêmes, ce qui peut influencer les stratégies de prix.
+                    </p>
+                    <p>
+                        <br>
+                    <h2>Code SQL généré :</h2>
+                    <p>
+                    <br>SELECT Min(Produit.PrixUnit) AS [Prix min], Max(Produit.PrixUnit) AS [Prix max], Avg(Produit.PrixUnit) AS [Prix moy]<br>
+                    FROM Produit;
+                    </p>
+                </div>
+                <div class="resultat">
+                    <h2>Résultat :</h2>
+                    <br>
+                    <table>
+                        <thead>
+                        <th>Prix min</th>
+                        <th>Prix max</th>
+                        <th>Prix moy</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>2,08 €</td>
+                            <td>320,00 €</td>
+                            <td>33,54 €</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 
