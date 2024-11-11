@@ -157,52 +157,307 @@ h2 { /*titre details spécifiques*/
 /* deuxième vignette*/
 /*  Fournisseur container*/
 
-/*
-.K-Fournisseur{
-    position: relative;
+.F-DATA {
     display: flex;
-    justify-content: center;
-    align-items: start;
-    gap: 20px;
-    max-width: 100%;
-} */
-
-/*
-#logo_fournisseur{
+    gap: 50px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.C2 {
+    position: relative;
+    display: flex; /* Utilisation de flex pour le conteneur de l'image et des textes */
+    gap: 50px;
+    margin-top: 25px;
+    width: 100%;
+}
+#logo_fournisseur { /*Image*/
     max-width: 100%;
     z-index: -1;
-    margin-top: 40%;
-    margin-left: -55%;
     border-radius: 5%;
-    box-shadow:1px  3px 4px 5px #A3B288;
+    box-shadow: 1px 3px 4px 5px #A3B288;
     padding: 3px;
 }
-#Fournisseur{
-    position: absolute;
-    font-family: Oswald, sans-serif;
-    text-align: center;
+
+#Fournisseurs { /* Titre client*/
     font-size: 3em;
-    color: #fefefc;
-    transform: translate(-175%, 1030%);
 }
 
-#fournisseur_description{
+#fournisseur_description, #Fournisseurs { /* Description de la vignette client*/
     position: absolute;
-    font-size: 1.2rem;
     font-family: Oswald, sans-serif;
     text-align: center;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    left: 15%;
     color: #fefefc;
-    transform: translate(-95%, 300%);
 }
 
-.F_reponses{
-    background: linear-gradient(#a0d874,#4bba74);
+#fournisseur_description {
+    font-size: 1.3em;
+    bottom: 110px;
+    width: 25%;
+    justify-items: center;
+}
+.F_reponses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    background: linear-gradient(#a0d874, #4bba74);
     border-radius: 15px;
-    height: 545px;
-    margin-top: 40%;
-    max-width: 100%;
+    height: auto;
+    width: 75%;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    border: #f7f7f7 solid 3px;
+    justify-items: center;
+    padding: 20px;
+}
+.F_reponses span { /* Titre localisation : client s*/
+    text-align: center;
+    color: #fefefc;
+    text-shadow: rgb(253, 202, 225) 2px 2px 2px;
+    font-size: 1.7em;
+    height: max-content;
+    margin-bottom: 20px;
+    grid-column: span 4;
+    grid-row: 1;
+}
+.flags_fourni{
+    margin-top: -170px;
+    border-collapse: separate;
+    border: 3px solid #fefefc;
+    border-radius: 7px;
+    color: #fefefc;
+
+}
+.drapeaux_container {
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row: 3;
+    margin-left: 10px;
+    text-align: center;
+    color: #fefefc;
+    font-size: 1.2em;
+}
+.detail {
+    margin-top: -25px;
+    grid-column: span 4;
+    grid-row: 4;
+}
+h3{
+    text-align: center;
+    color: #fefefc;
+    text-shadow: rgb(253, 202, 225) 2px 2px 2px;
+    font-size: 1.6em;
+}
+.detail p { /* texte vignette client */
+    font-size: 1.3em;
+    color: #fefefc;
+    margin: 5px;
+}
+/* 3ème vignette produits */
+.P-DATA {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.C3 {
+    position: relative;
+    display: flex; /* Utilisation de flex pour le conteneur de l'image et des textes */
+    gap: 50px;
+    margin-top: 25px;
     width: 100%;
-} */
+}
+#logo_produits{ /*Image*/
+    max-width: 100%;
+    z-index: -1;
+    border-radius: 5%;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    padding: 3px;
+}
+
+#Produits { /* Titre client*/
+    font-size: 3em;
+}
+
+#produits_description, #Produits { /* Description de la vignette client*/
+    position: absolute;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    left: 15%;
+    color: #fefefc;
+}
+
+#produits_description {
+    font-size: 1.3em;
+    bottom: 110px;
+    width: 25%;
+    justify-items: center;
+}
+.P_reponses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: repeat(4, 1fr);
+    background: linear-gradient(#a0d874, #4bba74);
+    border-radius: 15px;
+    height: auto;
+    width: 75%;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    border: #f7f7f7 solid 3px;
+    justify-items: center;
+    padding: 20px;
+}
+.P_reponses span { /* Titre localisation : client s*/
+    text-align: center;
+    color: #fefefc;
+    text-shadow: rgb(253, 202, 225) 2px 2px 2px;
+    font-size: 2.2em;
+    height: max-content;
+    margin-bottom: 20px;
+    grid-column: span 4;
+    grid-row: 1;
+}
+
+.produits_container{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: -160px;
+    gap: 100px;
+    max-width: 100%;
+    color: #fefefc;
+    font-size: 1.2em;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 3;
+}
+
+#style_puce_s, #style_puce_sp{
+    list-style-image: none;
+    margin-bottom: 15px;
+    margin-left: 35px;
+    color: black;
+    text-decoration: underline;
+}
+.P_reponses ul {
+    list-style-image: url("/assets/img/logo_couvert.png");
+    list-style-position: inside;
+}
+
+.p_detail{
+    margin-top: -110px;
+    margin-left: -160px;
+    grid-column: span 4;
+    grid-row: 4;
+}
+.P_reponses p{
+    grid-column: 1;
+    grid-row: 4;
+    color: #fefefc;
+    font-size: 1em;
+    margin-left: 50px;
+    width: 100%;
+
+}
+/*4ème vignette*/
+.Cible-DATA {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.C4 {
+    position: relative;
+    display: flex; /* Utilisation de flex pour le conteneur de l'image et des textes */
+    gap: 50px;
+    margin-top: 25px;
+    width: 100%;
+}
+#cible_photo{ /*Image*/
+    max-width: 100%;
+    z-index: -1;
+    border-radius: 5%;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    padding: 3px;
+}
+
+#Cible { /* Titre client*/
+    font-size: 2.4em;
+    margin-top: 25px;
+}
+
+#cible_description, #Cible { /* Description de la vignette client*/
+    position: absolute;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    left: 15%;
+    color: #fefefc;
+}
+
+#cible_description {
+    font-size: 1.3em;
+    bottom: 110px;
+    width: 25%;
+    justify-items: center;
+}
+.Cible_reponses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: repeat(4, 1fr);
+    background: linear-gradient(#a0d874, #4bba74);
+    border-radius: 15px;
+    height: auto;
+    width: 75%;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    border: #f7f7f7 solid 3px;
+    justify-items: center;
+    padding: 20px;
+}
+.Cible_reponses span {
+    grid-column: span 4;
+    color: #fefefc;
+    text-shadow: rgb(253, 202, 225) 2px 2px 2px;
+    font-size: 2em;
+}
+.exemple_image {
+    display: flex; /* Utilisation de flexbox pour la mise en page interne */
+    flex-wrap: wrap; /* Organise les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    grid-column: span 4; /* Positionne dans la première colonne de la grille */
+    grid-row: span 4; /* Permet de s'étendre sur 2 lignes */
+    color: #fefefc; /* Couleur du texte */
+    gap: 20px;
+}
+.exemple_image table {
+    width: 100%; /* S'assure que le tableau utilise la largeur complète */
+    padding: 3px; /* Espacement interne */
+    border: none; /* Pas de bordure pour le tableau */
+    margin-top: -40px;
+
+}
+.exemple_image th, td {
+    border: 1px solid #ccc;
+    text-align: left;
+
+}
+.style_caption{
+    color: rgba(128, 0, 0, 0.7);
+    border: #fad02c 3px solid;
+    font-weight: bold;
+    border-radius: 15px;
+}
+td strong{
+    background-color: rgba(250, 208, 44, 0.5);
+}
+.deuxieme_tableau{
+    grid-row: 2;
+}
 
 
 body {
