@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="2.4&#10;Mission 1, fix de l'affichage">
+    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="2.4&#10;ajout du footer mission 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/mission1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/accueil.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mission1.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission3.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission4.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +118,8 @@
       <workItem from="1731263923201" duration="418000" />
       <workItem from="1731269248453" duration="651000" />
       <workItem from="1731273664531" duration="411000" />
-      <workItem from="1731274091010" duration="7197000" />
+      <workItem from="1731274091010" duration="7573000" />
+      <workItem from="1731319746164" duration="1474000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />
@@ -293,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731280823616</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="2.4&#10;ajout du footer mission 1">
+      <option name="closed" value="true" />
+      <created>1731281557794</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1731281557795</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +338,7 @@
     <MESSAGE value="2.2&#10;Ajout Reda accueil" />
     <MESSAGE value="2.3&#10;Mission 1 + images dans le dossier img" />
     <MESSAGE value="2.4&#10;Mission 1, fix de l'affichage" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.4&#10;Mission 1, fix de l'affichage" />
+    <MESSAGE value="2.4&#10;ajout du footer mission 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.4&#10;ajout du footer mission 1" />
   </component>
 </project>

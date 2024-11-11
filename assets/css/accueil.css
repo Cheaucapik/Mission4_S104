@@ -71,6 +71,18 @@ h1{
     height: auto;
 }
 
+.profile img:hover{
+    box-shadow: 0 0 15px var(--primary-color);
+    border: var(--background-color) solid 3px;
+    border-radius: 100px;
+}
+
+.profile img:active{
+    box-shadow: 0 0 15px var(--secondary-hover-color);
+    border: var(--background-color) solid 4px;
+    border-radius: 100px;
+}
+
 .profile span{
     margin-top: 10px;
     font-size: 1.7em;
