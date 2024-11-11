@@ -55,7 +55,8 @@ nav{
 .separator{
     height: 2px;
     background-color: var(--text-color);
-    margin: 5px 0;
+    margin: 5px 10px !important;
+    padding: 0;
 }
 
 nav ul{
@@ -71,7 +72,7 @@ nav ul{
     margin-left: 25px;
 }
 
-#accueilhov{
+#accueilhov, #mission1hov{
     position: relative;
 }
 
@@ -93,9 +94,10 @@ nav ul{
     text-align: right;
 }
 
-#accueilhov:hover .navhov{
+#accueilhov:hover .navhov, #mission1hov:hover .navhov{
     display: flex;
     flex-direction: column;
+    z-index: 4;
 }
 
 ul a{
@@ -204,7 +206,7 @@ nav a img{
     }
 
     .separator{
-        height: 1px;
+        height: 1.5px;
         padding: 0 !important;
     }
 }
