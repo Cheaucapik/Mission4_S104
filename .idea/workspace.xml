@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="3.1&#10;Mission 2 suite">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mission1.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission1.html" afterDir="false" />
+    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="3.1.1&#10;&#10;Remise github">
+      <change beforePath="$PROJECT_DIR$/assets/css/mission1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission1.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +117,7 @@
       <workItem from="1731319746164" duration="1839000" />
       <workItem from="1731322237095" duration="14900000" />
       <workItem from="1731354740860" duration="10705000" />
-      <workItem from="1731443003185" duration="304000" />
+      <workItem from="1731443003185" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />
@@ -368,7 +367,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731366130033</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="3.1.1&#10;&#10;Remise github">
+      <option name="closed" value="true" />
+      <created>1731443495957</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1731443495957</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +393,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="premier commit" />
     <MESSAGE value="1.1" />
     <MESSAGE value="1.2&#10;améllioration du nav et de la page d'accueil&#10;nav : hover passant de chapitres en chapitres" />
     <MESSAGE value="1.3&#10;Amélioration de la page d'accueil" />
@@ -410,6 +416,8 @@
     <MESSAGE value="2.9&#10;Header mission 2 + fix responsive image fond + mission 2" />
     <MESSAGE value="3.0&#10;Amelioration de la mission 2" />
     <MESSAGE value="3.1&#10;Mission 2 suite" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.1&#10;Mission 2 suite" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;mission1.html" />
+    <MESSAGE value="3.1.1&#10;&#10;Remise github" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.1.1&#10;&#10;Remise github" />
   </component>
 </project>

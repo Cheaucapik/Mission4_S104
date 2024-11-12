@@ -349,7 +349,7 @@ h3{
     text-decoration: underline;
 }
 .P_reponses ul {
-    list-style-image: url("/assets/img/logo_couvert.webp");
+    list-style-image: url("/assets/img/logo_couvert.png");
     list-style-position: inside;
 }
 
