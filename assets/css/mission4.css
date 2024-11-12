@@ -26,14 +26,55 @@ h1{
 
 #intro, #accueilm4{
     background: var(--secondary-background-color);
-    padding: 50px;
+    padding: 40px 60px 60px 60px;
 }
 
-#header-footer, #accueilm4{
+#header-footer, #mission1m4{
     padding: 40px 60px 60px 60px;
 }
 
 hr{
     margin: 0 200px 40px 200px;
     border: solid 0.1em var(--hover-color);
+}
+
+@media screen and (max-width: 992px){
+    p{
+        font-size: 1.2em;
+    }
+    h1{
+        font-size: 2em;
+        padding-bottom: 20px;
+    }
+    #intro, #accueilm4{
+        padding: 30px 50px 50px 50px;
+    }
+
+    #header-footer, #mission1m4{
+        padding: 30px 50px 50px 50px;
+    }
+    hr{
+        margin: 0 100px 20px 100px;
+        border: solid 0.05em var(--hover-color);
+    }
+}
+
+@media screen and (max-width: 768px){
+    p{
+        font-size: 0.8em;
+    }
+    h1{
+        font-size: 1.5em;
+        padding-bottom: 10px;
+    }
+    #intro, #accueilm4{
+        padding: 20px 40px 40px 40px;
+    }
+
+    #header-footer, #mission1m4{
+        padding: 20px 40px 40px 40px;
+    }
+    hr{
+        margin: 0 50px 10px 50px;
+    }
 }
