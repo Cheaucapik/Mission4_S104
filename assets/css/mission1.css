@@ -67,7 +67,7 @@ th, td {
     font-size: 3em;
 }
 
-#clients, #produitsm1{
+#clients{
     background-color: var(--secondary-background-color);
     padding: 50px;
 }
@@ -195,7 +195,7 @@ h2 { /*titre details spécifiques*/
     transform: translate(-50%, 0%);
     width: 80%;
     left: 50%;
-    color: #fefefc;
+    color: var(--background-color);
 }
 
 #fournisseur_description {
@@ -218,7 +218,7 @@ h2 { /*titre details spécifiques*/
     box-shadow: 1px 3px 4px 5px #A3B288;
     border: #f7f7f7 solid 3px;
     padding: 20px;
-    height: 540px;
+    height: auto;
 }
 
 .F_reponses span { /* Titre localisation : client s*/
@@ -226,7 +226,7 @@ h2 { /*titre details spécifiques*/
     color: #fefefc;
     text-shadow: rgb(253, 202, 225) 2px 2px 2px;
     font-size: 1.7em;
-    margin-bottom: 20px;
+    margin: 22px;
 }
 
 .flags_fourni{
@@ -236,12 +236,8 @@ h2 { /*titre details spécifiques*/
 }
 
 .flags_fourni td, .flags_fourni th{
-    padding: 30px;
+    padding: 29px;
     text-align: center;
-}
-
-.drapeaux_container{
-    margin: 50px;
 }
 
 h3{
@@ -257,9 +253,13 @@ h3{
     margin: 5px;
 }
 
+.detail{
+    margin: 22px;
+}
 
 /* 3ème vignette produits */
-.P-DATA {
+
+.P-DATA{
     display: flex;
     gap: 50px;
     justify-content: space-between;
@@ -269,12 +269,10 @@ h3{
 
 .C3 {
     position: relative;
-    display: flex; /* Utilisation de flex pour le conteneur de l'image et des textes */
-    gap: 50px;
-    margin-top: 25px;
-    width: 100%;
+    display: inline-block;
 }
-#logo_produits{ /*Image*/
+
+#logo_produits { /*Image*/
     max-width: 100%;
     z-index: -1;
     border-radius: 5%;
@@ -286,27 +284,101 @@ h3{
     font-size: 3em;
 }
 
-#produits_description, #Produits { /* Description de la vignette client*/
+#Produits { /* Description de la vignette client*/
     position: absolute;
     font-family: Oswald, sans-serif;
     text-align: center;
     transform: translate(-50%, 0%);
     width: 80%;
-    left: 15%;
-    color: #fefefc;
+    left: 50%;
+    color: var(--background-color);
+}
+
+#produits_description { /* Description de la vignette client*/
+    position: absolute;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    transform: translate(-50%, -175%);
+    width: 80%;
+    left: 50%;
+    color: var(--background-color);
 }
 
 #produits_description {
     font-size: 1.3em;
-    bottom: 110px;
-    width: 25%;
-    justify-items: center;
 }
 
-.P_reponses, .Cible_reponses {
+#produitsm1{
+    padding: 50px;
+    background-color: var(--secondary-background-color);
+}
+
+.P_reponses{
+    display: flex;
+    background: linear-gradient(#a0d874, #4bba74);
+    border-radius: 15px;
+    height: auto;
+    width: 75%;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    border: #f7f7f7 solid 3px;
+    justify-content: center;
+    align-content: center;
+    padding: 68px;
+    flex-direction: column;
+}
+
+.P_reponses span { /* Titre localisation : client s*/
+    text-align: center;
+    color: #fefefc;
+    text-shadow: rgb(253, 202, 225) 2px 2px 2px;
+    font-size: 2.2em;
+    height: max-content;
+    margin-bottom: 20px;
+}
+
+.produits_container{
+    display: flex;
+    max-width: 100%;
+    color: #fefefc;
+    font-size: 1.2em;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 200px;
+}
+
+
+.P_reponses ul {
+    list-style-image: url("/assets/img/logo_couvert.png");
+    list-style-position: inside;
+}
+
+#style_puce_s, #style_puce_sp{
+    list-style-image: none;
+    list-style-type: none;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.p_detail{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px;
+    color: var(--background-color);
+    margin: 10px;
+    font-size: 1.4em;
+}
+
+
+
+/*4ème vignette*/
+
+.Cible_reponses {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
     background: linear-gradient(#a0d874, #4bba74);
     border-radius: 15px;
     height: auto;
@@ -317,58 +389,6 @@ h3{
     padding: 20px;
 }
 
-.P_reponses span { /* Titre localisation : client s*/
-    text-align: center;
-    color: #fefefc;
-    text-shadow: rgb(253, 202, 225) 2px 2px 2px;
-    font-size: 2.2em;
-    height: max-content;
-    margin-bottom: 20px;
-    grid-column: span 4;
-    grid-row: 1;
-}
-
-.produits_container{
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: -160px;
-    gap: 100px;
-    max-width: 100%;
-    color: #fefefc;
-    font-size: 1.2em;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row: 3;
-}
-
-#style_puce_s, #style_puce_sp{
-    list-style-image: none;
-    margin-bottom: 15px;
-    margin-left: 35px;
-    color: black;
-    text-decoration: underline;
-}
-.P_reponses ul {
-    list-style-image: url("/assets/img/logo_couvert.png");
-    list-style-position: inside;
-}
-
-.p_detail{
-    margin-top: -110px;
-    margin-left: -160px;
-    grid-column: span 4;
-    grid-row: 4;
-}
-.P_reponses p{
-    grid-column: 1;
-    grid-row: 4;
-    color: #fefefc;
-    font-size: 1em;
-    margin-left: 50px;
-    width: 100%;
-
-}
-/*4ème vignette*/
 .Cible-DATA {
     display: flex;
     gap: 50px;
