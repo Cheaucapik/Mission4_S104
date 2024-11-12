@@ -43,11 +43,6 @@ body{
     opacity: .7;
 }
 
-#clients{
-    background-color: var(--secondary-background-color);
-    padding: 50px;
-}
-
 .secondaryBack{
     background-color: var(--secondary-background-color);
 }

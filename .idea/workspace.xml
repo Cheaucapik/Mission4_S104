@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="3.0&#10;Amelioration de la mission 2">
+    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="3.1&#10;Amélioration de la mission 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/header-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/header-footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/mission1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mission1.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mission2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mission3.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mission4.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +35,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Cheaucapik/Mission4_S104.git&quot;,
-    &quot;accountId&quot;: &quot;153cb730-154f-4281-bb24-8974481e0150&quot;
+    &quot;url&quot;: &quot;https://github.com/Cheaucapik/Mission4_S104&quot;,
+    &quot;accountId&quot;: &quot;b6a2c401-0644-4fec-b909-4d1bfec58673&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -123,7 +123,9 @@
       <workItem from="1731354740860" duration="10636000" />
       <workItem from="1731406221507" duration="49000" />
       <workItem from="1731407749987" duration="22000" />
-      <workItem from="1731412034136" duration="2531000" />
+      <workItem from="1731412034136" duration="2873000" />
+      <workItem from="1731422971874" duration="3915000" />
+      <workItem from="1731427620463" duration="3302000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />
@@ -365,7 +367,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731365819703</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="3.1&#10;Amélioration de la mission 1">
+      <option name="closed" value="true" />
+      <created>1731414899961</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1731414899961</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,6 +416,7 @@
     <MESSAGE value="2.9&#10;Header mission 2 + fix responsive image fond" />
     <MESSAGE value="2.9&#10;Header mission 2 + fix responsive image fond + mission 2" />
     <MESSAGE value="3.0&#10;Amelioration de la mission 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.0&#10;Amelioration de la mission 2" />
+    <MESSAGE value="3.1&#10;Amélioration de la mission 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.1&#10;Amélioration de la mission 1" />
   </component>
 </project>
