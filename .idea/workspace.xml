@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="3.4&#10;Responsive mission 4">
-      <change beforePath="$PROJECT_DIR$/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission3.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -417,7 +418,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.4&#10;Page d'accueil presque finalisée&#10;--&gt; profils presque complets&#10;--&gt; Partie mission finalisée" />
     <MESSAGE value="1.5&#10;Media screen header" />
     <MESSAGE value="1.6&#10;Page d'accueil presque finalisée&#10;--&gt; responsive sauf pour le profile2" />
     <MESSAGE value="1.7&#10;page accueil responsive" />
@@ -442,6 +442,7 @@
     <MESSAGE value="3.2.1&#10;Remise github" />
     <MESSAGE value="3.3&#10;Amélioration de la mission1" />
     <MESSAGE value="3.4&#10;Responsive mission 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.4&#10;Responsive mission 4" />
+    <MESSAGE value="3.5.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.5.1" />
   </component>
 </project>
