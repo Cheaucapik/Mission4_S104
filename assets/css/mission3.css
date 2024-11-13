@@ -181,20 +181,26 @@ main section:nth-child(even){
 
 /*pour la coloration du code sql*/
 
-.selecteur {
-    color : lightcyan;
+.operateur {
+    color:#800000;
+    font-weight:bold;
 }
 
-.nombre, .par {
-    color: lightblue;
+.valeur {
+    color:#FFFFCC;
 }
 
-.saumon {
-    color: palegreen;
+.ponctuation {
+    color:#808030;
 }
 
-.str {
-    color : green;
+.agregation {
+    color:#bb7977;
+    font-weight:bold;
+}
+
+.mot {
+    color:#800000;
 }
 
 @media screen and (max-width: 1300px) {
@@ -207,6 +213,7 @@ main section:nth-child(even){
 
     #all > .context{
         width: 85%;
+        margin: 40px 0;
     }
 
     .presentation, .resultat, .presentation2, .resultat2{

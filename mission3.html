@@ -131,18 +131,18 @@
                             les produits par pays pour obtenir un décompte par pays. Enfin, on trie les pays par nombre
                             de produits en ordre décroissant pour mettre en avant ceux avec une offre importante.</p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p class="SQL"><strong class="selecteur">SELECT TOP</strong> <span class="nombre">10</span> <span
-                                class="saumon">Sum</span><span class="par">([</span>DC.PrixUnitCli<span
-                                class="par">]*[</span>DC.QteCom<span class="par">]*(</span><span class="nombre">1</span><span
-                                class="par">-[</span>DC.Remise<span class="par">]))</span> <strong
-                                class="selecteur">AS</strong> <span class="par">[</span>Chiffre d’affaires<span
-                                class="par">]</span>, P.RefProd, P.NomProd<br><strong class="selecteur">FROM</strong>
-                            Produit P <strong class="selecteur">INNER JOIN</strong> DetailCommande DC <strong
-                                    class="selecteur">ON</strong> P.RefProd = DC.RefProd <br><strong class="selecteur">GROUP
-                                BY</strong> P.RefProd, P.NomProd <br><strong class="selecteur">ORDER BY</strong> <span
-                                    class="saumon">Sum</span><span class="par">([</span>DC.PrixUnitCli<span class="par">]*[</span>DC.QteCom<span
-                                    class="par">]*(</span><span class="nombre">1</span><span class="par">-[</span>DC.Remise<span
-                                    class="par">]))</span> <strong class="selecteur">DESC;</strong>
+                        <p class="SQL"><strong class="operateur">SELECT TOP</strong> <span class="valeur">10</span> <span
+                                class="agregation">Sum</span><span class="ponctuation">([</span>DC.PrixUnitCli<span
+                                class="ponctuation">]*[</span>DC.QteCom<span class="ponctuation">]*(</span><span class="valeur">1</span><span
+                                class="ponctuation">-[</span>DC.Remise<span class="ponctuation">]))</span> <strong
+                                class="operateur">AS</strong> <span class="ponctuation">[</span>Chiffre d’affaires<span
+                                class="ponctuation">]</span>, P.RefProd, P.NomProd<br><strong class="operateur">FROM</strong>
+                            Produit P <strong class="operateur">INNER JOIN</strong> DetailCommande DC <strong
+                                    class="operateur">ON</strong> P.RefProd = DC.RefProd <br><strong class="operateur">GROUP
+                                BY</strong> P.RefProd, P.NomProd <br><strong class="operateur">ORDER BY</strong> <span
+                                    class="agregation">Sum</span><span class="ponctuation">([</span>DC.PrixUnitCli<span class="ponctuation">]*[</span>DC.QteCom<span
+                                    class="ponctuation">]*(</span><span class="valeur">1</span><span class="ponctuation">-[</span>DC.Remise<span
+                                    class="ponctuation">]))</span> <strong class="operateur">DESC;</strong>
                         </p>
                     </div>
                     <div class="resultat">
@@ -225,15 +225,15 @@
                         </p>
                         <p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p class="SQL"><strong class="selecteur">SELECT</strong> Fournisseur.Pays <br> <strong class="selecteur">FROM</strong>
-                            Fournisseur <strong class="selecteur">INNER JOIN</strong> <span class="par">(</span> <strong
-                                    class="selecteur">INNER JOIN</strong> Produit <strong class="selecteur">ON</strong>
-                            Categorie.CodeCateg = Produit.CodeCateg<span class="par">)</span> <strong class="selecteur">ON</strong>
-                            Fournisseur.NoFour = Produit.NoFour<br> <strong class="selecteur">WHERE</strong> <span
-                                    class="par">(((</span>Categorie.NomCateg<span class="par">)=</span><span
-                                    class="str">"Desserts"</span> <strong class="selecteur">OR</strong> <span
-                                    class="par">(</span>Categorie.NomCateg<span class="par">)=</span><span class="str">"Boissons"</span><span
-                                    class="par">))</span><br> <strong class="selecteur">GROUP BY</strong>
+                        <p class="SQL"><strong class="operateur">SELECT</strong> Fournisseur.Pays <br> <strong class="operateur">FROM</strong>
+                            Fournisseur <strong class="operateur">INNER JOIN</strong> <span class="ponctuation">(</span> <strong
+                                    class="operateur">INNER JOIN</strong> Produit <strong class="operateur">ON</strong>
+                            Categorie.CodeCateg = Produit.CodeCateg<span class="ponctuation">)</span> <strong class="operateur">ON</strong>
+                            Fournisseur.NoFour = Produit.NoFour<br> <strong class="operateur">WHERE</strong> <span
+                                    class="ponctuation">(((</span>Categorie.NomCateg<span class="ponctuation">)=</span><span
+                                    class="mot">"Desserts"</span> <strong class="operateur">OR</strong> <span
+                                    class="ponctuation">(</span>Categorie.NomCateg<span class="ponctuation">)=</span><span class="mot">"Boissons"</span><span
+                                    class="ponctuation">))</span><br> <strong class="operateur">GROUP BY</strong>
                             Fournisseur.Pays;
                         </p>
                     </div>
@@ -305,20 +305,20 @@
                             résultats par catégorie pour compter les produits non commandés par catégorie.</p>
                         <p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p class="SQL"><strong class="selecteur">SELECT</strong> <span class="saumon">Count</span><span
-                                class="par">(</span>Produit.NomProd<span class="par">)</span> <strong
-                                class="selecteur">AS</strong> CompteDeNomProd, Categorie.CodeCateg,
+                        <p class="SQL"><strong class="operateur">SELECT</strong> <span class="agregation">Count</span><span
+                                class="ponctuation">(</span>Produit.NomProd<span class="ponctuation">)</span> <strong
+                                class="operateur">AS</strong> CompteDeNomProd, Categorie.CodeCateg,
                             Categorie.NomCateg<br>
-                            <strong class="selecteur">FROM</strong> <span class="par">(</span>Categorie <strong
-                                    class="selecteur">INNER JOIN</strong> Produit <strong class="selecteur">ON</strong>
-                            Categorie.CodeCateg = Produit.CodeCateg<span class="par">)</span> <strong class="selecteur">LEFT
-                                JOIN</strong> DetailCommande <strong class="selecteur">ON</strong> Produit.RefProd =
+                            <strong class="operateur">FROM</strong> <span class="ponctuation">(</span>Categorie <strong
+                                    class="operateur">INNER JOIN</strong> Produit <strong class="operateur">ON</strong>
+                            Categorie.CodeCateg = Produit.CodeCateg<span class="ponctuation">)</span> <strong class="operateur">LEFT
+                                JOIN</strong> DetailCommande <strong class="operateur">ON</strong> Produit.RefProd =
                             DetailCommande.RefProd<br>
-                            <strong class="selecteur">WHERE</strong> <span
-                                    class="par">((</span>DetailCommande.RefProd<span
-                                    class="par">)</span> <strong class="selecteur">Is Null</strong><span
-                                    class="par">)</span><br>
-                            <strong class="selecteur">GROUP BY</strong> Categorie.CodeCateg, Categorie.NomCateg;
+                            <strong class="operateur">WHERE</strong> <span
+                                    class="ponctuation">((</span>DetailCommande.RefProd<span
+                                    class="ponctuation">)</span> <strong class="operateur">Is Null</strong><span
+                                    class="ponctuation">)</span><br>
+                            <strong class="operateur">GROUP BY</strong> Categorie.CodeCateg, Categorie.NomCateg;
                         </p>
                     </div>
                     <div class="resultat">
@@ -375,16 +375,16 @@
                             produits par pays pour obtenir un décompte par pays. Enfin, on trie les pays par nombre de
                             produits en ordre décroissant pour mettre en avant ceux avec une offre importante.</p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p class="SQL"><strong class="selecteur">SELECT</strong> Fournisseur.Pays, <span
-                                class="saumon">Count</span><span class="par">(</span>Produit.NomProd<span
-                                class="par">)</span> <strong class="selecteur">AS</strong> CompteDeNomProd<br>
-                            <strong class="selecteur">FROM</strong> Fournisseur <strong class="selecteur">INNER
-                                JOIN</strong> Produit <strong class="selecteur">ON</strong> Fournisseur.NoFour =
+                        <p class="SQL"><strong class="operateur">SELECT</strong> Fournisseur.Pays, <span
+                                class="agregation">Count</span><span class="ponctuation">(</span>Produit.NomProd<span
+                                class="ponctuation">)</span> <strong class="operateur">AS</strong> CompteDeNomProd<br>
+                            <strong class="operateur">FROM</strong> Fournisseur <strong class="operateur">INNER
+                                JOIN</strong> Produit <strong class="operateur">ON</strong> Fournisseur.NoFour =
                             Produit.NoFour<br>
-                            <strong class="selecteur">GROUP BY</strong> Fournisseur.Pays<br>
-                            <strong class="selecteur">ORDER BY</strong> <span class="saumon">Count</span><span
-                                    class="par">(</span> Produit.NomProd<span class="par">)</span> <strong
-                                    class="selecteur">DESC</strong>;
+                            <strong class="operateur">GROUP BY</strong> Fournisseur.Pays<br>
+                            <strong class="operateur">ORDER BY</strong> <span class="agregation">Count</span><span
+                                    class="ponctuation">(</span> Produit.NomProd<span class="ponctuation">)</span> <strong
+                                    class="operateur">DESC</strong>;
                         </p>
                     </div>
                     <div class="resultat2">
@@ -466,23 +466,23 @@
                             produits d’origine allemande et on se limite aux catégories "Dessert" et "Boisson". Enfin on
                             sélectionne les produits dont le prix est inférieur à 100 euros.</p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p class="SQL"><strong class="selecteur">SELECT</strong> Fournisseur.Pays, Categorie.NomCateg,
+                        <p class="SQL"><strong class="operateur">SELECT</strong> Fournisseur.Pays, Categorie.NomCateg,
                             Produit.PrixUnit<br>
-                            <strong class="selecteur">FROM</strong> Fournisseur
-                            <strong class="selecteur">INNER JOIN</strong> <span class="par">(</span>Categorie
-                            <strong class="selecteur">INNER JOIN</strong> Produit ON Categorie.CodeCateg =
+                            <strong class="operateur">FROM</strong> Fournisseur
+                            <strong class="operateur">INNER JOIN</strong> <span class="ponctuation">(</span>Categorie
+                            <strong class="operateur">INNER JOIN</strong> Produit ON Categorie.CodeCateg =
                             Produit.CodeCateg<span
-                                    class="par">)</span> <strong class="selecteur">ON</strong> Fournisseur.NoFour =
+                                    class="ponctuation">)</span> <strong class="operateur">ON</strong> Fournisseur.NoFour =
                             Produit.NoFour<br>
-                            <strong class="selecteur">WHERE</strong> <span class="par">(((</span>Fournisseur.Pays<span
-                                    class="par">)</span>="Allemagne"<span class="par">)</span> <strong
-                                    class="selecteur">AND</strong> <span class="par">((</span>Categorie.NomCateg<span
-                                    class="par">)</span> LIKE <span class="str">"*desserts*"</span> <strong
-                                    class="selecteur">OR</strong> <span class="par">(</span>Categorie.NomCateg<span
-                                    class="par">)</span> <strong class="selecteur">LIKE</strong> <span class="str">"*boissons*"</span><span
-                                    class="par">)</span> <strong class="selecteur">AND</strong> <span
-                                    class="par">((</span>Produit.PrixUnit<span
-                                    class="par">)</span><<span class="nombre">100</span><span class="par">))</span>;<br>
+                            <strong class="operateur">WHERE</strong> <span class="ponctuation">(((</span>Fournisseur.Pays<span
+                                    class="ponctuation">)</span>="Allemagne"<span class="ponctuation">)</span> <strong
+                                    class="operateur">AND</strong> <span class="ponctuation">((</span>Categorie.NomCateg<span
+                                    class="ponctuation">)</span> LIKE <span class="mot">"*desserts*"</span> <strong
+                                    class="operateur">OR</strong> <span class="ponctuation">(</span>Categorie.NomCateg<span
+                                    class="ponctuation">)</span> <strong class="operateur">LIKE</strong> <span class="mot">"*boissons*"</span><span
+                                    class="ponctuation">)</span> <strong class="operateur">AND</strong> <span
+                                    class="ponctuation">((</span>Produit.PrixUnit<span
+                                    class="ponctuation">)</span><<span class="valeur">100</span><span class="ponctuation">))</span>;<br>
                         </p>
                     </div>
                     <div class="resultat">
@@ -537,15 +537,15 @@
                             boissons
                             ou des desserts.</p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p class="SQL"><strong class="selecteur">SELECT</strong> Fournisseur.NoFour, Fournisseur.Contact<br>
-                            <strong class="selecteur">FROM</strong> Fournisseur<br>
-                            <strong class="selecteur">WHERE</strong> Fournisseur.NoFour <strong class="selecteur">NOT
-                                IN</strong> <span class="par">(</span><strong class="selecteur">SELECT</strong>
-                            Produit.NoFour <strong class="selecteur">FROM</strong> Produit <strong class="selecteur">INNER
-                                JOIN</strong> Categorie <strong class="selecteur">ON</strong> Produit.CodeCateg =
-                            Categorie.CodeCateg <strong class="selecteur">WHERE</strong> Categorie.CodeCateg <strong
-                                    class="selecteur">IN</strong> <span class="par">(</span><span class="nombre">2, 4, 5, 6, 7, 8</span><span
-                                    class="par">))</span>;
+                        <p class="SQL"><strong class="operateur">SELECT</strong> Fournisseur.NoFour, Fournisseur.Contact<br>
+                            <strong class="operateur">FROM</strong> Fournisseur<br>
+                            <strong class="operateur">WHERE</strong> Fournisseur.NoFour <strong class="operateur">NOT
+                                IN</strong> <span class="ponctuation">(</span><strong class="operateur">SELECT</strong>
+                            Produit.NoFour <strong class="operateur">FROM</strong> Produit <strong class="operateur">INNER
+                                JOIN</strong> Categorie <strong class="operateur">ON</strong> Produit.CodeCateg =
+                            Categorie.CodeCateg <strong class="operateur">WHERE</strong> Categorie.CodeCateg <strong
+                                    class="operateur">IN</strong> <span class="ponctuation">(</span><span class="valeur">2, 4, 5, 6, 7, 8</span><span
+                                    class="ponctuation">))</span>;
                         </p>
                     </div>
                     <div class="resultat2">
@@ -631,24 +631,24 @@
                             TOP 5
                             dans le SELECT va prendre les 5 premières lignes et les afficher.</p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p class="SQL"><strong class="selecteur">SELECT TOP</strong> <span class="nombre">5</span> Cl.CodeCli,
-                            Cl.SocieteCli, <span class="saumon">Sum</span><span class="par">(</span>DC.PrixUnitCli *
-                            DC.QteCom * <span class="par">(</span><span class="nombre">1</span> - DC.Remise<span
-                                    class="par">))</span> <strong class="selecteur">AS</strong> ChiffreAffaire<br>
-                            <strong class="selecteur">FROM</strong> <span class="par">((</span>Produit P
-                            <strong class="selecteur">INNER JOIN</strong> DetailCommande DC <strong
-                                    class="selecteur">ON</strong> P.RefProd = DC.RefProd<span class="par">)</span>
-                            <strong class="selecteur">INNER JOIN</strong> Commande C <strong
-                                    class="selecteur">ON</strong>
-                            DC.NoCom = C.NoCom<span class="par">)</span>
-                            <strong class="selecteur">INNER JOIN</strong> Client Cl <strong
-                                    class="selecteur">ON</strong>
+                        <p class="SQL"><strong class="operateur">SELECT TOP</strong> <span class="valeur">5</span> Cl.CodeCli,
+                            Cl.SocieteCli, <span class="agregation">Sum</span><span class="ponctuation">(</span>DC.PrixUnitCli *
+                            DC.QteCom * <span class="ponctuation">(</span><span class="valeur">1</span> - DC.Remise<span
+                                    class="ponctuation">))</span> <strong class="operateur">AS</strong> ChiffreAffaire<br>
+                            <strong class="operateur">FROM</strong> <span class="ponctuation">((</span>Produit P
+                            <strong class="operateur">INNER JOIN</strong> DetailCommande DC <strong
+                                    class="operateur">ON</strong> P.RefProd = DC.RefProd<span class="ponctuation">)</span>
+                            <strong class="operateur">INNER JOIN</strong> Commande C <strong
+                                    class="operateur">ON</strong>
+                            DC.NoCom = C.NoCom<span class="ponctuation">)</span>
+                            <strong class="operateur">INNER JOIN</strong> Client Cl <strong
+                                    class="operateur">ON</strong>
                             Cl.CodeCli = C.CodeCli<br>
-                            <strong class="selecteur">GROUP BY</strong> Cl.CodeCli, Cl.SocieteCli<br>
-                            <strong class="selecteur">ORDER BY</strong> <span class="saumon">Sum</span><span
-                                    class="par">(</span>DC.PrixUnitCli * DC.QteCom * <span class="par">(</span><span
-                                    class="nombre">1</span> - DC.Remise<span class="par">))</span> <strong
-                                    class="selecteur">DESC</strong>;
+                            <strong class="operateur">GROUP BY</strong> Cl.CodeCli, Cl.SocieteCli<br>
+                            <strong class="operateur">ORDER BY</strong> <span class="agregation">Sum</span><span
+                                    class="ponctuation">(</span>DC.PrixUnitCli * DC.QteCom * <span class="ponctuation">(</span><span
+                                    class="valeur">1</span> - DC.Remise<span class="ponctuation">))</span> <strong
+                                    class="operateur">DESC</strong>;
                         </p>
                     </div>
                     <div class="resultat">
@@ -711,25 +711,25 @@
                             des
                             10 premiers fournisseurs avec le plus gros nombre de commandes. </p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p class="SQL"><strong class="selecteur">SELECT TOP</strong> <span class="nombre">5</span> <span
-                                class="saumon">COUNT</span><span
-                                class="par">(</span>CMD.NoCom<span class="par">)</span> <strong
-                                class="selecteur">AS</strong> nb_Commande, F.Societe, F.Ville<br>
-                            <strong class="selecteur">FROM</strong> <span class="par">((</span>Fournisseur <strong
-                                    class="selecteur">AS</strong> F
-                            <strong class="selecteur">INNER JOIN</strong> Produit <strong class="selecteur">AS</strong>
+                        <p class="SQL"><strong class="operateur">SELECT TOP</strong> <span class="valeur">5</span> <span
+                                class="agregation">COUNT</span><span
+                                class="ponctuation">(</span>CMD.NoCom<span class="ponctuation">)</span> <strong
+                                class="operateur">AS</strong> nb_Commande, F.Societe, F.Ville<br>
+                            <strong class="operateur">FROM</strong> <span class="ponctuation">((</span>Fournisseur <strong
+                                    class="operateur">AS</strong> F
+                            <strong class="operateur">INNER JOIN</strong> Produit <strong class="operateur">AS</strong>
                             PD
-                            <strong class="selecteur">ON</strong> F.NoFour = PD.NoFour<span class="par">)</span>
-                            <strong class="selecteur">INNER JOIN</strong> DetailCommande <strong
-                                    class="selecteur">AS</strong> DC <strong class="selecteur">ON</strong> PD.RefProd =
-                            DC.RefProd<span class="par">)</span>
-                            <strong class="selecteur">INNER JOIN</strong> Commande <strong class="selecteur">AS</strong>
+                            <strong class="operateur">ON</strong> F.NoFour = PD.NoFour<span class="ponctuation">)</span>
+                            <strong class="operateur">INNER JOIN</strong> DetailCommande <strong
+                                    class="operateur">AS</strong> DC <strong class="operateur">ON</strong> PD.RefProd =
+                            DC.RefProd<span class="ponctuation">)</span>
+                            <strong class="operateur">INNER JOIN</strong> Commande <strong class="operateur">AS</strong>
                             CMD
-                            <strong class="selecteur">ON</strong> DC.NoCom = CMD.NoCom<br>
-                            <strong class="selecteur">GROUP BY</strong> F.Societe, F.Ville<br>
-                            <strong class="selecteur">ORDER BY</strong> <span class="saumon">COUNT</span><span
-                                    class="par">(</span>CMD.NoCom<span class="par">)</span> <strong
-                                    class="selecteur">DESC</strong>;
+                            <strong class="operateur">ON</strong> DC.NoCom = CMD.NoCom<br>
+                            <strong class="operateur">GROUP BY</strong> F.Societe, F.Ville<br>
+                            <strong class="operateur">ORDER BY</strong> <span class="agregation">COUNT</span><span
+                                    class="ponctuation">(</span>CMD.NoCom<span class="ponctuation">)</span> <strong
+                                    class="operateur">DESC</strong>;
                         </p>
                     </div>
                     <div class="resultat">
