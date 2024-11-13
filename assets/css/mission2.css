@@ -53,14 +53,14 @@ h1 {
     font-family: Oswald, sans-serif;
     font-weight: normal;
     color: var(--background-color);
-    font-size: 4vw;
+    font-size: 4em;
 }
 
 h2 {
     text-align: left;
     color: #fefefc;
     text-shadow: rgb(253, 202, 225) 2px 2px 2px;
-    font-size: 2vw;
+    font-size: 2em;
     margin: 30px 20px;
 }
 
@@ -139,6 +139,8 @@ td, th {
     text-align: center;
     color: var(--background-color);
     padding: 1em 2em;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .resultat2 td, .resultat2 th {
@@ -160,6 +162,91 @@ main section:nth-child(even){
 main section:nth-child(odd){
     padding: 50px 0;
 }
+
+p.SQL{
+    text-align: left;
+}
+
+@media screen and (max-width: 1300px) {
+    .first_indicateur, .second_indicateur, .third_indicateur, .fourth_indicateur {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #all > .context{
+        width: 85%;
+    }
+
+    .presentation, .resultat, .presentation2, .resultat2{
+        margin-bottom: 35px;
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 3.7em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .Theme{
+        font-size: 2em;
+
+    }
+    main section:nth-child(odd){
+        padding: 30px 0;
+    }
+
+    main section:nth-child(even){
+        padding: 30px 0;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+
+    .context > p{
+        font-size: 1em;
+    }
+
+    .presentation > p{
+        font-size: 1em;
+    }
+
+    .presentation2 > p{
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .Theme{
+        font-size: 1.6em;
+    }
+
+    main section:nth-child(odd){
+        padding: 15px 0;
+    }
+
+    main section:nth-child(even){
+        padding: 15px 0;
+    }
+
+    td, th{
+        font-size: 0.8em;
+    }
+
+}
+
 
 /* code couleur sql */
 

@@ -138,7 +138,7 @@
                         ce qui peut aider dans la prise de décisions de marketing et de logistique.
                     </p>
                     <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
-                    <p>
+                    <p class="SQL">
                         <span class ="operateur">SELECT TOP</span> <span class="valeur">3</span> Client<span class="ponctuation">.</span>VilleCli<span class="ponctuation">,</span> <span class="agregation">Count</span><span class="ponctuation">(</span>Client<span class="ponctuation">.</span>CodeCli<span class="ponctuation">)</span> <span class="operateur">AS</span> CompteDeCodeCli
                         <br>
                         <span class ="operateur">FROM</span> Client
@@ -188,7 +188,7 @@
                 </p>
                 <p>
                 <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
-                <p>
+                <p class="SQL">
                     <span class ="operateur">SELECT</span> Produit<span class="ponctuation">.</span>NomProd<span class="ponctuation">,</span> Produit<span class="ponctuation">.</span>PrixUnit<span class="ponctuation">,</span> Fournisseur<span class="ponctuation">.</span>Pays
                     <br>
                     <span class ="operateur">FROM</span> Fournisseur
@@ -246,7 +246,7 @@
                 </p>
                 <p>
                 <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
-                <p>
+                <p class="SQL">
                     <span class="operateur">SELECT</span> <span class="agregation">Sum</span><span class="ponctuation">(</span>PrixUnitCli<span class="ponctuation">*</span>QteCom<span class="ponctuation">*</span><span class="ponctuation">(</span><span class="valeur">1</span><span class="ponctuation">-</span>Remise<span class="ponctuation">))</span> <span class="operateur">AS</span> <span class="ponctuation">[</span>Chiffre d'affaire<span class="ponctuation">]</span>
                     <br>
                     <span class="operateur">FROM</span> Client
@@ -271,7 +271,7 @@
             </div>
         </section>
         <section class="fourth_indicateur">
-            <div class="presentation">
+            <div class="presentation2">
                 <h2><img src="assets/img/tag.png" alt="=tag" height="30" width="30"> 4e indicateur : Prix Moyen, Minimum
                     et Maximum des Produits</h2>
                 <p>
@@ -281,13 +281,13 @@
                 </p>
                 <p>
                 <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
-                <p>
+                <p class="SQL">
                     <span class="operateur">SELECT</span> <span class="agregation">Min</span><span class="ponctuation">(</span>Produit<span class="ponctuation">.</span>PrixUnit<span class="ponctuation">)</span> <span class="operateur">AS</span> <span class="ponctuation">[</span>Prix <span class="agregation">min</span><span class="ponctuation">]</span><span class="ponctuation">,</span> <span class="agregation">Max</span><span class="ponctuation">(</span>Produit<span class="ponctuation">.</span>PrixUnit<span class="ponctuation">)</span> <span class="operateur">AS</span> <span class="ponctuation">[</span>Prix <span class="agregation">max</span><span class="ponctuation">]</span><span class="ponctuation">,</span> <span class="agregation">Avg</span><span class="ponctuation">(</span>Produit<span class="ponctuation">.</span>PrixUnit<span class="ponctuation">)</span> <span class="operateur">AS</span> <span class="ponctuation">[</span>Prix moy<span class="ponctuation">]</span>
                     <br>
                     <span class="operateur">FROM</span> Produit<span class="ponctuation">;</span>
                 </p>
             </div>
-            <div class="resultat">
+            <div class="resultat2">
                 <h2>Résultat :</h2>
                 <table>
                     <thead>

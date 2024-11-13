@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="3.7&#10;Responsive de la mission 3">
+    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="3.8&#10;Code SQL de la bonne couleur Mission 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/mission2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/mission3.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission1.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mission2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mission3.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +121,7 @@
       <workItem from="1731322237095" duration="14900000" />
       <workItem from="1731354740860" duration="10705000" />
       <workItem from="1731443003185" duration="7574000" />
+      <workItem from="1731532530263" duration="1271000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />
@@ -419,7 +419,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731530733233</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="3.8&#10;Code SQL de la bonne couleur Mission 3">
+      <option name="closed" value="true" />
+      <created>1731532350479</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1731532350479</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +445,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.7&#10;page accueil responsive" />
     <MESSAGE value="1.8&#10;Ajout header-footer.css pour ne pas avoir à le répéter" />
     <MESSAGE value="1.9&#10;header &amp; footer sur toutes les pages&#10;link vers les bonnes pages css&#10;lang = &quot;fr&quot;" />
     <MESSAGE value="2.0&#10;checker html &amp; css corrections" />
@@ -462,6 +469,7 @@
     <MESSAGE value="3.5.1" />
     <MESSAGE value="3.6&#10;Icones mission 3" />
     <MESSAGE value="3.7&#10;Responsive de la mission 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.7&#10;Responsive de la mission 3" />
+    <MESSAGE value="3.8&#10;Code SQL de la bonne couleur Mission 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.8&#10;Code SQL de la bonne couleur Mission 3" />
   </component>
 </project>
