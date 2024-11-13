@@ -53,14 +53,14 @@ h1 {
     font-family: Oswald, sans-serif;
     font-weight: normal;
     color: var(--background-color);
-    font-size: 4vw;
+    font-size: 4em;
 }
 
 h3 {
     text-align: left;
     color: #fefefc;
     text-shadow: rgb(253, 202, 225) 2px 2px 2px;
-    font-size: 2vw;
+    font-size: 2em;
     margin: 30px 20px;
 }
 
@@ -90,7 +90,7 @@ h2{
     text-align: center;
     color: #bb7977;
     text-shadow: rgb(253, 202, 225) 2px 2px 2px;
-    font-size: 2.5vw;
+    font-size: 2.5em;
 }
 
 .presentation {
@@ -151,6 +151,8 @@ td, th {
     text-align: center;
     color: var(--background-color);
     padding: 1em 2em;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .resultat2 td, .resultat2 th {
@@ -160,12 +162,12 @@ td, th {
     color: var(--background-color);
 }
 
-.highlight {
-    background-color: rgb(253, 202, 225);
+p.SQL{
+    text-align: left;
 }
 
-footer {
-    margin-top: 40px;
+.highlight {
+    background-color: rgb(253, 202, 225);
 }
 
 main section:nth-child(odd){
@@ -195,35 +197,90 @@ main section:nth-child(even){
     color : green;
 }
 
-@media screen and (max-width: 768px){
-    .indicateur {
-        display: flex;
+@media screen and (max-width: 1300px) {
+    .first_indicateur, .second_indicateur, .third_indicateur, .fourth_indicateur, .fifth_indicateur, .sixth_indicateur, .seventh_indicateur, .eighth_indicateur {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        width: 98%;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
+    #all > .context{
+        width: 85%;
+    }
+
+    .presentation, .resultat, .presentation2, .resultat2{
+        margin-bottom: 35px;
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 3.7em;
+    }
+
+    h2{
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    .Theme{
+        font-size: 2em;
+
+    }
+    main section:nth-child(odd){
+        padding: 30px 0;
+    }
+
+    main section:nth-child(even){
+        padding: 30px 0;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+
     .context > p{
-        color: var(--background-color);
-        font-family: Arial, sans-serif;
-        font-size: 1.2em;
-        text-align: justify;
-        margin: 0 30px 20px 30px;
+        font-size: 1em;
     }
 
     .presentation > p{
-        color: var(--background-color);
         font-size: 1em;
-        text-align: justify;
-        margin: 0 20px 10px 20px;
     }
 
     .presentation2 > p{
-        color: var(--background-color);
         font-size: 1em;
-        text-align: justify;
-        margin: 0 20px 10px 20px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2{
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .Theme{
+        font-size: 1.6em;
+    }
+
+    main section:nth-child(odd){
+        padding: 15px 0;
+    }
+
+    main section:nth-child(even){
+        padding: 15px 0;
+    }
+
+    td, th{
+        font-size: 0.8em;
     }
 
 }

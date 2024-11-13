@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="3.4&#10;Responsive mission 4">
+    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="3.6&#10;Icones mission 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/mission3.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mission3.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -400,7 +402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731450567696</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="3.6&#10;Icones mission 3">
+      <option name="closed" value="true" />
+      <created>1731526107952</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1731526107952</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +428,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.5&#10;Media screen header" />
     <MESSAGE value="1.6&#10;Page d'accueil presque finalisée&#10;--&gt; responsive sauf pour le profile2" />
     <MESSAGE value="1.7&#10;page accueil responsive" />
     <MESSAGE value="1.8&#10;Ajout header-footer.css pour ne pas avoir à le répéter" />
@@ -443,6 +452,7 @@
     <MESSAGE value="3.3&#10;Amélioration de la mission1" />
     <MESSAGE value="3.4&#10;Responsive mission 4" />
     <MESSAGE value="3.5.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.5.1" />
+    <MESSAGE value="3.6&#10;Icones mission 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.6&#10;Icones mission 3" />
   </component>
 </project>

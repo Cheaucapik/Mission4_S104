@@ -95,7 +95,7 @@
         </div>
     </div>
     <div id="all">
-        <section id="contexte" class="context">
+        <div id="contexte" class="context">
             <h1>Contexte</h1>
             <p>
                 <br>
@@ -114,7 +114,7 @@
                 des informations en outils d’aide à la décision. Ainsi, en produisant des analyses détaillées et des
                 indicateurs adaptés aux besoins stratégiques de KDou, cette mission contribue directement à soutenir la
                 prise de décisions éclairées et à favoriser la croissance et la compétitivité de l’entreprise.</p>
-        </section>
+        </div>
         <div class="indicateur">
             <section>
                 <h2 id="D&B" class="Theme">Thème : Desserts / boissons </h2>
@@ -131,7 +131,7 @@
                             les produits par pays pour obtenir un décompte par pays. Enfin, on trie les pays par nombre
                             de produits en ordre décroissant pour mettre en avant ceux avec une offre importante.</p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p><strong class="selecteur">SELECT TOP</strong> <span class="nombre">10</span> <span
+                        <p class="SQL"><strong class="selecteur">SELECT TOP</strong> <span class="nombre">10</span> <span
                                 class="saumon">Sum</span><span class="par">([</span>DC.PrixUnitCli<span
                                 class="par">]*[</span>DC.QteCom<span class="par">]*(</span><span class="nombre">1</span><span
                                 class="par">-[</span>DC.Remise<span class="par">]))</span> <strong
@@ -142,7 +142,8 @@
                                 BY</strong> P.RefProd, P.NomProd <br><strong class="selecteur">ORDER BY</strong> <span
                                     class="saumon">Sum</span><span class="par">([</span>DC.PrixUnitCli<span class="par">]*[</span>DC.QteCom<span
                                     class="par">]*(</span><span class="nombre">1</span><span class="par">-[</span>DC.Remise<span
-                                    class="par">]))</span> <strong class="selecteur">DESC;</strong></p>
+                                    class="par">]))</span> <strong class="selecteur">DESC;</strong>
+                        </p>
                     </div>
                     <div class="resultat">
                         <h3>Résultat :</h3>
@@ -224,7 +225,7 @@
                         </p>
                         <p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p><strong class="selecteur">SELECT</strong> Fournisseur.Pays <br> <strong class="selecteur">FROM</strong>
+                        <p class="SQL"><strong class="selecteur">SELECT</strong> Fournisseur.Pays <br> <strong class="selecteur">FROM</strong>
                             Fournisseur <strong class="selecteur">INNER JOIN</strong> <span class="par">(</span> <strong
                                     class="selecteur">INNER JOIN</strong> Produit <strong class="selecteur">ON</strong>
                             Categorie.CodeCateg = Produit.CodeCateg<span class="par">)</span> <strong class="selecteur">ON</strong>
@@ -233,7 +234,8 @@
                                     class="str">"Desserts"</span> <strong class="selecteur">OR</strong> <span
                                     class="par">(</span>Categorie.NomCateg<span class="par">)=</span><span class="str">"Boissons"</span><span
                                     class="par">))</span><br> <strong class="selecteur">GROUP BY</strong>
-                            Fournisseur.Pays;</p>
+                            Fournisseur.Pays;
+                        </p>
                     </div>
                     <div class="resultat2">
                         <h3>Résultat :</h3>
@@ -285,7 +287,8 @@
                 <h2 id="Offre" class="Theme">Thème : l’offre de KDou </h2>
                 <div class="third_indicateur">
                     <div class="presentation">
-                        <h3><img src="assets/img/pas-de-commande.png" alt="=no-commande" height="40" width="40"> Nombre de
+                        <h3><img src="assets/img/pas-de-commande.png" alt="=no-commande" height="40" width="40"> Nombre
+                            de
                             produits
                             non commandés</h3>
                         <p>Déterminer le nombre de produits non commandés permettrait à KDou d’identifier les catégories
@@ -302,7 +305,7 @@
                             résultats par catégorie pour compter les produits non commandés par catégorie.</p>
                         <p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p><strong class="selecteur">SELECT</strong> <span class="saumon">Count</span><span
+                        <p class="SQL"><strong class="selecteur">SELECT</strong> <span class="saumon">Count</span><span
                                 class="par">(</span>Produit.NomProd<span class="par">)</span> <strong
                                 class="selecteur">AS</strong> CompteDeNomProd, Categorie.CodeCateg,
                             Categorie.NomCateg<br>
@@ -315,7 +318,8 @@
                                     class="par">((</span>DetailCommande.RefProd<span
                                     class="par">)</span> <strong class="selecteur">Is Null</strong><span
                                     class="par">)</span><br>
-                            <strong class="selecteur">GROUP BY</strong> Categorie.CodeCateg, Categorie.NomCateg;</p>
+                            <strong class="selecteur">GROUP BY</strong> Categorie.CodeCateg, Categorie.NomCateg;
+                        </p>
                     </div>
                     <div class="resultat">
                         <h3>Résultat :</h3>
@@ -361,7 +365,7 @@
                         <h3><img src="assets/img/encheres.png" alt="=offre" height="40" width="40"> Pays ayant une
                             offre
                             importante</h3>
-                        <p>Déterminer les pays ayant une offre importante de produits permettrait à KDou de cibler les
+                        <p class="SQL">Déterminer les pays ayant une offre importante de produits permettrait à KDou de cibler les
                             régions à fort potentiel d'approvisionnement. En identifiant les pays qui fournissent le
                             plus de
                             produits, KDou peut envisager des stratégies de partenariat, de logistique ou de marketing
@@ -371,7 +375,7 @@
                             produits par pays pour obtenir un décompte par pays. Enfin, on trie les pays par nombre de
                             produits en ordre décroissant pour mettre en avant ceux avec une offre importante.</p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p><strong class="selecteur">SELECT</strong> Fournisseur.Pays, <span
+                        <p class="SQL"><strong class="selecteur">SELECT</strong> Fournisseur.Pays, <span
                                 class="saumon">Count</span><span class="par">(</span>Produit.NomProd<span
                                 class="par">)</span> <strong class="selecteur">AS</strong> CompteDeNomProd<br>
                             <strong class="selecteur">FROM</strong> Fournisseur <strong class="selecteur">INNER
@@ -380,7 +384,8 @@
                             <strong class="selecteur">GROUP BY</strong> Fournisseur.Pays<br>
                             <strong class="selecteur">ORDER BY</strong> <span class="saumon">Count</span><span
                                     class="par">(</span> Produit.NomProd<span class="par">)</span> <strong
-                                    class="selecteur">DESC</strong>;</p>
+                                    class="selecteur">DESC</strong>;
+                        </p>
                     </div>
                     <div class="resultat2">
                         <h3>Résultat :</h3>
@@ -461,7 +466,7 @@
                             produits d’origine allemande et on se limite aux catégories "Dessert" et "Boisson". Enfin on
                             sélectionne les produits dont le prix est inférieur à 100 euros.</p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p><strong class="selecteur">SELECT</strong> Fournisseur.Pays, Categorie.NomCateg,
+                        <p class="SQL"><strong class="selecteur">SELECT</strong> Fournisseur.Pays, Categorie.NomCateg,
                             Produit.PrixUnit<br>
                             <strong class="selecteur">FROM</strong> Fournisseur
                             <strong class="selecteur">INNER JOIN</strong> <span class="par">(</span>Categorie
@@ -478,6 +483,7 @@
                                     class="par">)</span> <strong class="selecteur">AND</strong> <span
                                     class="par">((</span>Produit.PrixUnit<span
                                     class="par">)</span><<span class="nombre">100</span><span class="par">))</span>;<br>
+                        </p>
                     </div>
                     <div class="resultat">
                         <h3>Résultat :</h3>
@@ -514,7 +520,8 @@
                 </div>
                 <div class="sixth_indicateur">
                     <div class="presentation2">
-                        <h3><img src="assets/img/pas-de-commande.png" alt="=no-commande" height="40" width="40"> Nombre de
+                        <h3><img src="assets/img/pas-de-commande.png" alt="=no-commande" height="40" width="40"> Nombre
+                            de
                             produits
                             non commandés</h3>
                         <p>Identifier les fournisseurs qui se spécialisent uniquement dans les boissons ou uniquement
@@ -530,7 +537,7 @@
                             boissons
                             ou des desserts.</p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p><strong class="selecteur">SELECT</strong> Fournisseur.NoFour, Fournisseur.Contact<br>
+                        <p class="SQL"><strong class="selecteur">SELECT</strong> Fournisseur.NoFour, Fournisseur.Contact<br>
                             <strong class="selecteur">FROM</strong> Fournisseur<br>
                             <strong class="selecteur">WHERE</strong> Fournisseur.NoFour <strong class="selecteur">NOT
                                 IN</strong> <span class="par">(</span><strong class="selecteur">SELECT</strong>
@@ -538,7 +545,8 @@
                                 JOIN</strong> Categorie <strong class="selecteur">ON</strong> Produit.CodeCateg =
                             Categorie.CodeCateg <strong class="selecteur">WHERE</strong> Categorie.CodeCateg <strong
                                     class="selecteur">IN</strong> <span class="par">(</span><span class="nombre">2, 4, 5, 6, 7, 8</span><span
-                                    class="par">))</span>;</p>
+                                    class="par">))</span>;
+                        </p>
                     </div>
                     <div class="resultat2">
                         <h3>Résultat :</h3>
@@ -623,7 +631,7 @@
                             TOP 5
                             dans le SELECT va prendre les 5 premières lignes et les afficher.</p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p><strong class="selecteur">SELECT TOP</strong> <span class="nombre">5</span> Cl.CodeCli,
+                        <p class="SQL"><strong class="selecteur">SELECT TOP</strong> <span class="nombre">5</span> Cl.CodeCli,
                             Cl.SocieteCli, <span class="saumon">Sum</span><span class="par">(</span>DC.PrixUnitCli *
                             DC.QteCom * <span class="par">(</span><span class="nombre">1</span> - DC.Remise<span
                                     class="par">))</span> <strong class="selecteur">AS</strong> ChiffreAffaire<br>
@@ -640,7 +648,8 @@
                             <strong class="selecteur">ORDER BY</strong> <span class="saumon">Sum</span><span
                                     class="par">(</span>DC.PrixUnitCli * DC.QteCom * <span class="par">(</span><span
                                     class="nombre">1</span> - DC.Remise<span class="par">))</span> <strong
-                                    class="selecteur">DESC</strong>;</p>
+                                    class="selecteur">DESC</strong>;
+                        </p>
                     </div>
                     <div class="resultat">
                         <h3>Résultat :</h3>
@@ -682,7 +691,8 @@
                 </div>
                 <div class="eighth_indicateur">
                     <div class="presentation">
-                        <h3><img src="assets/img/populaire.png" alt="=popularité" height="40" width="40"> Popularité auprès
+                        <h3><img src="assets/img/populaire.png" alt="=popularité" height="40" width="40"> Popularité
+                            auprès
                             des
                             clients</h3>
                         <p>On cherche les 5 premières sociétés qui ont généré le plus de commandes. On affiche le nom de
@@ -701,7 +711,7 @@
                             des
                             10 premiers fournisseurs avec le plus gros nombre de commandes. </p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
-                        <p><strong class="selecteur">SELECT TOP</strong> <span class="nombre">5</span> <span
+                        <p class="SQL"><strong class="selecteur">SELECT TOP</strong> <span class="nombre">5</span> <span
                                 class="saumon">COUNT</span><span
                                 class="par">(</span>CMD.NoCom<span class="par">)</span> <strong
                                 class="selecteur">AS</strong> nb_Commande, F.Societe, F.Ville<br>
@@ -719,7 +729,8 @@
                             <strong class="selecteur">GROUP BY</strong> F.Societe, F.Ville<br>
                             <strong class="selecteur">ORDER BY</strong> <span class="saumon">COUNT</span><span
                                     class="par">(</span>CMD.NoCom<span class="par">)</span> <strong
-                                    class="selecteur">DESC</strong>;</p>
+                                    class="selecteur">DESC</strong>;
+                        </p>
                     </div>
                     <div class="resultat">
                         <h3>Résultat :</h3>
