@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="3.4&#10;Responsive mission 4">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/mission2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/mission3.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission1.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission3.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission4.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +125,7 @@
       <workItem from="1731322237095" duration="14900000" />
       <workItem from="1731354740860" duration="10705000" />
       <workItem from="1731443003185" duration="7574000" />
+      <workItem from="1731509374085" duration="3713000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />

@@ -52,7 +52,19 @@
 
             <li class="separator-nav"></li>
 
-            <li><a href="mission3.html" id="mission3">mission 3</a></li>
+            <li id="mission3hov"><a href="mission3.html" id="mission3">mission 3</a>
+                <ul class="navhov">
+                    <li><a href="mission3.html#contexte">Contexte</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission3.html#D&B">Desserts et Boissons</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission3.html#Offre">L’offre de KDou </a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission3.html#Provenance">Provenance des produits</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission3.html#Clientèle">La clientèle</a></li>
+                </ul>
+            </li>
 
             <li class="separator-nav"></li>
 
@@ -80,6 +92,674 @@
         <div class="image-container">
             <img id="fond" src="assets/img/fond.jpeg" alt="fond">
             <span id="missionfond">Mission 3</span>
+        </div>
+    </div>
+    <div id="all">
+        <section id="contexte" class="context">
+            <h1>Contexte</h1>
+            <p>
+                <br>
+                <strong>L’objectif fondamental</strong> de cette troisième mission consiste à utiliser de manière
+                exhaustive la base de données de l’entreprise KDou pour en extraire des informations stratégiques qui
+                serviront de fondement à des analyses poussées et à la création d’indicateurs pertinents. Dans un
+                premier temps, il s’agit d’explorer l’ensemble des données disponibles afin de comprendre leur
+                structure, leur contenu et leur potentiel informatif. Ensuite, l’accent sera mis sur l’organisation et
+                la catégorisation de ces données pour garantir une exploitation optimale et cohérente.<br><br>Par le
+                biais de méthodes analytiques avancées, cette mission vise à identifier des tendances, des corrélations
+                et des anomalies qui pourront fournir des insights précieux sur le fonctionnement et la performance de
+                l’entreprise. Les indicateurs générés à partir de cette analyse joueront un rôle crucial dans le suivi
+                de la santé financière de KDou, dans l’évaluation de l’efficacité de ses processus internes, et dans la
+                détection d’opportunités ou de risques potentiels.<br><br>En somme, cette mission ne se limite pas à la
+                simple extraction de données, mais implique une démarche rigoureuse de traitement et de transformation
+                des informations en outils d’aide à la décision. Ainsi, en produisant des analyses détaillées et des
+                indicateurs adaptés aux besoins stratégiques de KDou, cette mission contribue directement à soutenir la
+                prise de décisions éclairées et à favoriser la croissance et la compétitivité de l’entreprise.</p>
+        </section>
+        <div class="indicateur">
+            <section>
+                <h2 id="D&B" class="Theme">Thème : Desserts / boissons </h2>
+                <div class="first_indicateur">
+                    <div class="presentation">
+                        <h3><img src="assets/img/turnover.png" alt="=turnover" height="30" width="30"> Les pays avec la
+                            meilleur offre</h3>
+                        <p>
+                            Déterminer les pays ayant une offre importante de produits permettrait à KDou de cibler les
+                            régions à fort potentiel d'approvisionnement. En identifiant les pays qui fournissent le
+                            plus de produits, KDou peut envisager des stratégies de partenariat, de logistique ou de
+                            marketing adaptées aux fournisseurs et produits de ces pays.<br>
+                            On relie chaque produit à son fournisseur pour obtenir le pays d’origine. Puis, on regroupe
+                            les produits par pays pour obtenir un décompte par pays. Enfin, on trie les pays par nombre
+                            de produits en ordre décroissant pour mettre en avant ceux avec une offre importante.</p>
+                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <p><strong class="selecteur">SELECT TOP</strong> <span class="nombre">10</span> <span
+                                class="saumon">Sum</span><span class="par">([</span>DC.PrixUnitCli<span
+                                class="par">]*[</span>DC.QteCom<span class="par">]*(</span><span class="nombre">1</span><span
+                                class="par">-[</span>DC.Remise<span class="par">]))</span> <strong
+                                class="selecteur">AS</strong> <span class="par">[</span>Chiffre d’affaires<span
+                                class="par">]</span>, P.RefProd, P.NomProd<br><strong class="selecteur">FROM</strong>
+                            Produit P <strong class="selecteur">INNER JOIN</strong> DetailCommande DC <strong
+                                    class="selecteur">ON</strong> P.RefProd = DC.RefProd <br><strong class="selecteur">GROUP
+                                BY</strong> P.RefProd, P.NomProd <br><strong class="selecteur">ORDER BY</strong> <span
+                                    class="saumon">Sum</span><span class="par">([</span>DC.PrixUnitCli<span class="par">]*[</span>DC.QteCom<span
+                                    class="par">]*(</span><span class="nombre">1</span><span class="par">-[</span>DC.Remise<span
+                                    class="par">]))</span> <strong class="selecteur">DESC;</strong></p>
+                    </div>
+                    <div class="resultat">
+                        <h3>Résultat :</h3>
+                        <table>
+                            <thead>
+                            <th>Chiffre d'affaires</th>
+                            <th>RefProd</th>
+                            <th>NomProd</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>176236,934903448</td>
+                                <td>38</td>
+                                <td>Côte de Blaye</td>
+                            </tr>
+                            <tr>
+                                <td>108502,53194375</td>
+                                <td>29</td>
+                                <td>Thüringer Rostbratwurst</td>
+                            </tr>
+                            <tr>
+                                <td>82038,0748958401</td>
+                                <td>59</td>
+                                <td>Raclette Courdavault</td>
+                            </tr>
+                            <tr>
+                                <td>82038,0748958401</td>
+                                <td>60</td>
+                                <td>Camembert Pierrot</td>
+                            </tr>
+                            <tr>
+                                <td>53889,3199451491</td>
+                                <td>62</td>
+                                <td>Sugar Pie</td>
+                            </tr>
+                            <tr>
+                                <td>50365,8399599195</td>
+                                <td>56</td>
+                                <td>Gnocchi di nonna Alice</td>
+                            </tr>
+                            <tr>
+                                <td>49412,5399495184</td>
+                                <td>51</td>
+                                <td>Manjimup Dried Apples</td>
+                            </tr>
+                            <tr>
+                                <td>37254,179978317</td>
+                                <td>17</td>
+                                <td>Alice Mutton</td>
+                            </tr>
+                            <tr>
+                                <td>35531,2849606954</td>
+                                <td>18</td>
+                                <td>Carnarvon Tigers</td>
+                            </tr>
+                            <tr>
+                                <td>32272,5799703836</td>
+                                <td>43</td>
+                                <td>Ipoh Coffee</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="second_indicateur">
+                    <div class="presentation2">
+                        <h3><img src="assets/img/turnover.png" alt="=turnover" height="30" width="30"> Origine des
+                            produits de la catégorie "desserts" et "boissons"</h3>
+                        <p>
+                            Connaître les pays d'origine des produits de la catégorie "desserts" et "boissons"
+                            permettrait de mieux comprendre la diversité géographique de son offre et d’identifier les
+                            régions du monde d’où proviennent ces produits afin d’orienter sa stratégie de communication
+                            et de répondre aux préoccupations des clients intéressés par la traçabilité et l'origine des
+                            produits. Elle pourrait aussi inspirer des choix futurs en faveur d’un approvisionnement
+                            plus localisé ou diversifié.
+                            <br>On cherche donc le pays d’origine de chaque produit de catégories "Dessert" et
+                            "Boisson". Enfin, on regroupe par catégorie et pays, de sorte que chaque pays d’origine pour
+                            chaque catégorie soit affiché une seule fois.
+                        </p>
+                        <p>
+                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <p><strong class="selecteur">SELECT</strong> Fournisseur.Pays <br> <strong class="selecteur">FROM</strong>
+                            Fournisseur <strong class="selecteur">INNER JOIN</strong> <span class="par">(</span> <strong
+                                    class="selecteur">INNER JOIN</strong> Produit <strong class="selecteur">ON</strong>
+                            Categorie.CodeCateg = Produit.CodeCateg<span class="par">)</span> <strong class="selecteur">ON</strong>
+                            Fournisseur.NoFour = Produit.NoFour<br> <strong class="selecteur">WHERE</strong> <span
+                                    class="par">(((</span>Categorie.NomCateg<span class="par">)=</span><span
+                                    class="str">"Desserts"</span> <strong class="selecteur">OR</strong> <span
+                                    class="par">(</span>Categorie.NomCateg<span class="par">)=</span><span class="str">"Boissons"</span><span
+                                    class="par">))</span><br> <strong class="selecteur">GROUP BY</strong>
+                            Fournisseur.Pays;</p>
+                    </div>
+                    <div class="resultat2">
+                        <h3>Résultat :</h3>
+                        <table>
+                            <thead>
+                            <th>Pays</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Allemagne</td>
+                            </tr>
+                            <tr>
+                                <td>Australie</td>
+                            </tr>
+                            <tr>
+                                <td>Brésil</td>
+                            </tr>
+                            <tr>
+                                <td>Canada</td>
+                            </tr>
+                            <tr>
+                                <td>Etats-Unis</td>
+                            </tr>
+                            <tr>
+                                <td>Finlande</td>
+                            </tr>
+                            <tr>
+                                <td>France</td>
+                            </tr>
+                            <tr>
+                                <td>Pays-Bas</td>
+                            </tr>
+                            <tr>
+                                <td>Royaume-Unis</td>
+                            </tr>
+                            <tr>
+                                <td>Singapour</td>
+                            </tr>
+                            <tr>
+                                <td>Suède</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 id="Offre" class="Theme">Thème : l’offre de KDou </h2>
+                <div class="third_indicateur">
+                    <div class="presentation">
+                        <h3><img src="assets/img/turnover.png" alt="=turnover" height="30" width="30"> Nombre de
+                            produits
+                            non commandés</h3>
+                        <p>Déterminer le nombre de produits non commandés permettrait à KDou d’identifier les catégories
+                            de
+                            produits avec un inventaire inactif, ce qui pourrait guider l'optimisation de son offre en
+                            fonction de la demande en plus d'aider KDou à analyser l’attractivité de chaque catégorie de
+                            produits. En repérant les catégories où les produits ne suscitent pas de commandes, KDou
+                            pourra
+                            évaluer si ces produits sont bien alignés avec les préférences des clients ou s’il est
+                            nécessaire d’ajuster son offre pour améliorer les ventes.<br>
+                            On récupère tous les produits( en incluant ceux sans commandes associées) qu'on relie à sa
+                            catégorie. On sélectionne uniquement les produits qui n'ont pas été commandés (ceux pour
+                            lesquels aucune correspondance n’a été trouvée dans la table Commande) et on regroupe les
+                            résultats par catégorie pour compter les produits non commandés par catégorie.</p>
+                        <p>
+                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <p><strong class="selecteur">SELECT</strong> <span class="saumon">Count</span><span
+                                class="par">(</span>Produit.NomProd<span class="par">)</span> <strong
+                                class="selecteur">AS</strong> CompteDeNomProd, Categorie.CodeCateg,
+                            Categorie.NomCateg<br>
+                            <strong class="selecteur">FROM</strong> <span class="par">(</span>Categorie <strong
+                                    class="selecteur">INNER JOIN</strong> Produit <strong class="selecteur">ON</strong>
+                            Categorie.CodeCateg = Produit.CodeCateg<span class="par">)</span> <strong class="selecteur">LEFT
+                                JOIN</strong> DetailCommande <strong class="selecteur">ON</strong> Produit.RefProd =
+                            DetailCommande.RefProd<br>
+                            <strong class="selecteur">WHERE</strong> <span
+                                    class="par">((</span>DetailCommande.RefProd<span
+                                    class="par">)</span> <strong class="selecteur">Is Null</strong><span
+                                    class="par">)</span><br>
+                            <strong class="selecteur">GROUP BY</strong> Categorie.CodeCateg, Categorie.NomCateg;</p>
+                    </div>
+                    <div class="resultat">
+                        <h3>Résultat :</h3>
+                        <table>
+                            <thead>
+                            <th>CompteDeNomProd</th>
+                            <th>CodeCateg</th>
+                            <th>NomCateg</th>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <td>27</td>
+                                <td>1</td>
+                                <td>Boissons</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>Condiments</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>Desserts</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>Pâtes et céréales</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>8</td>
+                                <td>Poissons et fruits de mer</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="fourth_indicateur">
+                    <div class="presentation2">
+                        <h3><img src="assets/img/turnover.png" alt="=turnover" height="30" width="30"> Pays ayant une
+                            offre
+                            importante</h3>
+                        <p>Déterminer les pays ayant une offre importante de produits permettrait à KDou de cibler les
+                            régions à fort potentiel d'approvisionnement. En identifiant les pays qui fournissent le
+                            plus de
+                            produits, KDou peut envisager des stratégies de partenariat, de logistique ou de marketing
+                            adaptées aux fournisseurs et produits de ces pays.<br>
+                            On relie chaque produit à son fournisseur pour obtenir le pays d’origine. Puis, on regroupe
+                            les
+                            produits par pays pour obtenir un décompte par pays. Enfin, on trie les pays par nombre de
+                            produits en ordre décroissant pour mettre en avant ceux avec une offre importante.</p>
+                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <p><strong class="selecteur">SELECT</strong> Fournisseur.Pays, <span
+                                class="saumon">Count</span><span class="par">(</span>Produit.NomProd<span
+                                class="par">)</span> <strong class="selecteur">AS</strong> CompteDeNomProd<br>
+                            <strong class="selecteur">FROM</strong> Fournisseur <strong class="selecteur">INNER
+                                JOIN</strong> Produit <strong class="selecteur">ON</strong> Fournisseur.NoFour =
+                            Produit.NoFour<br>
+                            <strong class="selecteur">GROUP BY</strong> Fournisseur.Pays<br>
+                            <strong class="selecteur">ORDER BY</strong> <span class="saumon">Count</span><span
+                                    class="par">(</span> Produit.NomProd<span class="par">)</span> <strong
+                                    class="selecteur">DESC</strong>;</p>
+                    </div>
+                    <div class="resultat2">
+                        <h3>Résultat :</h3>
+                        <table>
+                            <thead>
+                            <th>Pays</th>
+                            <th>CompteDeNomProd</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Royaume-Uni</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td>Etats-Unis</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>Allemagne</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>Australie</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Brésil</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Canada</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Suède</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>France</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Japon</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Italie</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Singapour</td>
+                                <td>4</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+
+                <h2 id="Provenance" class="Theme">Thème : Provenance des produits </h2>
+                <div class="fifth_indicateur">
+                    <div class="presentation">
+                        <h3><img src="assets/img/turnover.png" alt="=turnover" height="30" width="30"> Desserts et
+                            boissons
+                            à moins de 100€</h3>
+                        <p>Trouver les desserts et boissons allemandes vendus à moins de 100 euros, afin de mettre en
+                            avant
+                            des produits abordables et de proximité dans le catalogue de KDou de provenance allemande,
+                            réduisant potentiellement les coûts logistiques et renforçant son offre en circuits courts.
+                            En
+                            mettant l’accent sur la proximité, KDou répond à une demande croissante pour des produits
+                            frais,
+                            accessibles et à faible impact environnemental.<br>
+                            On souhaite obtenir le pays d’origine et la catégorie de chaque produit. On ne retenir que
+                            les
+                            produits d’origine allemande et on se limite aux catégories "Dessert" et "Boisson". Enfin on
+                            sélectionne les produits dont le prix est inférieur à 100 euros.</p>
+                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <p><strong class="selecteur">SELECT</strong> Fournisseur.Pays, Categorie.NomCateg,
+                            Produit.PrixUnit<br>
+                            <strong class="selecteur">FROM</strong> Fournisseur
+                            <strong class="selecteur">INNER JOIN</strong> <span class="par">(</span>Categorie
+                            <strong class="selecteur">INNER JOIN</strong> Produit ON Categorie.CodeCateg =
+                            Produit.CodeCateg<span
+                                    class="par">)</span> <strong class="selecteur">ON</strong> Fournisseur.NoFour =
+                            Produit.NoFour<br>
+                            <strong class="selecteur">WHERE</strong> <span class="par">(((</span>Fournisseur.Pays<span
+                                    class="par">)</span>="Allemagne"<span class="par">)</span> <strong
+                                    class="selecteur">AND</strong> <span class="par">((</span>Categorie.NomCateg<span
+                                    class="par">)</span> LIKE <span class="str">"*desserts*"</span> <strong
+                                    class="selecteur">OR</strong> <span class="par">(</span>Categorie.NomCateg<span
+                                    class="par">)</span> <strong class="selecteur">LIKE</strong> <span class="str">"*boissons*"</span><span
+                                    class="par">)</span> <strong class="selecteur">AND</strong> <span
+                                    class="par">((</span>Produit.PrixUnit<span
+                                    class="par">)</span><<span class="nombre">100</span><span class="par">))</span>;<br>
+                    </div>
+                    <div class="resultat">
+                        <h3>Résultat :</h3>
+                        <table>
+                            <thead>
+                            <th>Pays</th>
+                            <th>NomCateg</th>
+                            <th>PrixUnit</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Allemagne</td>
+                                <td>Desserts</td>
+                                <td>11,67 €</td>
+                            </tr>
+                            <tr>
+                                <td>Allemagne</td>
+                                <td>Desserts</td>
+                                <td>26,03 €</td>
+                            </tr>
+                            <tr>
+                                <td>Allemagne</td>
+                                <td>Desserts</td>
+                                <td>36,58 €</td>
+                            </tr>
+                            <tr>
+                                <td>Allemagne</td>
+                                <td>Desserts</td>
+                                <td>86,46 €</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="sixth_indicateur">
+                    <div class="presentation2">
+                        <h3><img src="assets/img/turnover.png" alt="=turnover" height="30" width="30"> Nombre de
+                            produits
+                            non commandés</h3>
+                        <p>Identifier les fournisseurs qui se spécialisent uniquement dans les boissons ou uniquement
+                            dans
+                            les desserts permettrait à KDou d'optimiser ses relations avec ces partenaires, mieux cibler
+                            les
+                            produits à commander, et valoriser cette spécialisation dans son catalogue. On joint les
+                            produits à leur catégorie, on prend uniquement les produits qui ne sont ni des boissons ni
+                            des
+                            desserts et on sélectionne leur Fournisseur. Enfin on prend les fournisseur qui
+                            n'apparaissent
+                            pas dans la table précédente qui sont enfaite les fournisseurs qui ne vendent que des
+                            boissons
+                            ou des desserts.</p>
+                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <p><strong class="selecteur">SELECT</strong> Fournisseur.NoFour, Fournisseur.Contact<br>
+                            <strong class="selecteur">FROM</strong> Fournisseur<br>
+                            <strong class="selecteur">WHERE</strong> Fournisseur.NoFour <strong class="selecteur">NOT
+                                IN</strong> <span class="par">(</span><strong class="selecteur">SELECT</strong>
+                            Produit.NoFour <strong class="selecteur">FROM</strong> Produit <strong class="selecteur">INNER
+                                JOIN</strong> Categorie <strong class="selecteur">ON</strong> Produit.CodeCateg =
+                            Categorie.CodeCateg <strong class="selecteur">WHERE</strong> Categorie.CodeCateg <strong
+                                    class="selecteur">IN</strong> <span class="par">(</span><span class="nombre">2, 4, 5, 6, 7, 8</span><span
+                                    class="par">))</span>;</p>
+                    </div>
+                    <div class="resultat2">
+                        <h3>Résultat :</h3>
+                        <table>
+                            <thead>
+                            <th>NoFour</th>
+                            <th>Contact</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>8</td>
+                                <td>Melvin Wilson</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Carlos Diaz</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Petra Winkler</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>Guylène Nodier</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>Dirk Luchte</td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>Anne Heikkonen</td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>Claudio Sole</td>
+                            </tr>
+                            <tr>
+                                <td>31</td>
+                                <td>Charlie Colley</td>
+                            </tr>
+                            <tr>
+                                <td>32</td>
+                                <td>Helena Carbo</td>
+                            </tr>
+                            <tr>
+                                <td>33</td>
+                                <td>Bob Rego</td>
+                            </tr>
+                            <tr>
+                                <td>34</td>
+                                <td>Hug Jhonson</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+
+                <h2 id="Clientèle" class="Theme">Thème : La clientèle </h2>
+                <div class="seventh_indicateur">
+                    <div class="presentation">
+                        <h3><img src="assets/img/turnover.png" alt="=turnover" height="30" width="30"> Clients les plus
+                            rentables</h3>
+                        <p>Dans cette requête, nous calculons le chiffre d'affaires global généré par chaque client pour
+                            déterminer les 5 clients ayant rapporté le plus de chiffre d'affaires à KDou. Cette requête
+                            permet une identification des clients les plus rentables il est crucial de les fidéliser
+                            pour
+                            garantir un revenu stable. Une fois les clients les plus rentables identifiés, KDou peut
+                            adapter
+                            ses actions commerciales, comme leur accorder des remises spéciales ou des offres
+                            exclusives,
+                            pour renforcer leur fidélité et les encourager à acheter davantage.
+                            On regroupe les produits, Commandes et Client pour pouvoir ensuite afficher le code client,
+                            la
+                            société client, et le chiffre d’affaire qui est calculé avec le prix unitaire des produits,
+                            les
+                            quantités commandées, et les remises accordées et enfin on trie le tout pour afficher les
+                            chiffres d’affaires de manière décroissante donc du plus haut au plus petit. A la fin, le
+                            TOP 5
+                            dans le SELECT va prendre les 5 premières lignes et les afficher.</p>
+                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <p><strong class="selecteur">SELECT TOP</strong> <span class="nombre">5</span> Cl.CodeCli,
+                            Cl.SocieteCli, <span class="saumon">Sum</span><span class="par">(</span>DC.PrixUnitCli *
+                            DC.QteCom * <span class="par">(</span><span class="nombre">1</span> - DC.Remise<span
+                                    class="par">))</span> <strong class="selecteur">AS</strong> ChiffreAffaire<br>
+                            <strong class="selecteur">FROM</strong> <span class="par">((</span>Produit P
+                            <strong class="selecteur">INNER JOIN</strong> DetailCommande DC <strong
+                                    class="selecteur">ON</strong> P.RefProd = DC.RefProd<span class="par">)</span>
+                            <strong class="selecteur">INNER JOIN</strong> Commande C <strong
+                                    class="selecteur">ON</strong>
+                            DC.NoCom = C.NoCom<span class="par">)</span>
+                            <strong class="selecteur">INNER JOIN</strong> Client Cl <strong
+                                    class="selecteur">ON</strong>
+                            Cl.CodeCli = C.CodeCli<br>
+                            <strong class="selecteur">GROUP BY</strong> Cl.CodeCli, Cl.SocieteCli<br>
+                            <strong class="selecteur">ORDER BY</strong> <span class="saumon">Sum</span><span
+                                    class="par">(</span>DC.PrixUnitCli * DC.QteCom * <span class="par">(</span><span
+                                    class="nombre">1</span> - DC.Remise<span class="par">))</span> <strong
+                                    class="selecteur">DESC</strong>;</p>
+                    </div>
+                    <div class="resultat">
+                        <h3>Résultat :</h3>
+                        <table>
+                            <thead>
+                            <th>nbCommande</th>
+                            <th>Société</th>
+                            <th>Ville</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>255</td>
+                                <td>Plusspar Lebensmittelgroßmärkte AG</td>
+                                <td>Frankfurt</td>
+                            </tr>
+                            <tr>
+                                <td>163</td>
+                                <td>Specialty Biscuits, Ltd.</td>
+                                <td>Manchester</td>
+                            </tr>
+                            <tr>
+                                <td>143</td>
+                                <td>Pavlova, Ltd.</td>
+                                <td>Melbourne</td>
+                            </tr>
+                            <tr>
+                                <td>141</td>
+                                <td>Ma Maison</td>
+                                <td>Montréal</td>
+                            </tr>
+                            <tr>
+                                <td>141</td>
+                                <td>Formaggi Fortini s.r.</td>
+                                <td>Ravenna</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="eighth_indicateur">
+                    <div class="presentation">
+                        <h3><img src="assets/img/turnover.png" alt="=turnover" height="30" width="30"> Popularité auprès
+                            des
+                            clients</h3>
+                        <p>On cherche les 5 premières sociétés qui ont généré le plus de commandes. On affiche le nom de
+                            la
+                            société , la ville ou elle est localisée ainsi que le total de commandes. Cette analyse nous
+                            permet de déterminer les fournisseurs les plus rentables ainsi que leur popularité auprès
+                            des
+                            clients . KDOU peut utiliser ces données pour revoir ces décisions sur la gestion des
+                            relations
+                            avec les fournisseurs ou le réapprovisionnement auprès d’eux.
+                            On regroupe les tables Fournisseurs, Produit, Détail Commande et commande à l’aide d'une
+                            triple
+                            jointures, On regroupe ensuite les résultats par Societe et Ville On calcule le nombre de
+                            lignes
+                            qui correspondra donc aux nombres de commandes réalisées. Enfin on affiche le nom ,la ville
+                            des
+                            10 premiers fournisseurs avec le plus gros nombre de commandes. </p>
+                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <p><strong class="selecteur">SELECT TOP</strong> <span class="nombre">5</span> <span
+                                class="saumon">COUNT</span><span
+                                class="par">(</span>CMD.NoCom<span class="par">)</span> <strong
+                                class="selecteur">AS</strong> nb_Commande, F.Societe, F.Ville<br>
+                            <strong class="selecteur">FROM</strong> <span class="par">((</span>Fournisseur <strong
+                                    class="selecteur">AS</strong> F
+                            <strong class="selecteur">INNER JOIN</strong> Produit <strong class="selecteur">AS</strong>
+                            PD
+                            <strong class="selecteur">ON</strong> F.NoFour = PD.NoFour<span class="par">)</span>
+                            <strong class="selecteur">INNER JOIN</strong> DetailCommande <strong
+                                    class="selecteur">AS</strong> DC <strong class="selecteur">ON</strong> PD.RefProd =
+                            DC.RefProd<span class="par">)</span>
+                            <strong class="selecteur">INNER JOIN</strong> Commande <strong class="selecteur">AS</strong>
+                            CMD
+                            <strong class="selecteur">ON</strong> DC.NoCom = CMD.NoCom<br>
+                            <strong class="selecteur">GROUP BY</strong> F.Societe, F.Ville<br>
+                            <strong class="selecteur">ORDER BY</strong> <span class="saumon">COUNT</span><span
+                                    class="par">(</span>CMD.NoCom<span class="par">)</span> <strong
+                                    class="selecteur">DESC</strong>;</p>
+                    </div>
+                    <div class="resultat">
+                        <h3>Résultat :</h3>
+                        <table>
+                            <thead>
+                            <th>nbCommande</th>
+                            <th>Société</th>
+                            <th>Ville</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>255</td>
+                                <td>Plusspar Lebensmittelgroßmärkte AG</td>
+                                <td>Frankfurt</td>
+                            </tr>
+                            <tr>
+                                <td>163</td>
+                                <td>Specialty Biscuits, Ltd.</td>
+                                <td>Manchester</td>
+                            </tr>
+                            <tr>
+                                <td>143</td>
+                                <td>Pavlova, Ltd.</td>
+                                <td>Melbourne</td>
+                            </tr>
+                            <tr>
+                                <td>141</td>
+                                <td>Ma Maison</td>
+                                <td>Montréal</td>
+                            </tr>
+                            <tr>
+                                <td>141</td>
+                                <td>Formaggi Fortini s.r.</td>
+                                <td>Ravenna</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </main>

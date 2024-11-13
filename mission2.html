@@ -53,7 +53,19 @@
 
             <li class="separator-nav"></li>
 
-            <li><a href="mission3.html">mission 3</a></li>
+            <li id="mission3hov"><a href="mission3.html">mission 3</a>
+                <ul class="navhov">
+                    <li><a href="mission3.html#contexte">Contexte</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission3.html#D&B">Desserts et Boissons</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission3.html#Offre">L’offre de KDou </a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission3.html#Provenance">Provenance des produits</a></li>
+                    <li class="separator"></li>
+                    <li><a href="mission3.html#Clientèle">La clientèle</a></li>
+                </ul>
+            </li>
 
             <li class="separator-nav"></li>
 
@@ -84,7 +96,7 @@
         </div>
     </div>
     <div id="all">
-        <div id="contexte" class="context">
+        <section id="contexte" class="context">
             <h1>Contexte</h1>
             <p>
                 <br>
@@ -112,11 +124,12 @@
                 de répondre à un ensemble de questions pratiques concernant les fournisseurs, les produits, les ventes
                 et les clients de l'entreprise.
             </p>
-        </div>
-        <div id="1indicateur" class="indicateur">
+        </section>
+        <section id="1indicateur" class="indicateur">
             <div class="first_indicateur">
                 <div class="presentation">
-                    <h2><img src="assets/img/cityscape.png" alt="=ville" height="30" width="30"> 1er indicateur : Classement des 3 Villes avec la Plus Grande Clientèle</h2>
+                    <h2><img src="assets/img/cityscape.png" alt="=ville" height="30" width="30"> 1er indicateur :
+                        Classement des 3 Villes avec la Plus Grande Clientèle</h2>
                     <p>
                         Un classement des 3 premières villes avec le plus de clients est demandé.
                     </p>
@@ -155,205 +168,208 @@
                     </table>
                 </div>
             </div>
-            <div id="2indicateur" class="second_indicateur">
-                <div class="presentation2">
-                    <h2><img src="assets/img/financial-profit.png" alt="=stonks" height="30" width="30"> 2e indicateur : Produits Italiens ou Allemands de 50€ ou Moins</h2>
-                    <p>
-                        Cet indicateur permet d’identifier les produits de fournisseurs européens (Italie et Allemagne)
-                        vendus à un prix attractif (50 € ou moins).<br>
-                        Cela peut aider à proposer des produits européens à prix abordable dans les campagnes de vente.
-                    </p>
-                    <p>
-                    <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
-                    <img src="assets/img/SQL2.png" alt="=SQL" height="240" width="430">
-                </div>
-                <div class="resultat2">
-                    <h2>Résultat :</h2>
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>NomProd</th>
-                            <th>PrixUnit</th>
-                            <th>Ville</th>
-                            <th>Pays</th>
-                            <th>Societe</th>
-                            <th>Contact</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Original Frankfurter grüne Soße</td>
-                            <td class="highlight">10,83 €</td>
-                            <td>Frankfurt</td>
-                            <td>Allemagne</td>
-                            <td>Plusspar Lebensmittelgroßmärkte AG</td>
-                            <td>Maric Bein</td>
-                        </tr>
-                        <tr>
-                            <td>Wimmers gute Semmelknödel</td>
-                            <td class="highlight">27,71 €</td>
-                            <td>Frankfurt</td>
-                            <td>Allemagne</td>
-                            <td>Plusspar Lebensmittelgroßmärkte AG</td>
-                            <td>Maric Bein</td>
-                        </tr>
-                        <tr>
-                            <td>Singaporean Hokkien Fried Mee</td>
-                            <td class="highlight">11,67 €</td>
-                            <td>Cuxhaven</td>
-                            <td>Allemagne</td>
-                            <td>Nord-Ost-Fisch Handelsgesellschaft mbH</td>
-                            <td>Sven Petersen</td>
-                        </tr>
-                        <tr>
-                            <td>Nord-Ost Matjeshering</td>
-                            <td class="highlight">21,58 €</td>
-                            <td>Cuxhaven</td>
-                            <td>Allemagne</td>
-                            <td>Nord-Ost-Fisch Handelsgesellschaft mbH</td>
-                            <td>Sven Petersen</td>
-                        </tr>
-                        <tr>
-                            <td>Rössle Sauerkraut</td>
-                            <td class="highlight">38,00 €</td>
-                            <td>Frankfurt</td>
-                            <td>Allemagne</td>
-                            <td>Plusspar Lebensmittelgroßmärkte AG</td>
-                            <td>Maric Bein</td>
-                        </tr>
-                        <tr>
-                            <td>Schoggi Schokolade</td>
-                            <td class="highlight">36,58 €</td>
-                            <td>Berlin</td>
-                            <td>Allemagne</td>
-                            <td>Heli Süßwaren GmbH & Co. KG</td>
-                            <td>Petra Winkler</td>
-                        </tr>
-                        <tr>
-                            <td>Gumbär Gummibärchen</td>
-                            <td class="highlight">26,03 €</td>
-                            <td>Berlin</td>
-                            <td>Allemagne</td>
-                            <td>Heli Süßwaren GmbH & Co. KG</td>
-                            <td>Petra Winkler</td>
-                        </tr>
-                        <tr>
-                            <td>NuNuCa Nuß-Nougat-Creme</td>
-                            <td class="highlight">11,67 €</td>
-                            <td>Berlin</td>
-                            <td>Allemagne</td>
-                            <td>Heli Süßwaren GmbH & Co. KG</td>
-                            <td>Petra Winkler</td>
-                        </tr>
-                        <tr>
-                            <td>Gustaf's Knäckebröd</td>
-                            <td class="highlight">17,50 €</td>
-                            <td>Frankfurt</td>
-                            <td>Allemagne</td>
-                            <td>Plusspar Lebensmittelgroßmärkte AG</td>
-                            <td>Maric Bein</td>
-                        </tr>
-                        <tr>
-                            <td>Mozzarella di Giovanni</td>
-                            <td class="highlight">29,00 €</td>
-                            <td>Ravenna</td>
-                            <td>Italie</td>
-                            <td>Formaggi Fortini s.r.l.</td>
-                            <td>Elio Rossi</td>
-                        </tr>
-                        <tr>
-                            <td>Ravioli Angelo</td>
-                            <td class="highlight">16,25 €</td>
-                            <td>Salerno</td>
-                            <td>Italie</td>
-                            <td>Pasta Buttini s.r.l.</td>
-                            <td>Giovanni Giudici</td>
-                        </tr>
-                        <tr>
-                            <td>Gnocchi di nonna Alice</td>
-                            <td class="highlight">31,67 €</td>
-                            <td>Salerno</td>
-                            <td>Italie</td>
-                            <td>Pasta Buttini s.r.l.</td>
-                            <td>Giovanni Giudici</td>
-                        </tr>
-                        <tr>
-                            <td>Mascarpone Fabioli</td>
-                            <td class="highlight">26,67 €</td>
-                            <td>Ravenna</td>
-                            <td>Italie</td>
-                            <td>Formaggi Fortini s.r.l.</td>
-                            <td>Elio Rossi</td>
-                        </tr>
-                        <tr>
-                            <td>Gorgonzola Telino</td>
-                            <td class="highlight">10,42 €</td>
-                            <td>Ravenna</td>
-                            <td>Italie</td>
-                            <td>Formaggi Fortini s.r.l.</td>
-                            <td>Elio Rossi</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+        </section>
+        <section id="2indicateur" class="second_indicateur">
+            <div class="presentation2">
+                <h2><img src="assets/img/financial-profit.png" alt="=stonks" height="30" width="30"> 2e indicateur :
+                    Produits Italiens ou Allemands de 50€ ou Moins</h2>
+                <p>
+                    Cet indicateur permet d’identifier les produits de fournisseurs européens (Italie et Allemagne)
+                    vendus à un prix attractif (50 € ou moins).<br>
+                    Cela peut aider à proposer des produits européens à prix abordable dans les campagnes de vente.
+                </p>
+                <p>
+                <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
+                <img src="assets/img/SQL2.png" alt="=SQL" height="240" width="430">
             </div>
-            <div id="3indicateur" class="third_indicateur">
-                <div class="presentation">
-                    <h2><img src="assets/img/turnover.png" alt="=turnover" height="30" width="30"> 3e indicateur : Chiffre d’Affaires Total Généré</h2>
-                    <p>
-                        Calculer le chiffre d’affaires total permet de savoir combien de revenus ont été générés à
-                        partir des informations de vente.<br>
-                        Cela donne un aperçu de la performance globale des ventes de l’entreprise.
-                    </p>
-                    <p>
-                    <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
-                    <img src="assets/img/SQL3.png" alt="=SQL" height="141" width="877">
-                </div>
-                <div class="resultat">
-                    <h2>Résultat :</h2>
-                    <table>
-                        <thead>
-                        <th>Chiffre d'affaire</th>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>1541632,27670534</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="resultat2">
+                <h2>Résultat :</h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>NomProd</th>
+                        <th>PrixUnit</th>
+                        <th>Ville</th>
+                        <th>Pays</th>
+                        <th>Societe</th>
+                        <th>Contact</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Original Frankfurter grüne Soße</td>
+                        <td class="highlight">10,83 €</td>
+                        <td>Frankfurt</td>
+                        <td>Allemagne</td>
+                        <td>Plusspar Lebensmittelgroßmärkte AG</td>
+                        <td>Maric Bein</td>
+                    </tr>
+                    <tr>
+                        <td>Wimmers gute Semmelknödel</td>
+                        <td class="highlight">27,71 €</td>
+                        <td>Frankfurt</td>
+                        <td>Allemagne</td>
+                        <td>Plusspar Lebensmittelgroßmärkte AG</td>
+                        <td>Maric Bein</td>
+                    </tr>
+                    <tr>
+                        <td>Singaporean Hokkien Fried Mee</td>
+                        <td class="highlight">11,67 €</td>
+                        <td>Cuxhaven</td>
+                        <td>Allemagne</td>
+                        <td>Nord-Ost-Fisch Handelsgesellschaft mbH</td>
+                        <td>Sven Petersen</td>
+                    </tr>
+                    <tr>
+                        <td>Nord-Ost Matjeshering</td>
+                        <td class="highlight">21,58 €</td>
+                        <td>Cuxhaven</td>
+                        <td>Allemagne</td>
+                        <td>Nord-Ost-Fisch Handelsgesellschaft mbH</td>
+                        <td>Sven Petersen</td>
+                    </tr>
+                    <tr>
+                        <td>Rössle Sauerkraut</td>
+                        <td class="highlight">38,00 €</td>
+                        <td>Frankfurt</td>
+                        <td>Allemagne</td>
+                        <td>Plusspar Lebensmittelgroßmärkte AG</td>
+                        <td>Maric Bein</td>
+                    </tr>
+                    <tr>
+                        <td>Schoggi Schokolade</td>
+                        <td class="highlight">36,58 €</td>
+                        <td>Berlin</td>
+                        <td>Allemagne</td>
+                        <td>Heli Süßwaren GmbH & Co. KG</td>
+                        <td>Petra Winkler</td>
+                    </tr>
+                    <tr>
+                        <td>Gumbär Gummibärchen</td>
+                        <td class="highlight">26,03 €</td>
+                        <td>Berlin</td>
+                        <td>Allemagne</td>
+                        <td>Heli Süßwaren GmbH & Co. KG</td>
+                        <td>Petra Winkler</td>
+                    </tr>
+                    <tr>
+                        <td>NuNuCa Nuß-Nougat-Creme</td>
+                        <td class="highlight">11,67 €</td>
+                        <td>Berlin</td>
+                        <td>Allemagne</td>
+                        <td>Heli Süßwaren GmbH & Co. KG</td>
+                        <td>Petra Winkler</td>
+                    </tr>
+                    <tr>
+                        <td>Gustaf's Knäckebröd</td>
+                        <td class="highlight">17,50 €</td>
+                        <td>Frankfurt</td>
+                        <td>Allemagne</td>
+                        <td>Plusspar Lebensmittelgroßmärkte AG</td>
+                        <td>Maric Bein</td>
+                    </tr>
+                    <tr>
+                        <td>Mozzarella di Giovanni</td>
+                        <td class="highlight">29,00 €</td>
+                        <td>Ravenna</td>
+                        <td>Italie</td>
+                        <td>Formaggi Fortini s.r.l.</td>
+                        <td>Elio Rossi</td>
+                    </tr>
+                    <tr>
+                        <td>Ravioli Angelo</td>
+                        <td class="highlight">16,25 €</td>
+                        <td>Salerno</td>
+                        <td>Italie</td>
+                        <td>Pasta Buttini s.r.l.</td>
+                        <td>Giovanni Giudici</td>
+                    </tr>
+                    <tr>
+                        <td>Gnocchi di nonna Alice</td>
+                        <td class="highlight">31,67 €</td>
+                        <td>Salerno</td>
+                        <td>Italie</td>
+                        <td>Pasta Buttini s.r.l.</td>
+                        <td>Giovanni Giudici</td>
+                    </tr>
+                    <tr>
+                        <td>Mascarpone Fabioli</td>
+                        <td class="highlight">26,67 €</td>
+                        <td>Ravenna</td>
+                        <td>Italie</td>
+                        <td>Formaggi Fortini s.r.l.</td>
+                        <td>Elio Rossi</td>
+                    </tr>
+                    <tr>
+                        <td>Gorgonzola Telino</td>
+                        <td class="highlight">10,42 €</td>
+                        <td>Ravenna</td>
+                        <td>Italie</td>
+                        <td>Formaggi Fortini s.r.l.</td>
+                        <td>Elio Rossi</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="fourth_indicateur">
-                <div class="presentation">
-                    <h2><img src="assets/img/tag.png" alt="=tag" height="30" width="30"> 4e indicateur : Prix Moyen, Minimum et Maximum des Produits</h2>
-                    <p>
-                        Cet indicateur permet d’analyser les gammes de prix des produits de l’entreprise.<br>
-                        Connaître le prix moyen, ainsi que les prix minimum et maximum, permet d’évaluer l’éventail des
-                        prix proposés et d’identifier les extrêmes, ce qui peut influencer les stratégies de prix.
-                    </p>
-                    <p>
-                    <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
-                    <img src="assets/img/SQL4.png" alt="=SQL" height="125" width="877">
-                </div>
-                <div class="resultat">
-                    <h2>Résultat :</h2>
-                    <table>
-                        <thead>
-                        <th>Prix min</th>
-                        <th>Prix max</th>
-                        <th>Prix moy</th>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>2,08 €</td>
-                            <td>320,00 €</td>
-                            <td>33,54 €</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+        </section>
+        <section id="3indicateur" class="third_indicateur">
+            <div class="presentation">
+                <h2><img src="assets/img/turnover.png" alt="=turnover" height="30" width="30"> 3e indicateur : Chiffre
+                    d’Affaires Total Généré</h2>
+                <p>
+                    Calculer le chiffre d’affaires total permet de savoir combien de revenus ont été générés à
+                    partir des informations de vente.<br>
+                    Cela donne un aperçu de la performance globale des ventes de l’entreprise.
+                </p>
+                <p>
+                <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
+                <img src="assets/img/SQL3.png" alt="=SQL" height="141" width="877">
             </div>
-        </div>
+            <div class="resultat">
+                <h2>Résultat :</h2>
+                <table>
+                    <thead>
+                    <th>Chiffre d'affaire</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1541632,27670534</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="fourth_indicateur">
+            <div class="presentation">
+                <h2><img src="assets/img/tag.png" alt="=tag" height="30" width="30"> 4e indicateur : Prix Moyen, Minimum
+                    et Maximum des Produits</h2>
+                <p>
+                    Cet indicateur permet d’analyser les gammes de prix des produits de l’entreprise.<br>
+                    Connaître le prix moyen, ainsi que les prix minimum et maximum, permet d’évaluer l’éventail des
+                    prix proposés et d’identifier les extrêmes, ce qui peut influencer les stratégies de prix.
+                </p>
+                <p>
+                <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
+                <img src="assets/img/SQL4.png" alt="=SQL" height="125" width="877">
+            </div>
+            <div class="resultat">
+                <h2>Résultat :</h2>
+                <table>
+                    <thead>
+                    <th>Prix min</th>
+                    <th>Prix max</th>
+                    <th>Prix moy</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>2,08 €</td>
+                        <td>320,00 €</td>
+                        <td>33,54 €</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </div>
 </main>
 

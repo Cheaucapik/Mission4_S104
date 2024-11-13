@@ -6,3 +6,224 @@
     --background-color: #f7f7f7;
     --secondary-background-color: #edf2e4;
 }
+
+#all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#all > .context {
+    background: linear-gradient(#a0d874, #4bba74);
+    border-radius: 15px;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    border: #f7f7f7 solid 3px;
+    height: auto;
+    width: 94%;
+    margin: 70px 50px;
+    padding: 20px;
+}
+
+.context > p{
+    color: var(--background-color);
+    font-family: Arial, sans-serif;
+    font-size: 1.4em;
+    text-align: justify;
+    margin: 0 30px 20px 30px;
+}
+
+.presentation > p{
+    color: var(--background-color);
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 0 20px 10px 20px;
+}
+
+.presentation2 > p{
+    color: var(--background-color);
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 0 20px 10px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-weight: normal;
+    color: var(--background-color);
+    font-size: 4vw;
+}
+
+h3 {
+    text-align: left;
+    color: #fefefc;
+    text-shadow: rgb(253, 202, 225) 2px 2px 2px;
+    font-size: 2vw;
+    margin: 30px 20px;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+.indicateur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.first_indicateur, .second_indicateur, .third_indicateur, .fourth_indicateur, .fifth_indicateur, .sixth_indicateur, .seventh_indicateur, .eighth_indicateur {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.Theme{
+    text-align: center;
+    color: #bb7977;
+    text-shadow: rgb(253, 202, 225) 2px 2px 2px;
+    font-size: 2.5vw;
+}
+
+.presentation {
+    background: linear-gradient(#a0d874, #4bba74);
+    border-radius: 15px;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    border: #f7f7f7 solid 3px;
+    width: 50%;
+    padding: 2%;
+}
+
+.resultat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#a0d874, #4bba74);
+    border-radius: 15px;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    border: #f7f7f7 solid 3px;
+    width: 42%;
+    padding: 2%;
+}
+
+.presentation2{
+    background: linear-gradient(#a0d874, #4bba74);
+    border-radius: 15px;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    border: #f7f7f7 solid 3px;
+    width: 62%;
+    padding: 2%;
+}
+
+.resultat2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#a0d874, #4bba74);
+    border-radius: 15px;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    border: #f7f7f7 solid 3px;
+    width: 30%;
+    padding: 2%;
+}
+
+table {
+    border: 3px solid var(--background-color);
+    text-align: center;
+    width: 100%;
+    height: 70%;
+    border-radius: 7px;
+    table-layout: fixed;
+}
+
+td, th {
+    border: 1px solid #ccc;
+    text-align: center;
+    color: var(--background-color);
+    padding: 1em 2em;
+}
+
+.resultat2 td, .resultat2 th {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 2px 20px;
+    color: var(--background-color);
+}
+
+.highlight {
+    background-color: rgb(253, 202, 225);
+}
+
+footer {
+    margin-top: 40px;
+}
+
+main section:nth-child(odd){
+    background-color: var(--secondary-background-color);
+    padding: 50px 0;
+}
+
+main section:nth-child(even){
+    padding: 50px 0;
+}
+
+/*pour la coloration du code sql*/
+
+.selecteur {
+    color : lightcyan;
+}
+
+.nombre, .par {
+    color: lightblue;
+}
+
+.saumon {
+    color: palegreen;
+}
+
+.str {
+    color : green;
+}
+
+@media screen and (max-width: 768px){
+    .indicateur {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+    }
+
+    .context > p{
+        color: var(--background-color);
+        font-family: Arial, sans-serif;
+        font-size: 1.2em;
+        text-align: justify;
+        margin: 0 30px 20px 30px;
+    }
+
+    .presentation > p{
+        color: var(--background-color);
+        font-size: 1em;
+        text-align: justify;
+        margin: 0 20px 10px 20px;
+    }
+
+    .presentation2 > p{
+        color: var(--background-color);
+        font-size: 1em;
+        text-align: justify;
+        margin: 0 20px 10px 20px;
+    }
+
+}
