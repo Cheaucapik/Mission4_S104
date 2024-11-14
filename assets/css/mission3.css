@@ -170,12 +170,12 @@ p.SQL{
     background-color: rgb(253, 202, 225);
 }
 
-main section:nth-child(odd){
+main article:nth-child(odd){
     background-color: var(--secondary-background-color);
     padding: 50px 0;
 }
 
-main section:nth-child(even){
+main article:nth-child(even){
     padding: 50px 0;
 }
 
@@ -237,11 +237,11 @@ main section:nth-child(even){
         font-size: 2em;
 
     }
-    main section:nth-child(odd){
+    main article:nth-child(odd){
         padding: 30px 0;
     }
 
-    main section:nth-child(even){
+    main article:nth-child(even){
         padding: 30px 0;
     }
 
@@ -278,11 +278,11 @@ main section:nth-child(even){
         font-size: 1.6em;
     }
 
-    main section:nth-child(odd){
+    main article:nth-child(odd){
         padding: 15px 0;
     }
 
-    main section:nth-child(even){
+    main article:nth-child(even){
         padding: 15px 0;
     }
 

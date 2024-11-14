@@ -70,6 +70,7 @@ th, td {
 #clients{
     background-color: var(--secondary-background-color);
     padding: 50px;
+    scroll-margin-top: 100px;
 }
 
 #client_description, #Client { /* Description de la vignette client*/
@@ -205,6 +206,7 @@ h2 { /*titre details spécifiques*/
 
 #fournisseursm1, #améliorationm1{
     padding: 50px;
+    scroll-margin-top: 100px;
 }
 
 .F_reponses {

@@ -98,8 +98,8 @@ h2 {
     flex-direction: column;
     background: linear-gradient(#a0d874, #4bba74);
     border-radius: 15px;
-    box-shadow: 1px 3px 4px 5px #A3B288;
-    border: #f7f7f7 solid 3px;
+    box-shadow: 1px 3px 4px 5px var(--primary-color);
+    border: var(--background-color) solid 3px;
     width: 30%;
     padding: 2%;
 }
@@ -154,12 +154,12 @@ td, th {
     background-color: rgb(253, 202, 225);
 }
 
-main section:nth-child(even){
+main article:nth-child(even){
     background-color: var(--secondary-background-color);
     padding: 50px 0;
 }
 
-main section:nth-child(odd){
+main article:nth-child(odd){
     padding: 50px 0;
 }
 

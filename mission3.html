@@ -94,7 +94,7 @@
             <span id="missionfond">Mission 3</span>
         </div>
     </div>
-    <div id="all">
+    <section id="all">
         <div id="contexte" class="context">
             <h1>Contexte</h1>
             <p>
@@ -116,7 +116,7 @@
                 prise de décisions éclairées et à favoriser la croissance et la compétitivité de l’entreprise.</p>
         </div>
         <div class="indicateur">
-            <section>
+            <article>
                 <h2 id="D&B" class="Theme">Thème : Desserts / boissons </h2>
                 <div class="first_indicateur">
                     <div class="presentation">
@@ -285,9 +285,9 @@
                         </table>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section>
+            <article>
                 <h2 id="Offre" class="Theme">Thème : l’offre de KDou </h2>
                 <div class="third_indicateur">
                     <div class="presentation">
@@ -303,7 +303,7 @@
                             pourra
                             évaluer si ces produits sont bien alignés avec les préférences des clients ou s’il est
                             nécessaire d’ajuster son offre pour améliorer les ventes.<br>
-                            On récupère tous les produits( en incluant ceux sans commandes associées) qu'on relie à sa
+                            On récupère tous les produits (en incluant ceux sans commandes associées) qu'on relie à sa
                             catégorie. On sélectionne uniquement les produits qui n'ont pas été commandés (ceux pour
                             lesquels aucune correspondance n’a été trouvée dans la table Commande) et on regroupe les
                             résultats par catégorie pour compter les produits non commandés par catégorie.</p>
@@ -451,9 +451,9 @@
                         </table>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section>
+            <article>
 
                 <h2 id="Provenance" class="Theme">Thème : Provenance des produits </h2>
                 <div class="fifth_indicateur">
@@ -471,7 +471,7 @@
                             accessibles et à faible impact environnemental.<br>
                             On souhaite obtenir le pays d’origine et la catégorie de chaque produit. On ne retenir que
                             les
-                            produits d’origine allemande et on se limite aux catégories "Dessert" et "Boisson". Enfin on
+                            produits d’origine allemande et on se limite aux catégories "Dessert" et "Boisson". Enfin, on
                             sélectionne les produits dont le prix est inférieur à 100 euros.</p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
                         <p class="SQL"><strong class="operateur">SELECT</strong> Fournisseur.Pays, Categorie.NomCateg,
@@ -535,17 +535,12 @@
                             produits
                             non commandés</h3>
                         <p>Identifier les fournisseurs qui se spécialisent uniquement dans les boissons ou uniquement
-                            dans
-                            les desserts permettrait à KDou d'optimiser ses relations avec ces partenaires, mieux cibler
-                            les
-                            produits à commander, et valoriser cette spécialisation dans son catalogue. On joint les
+                            dans les desserts permettrait à KDou d'optimiser ses relations avec ces partenaires, mieux cibler
+                            les produits à commander, et valoriser cette spécialisation dans son catalogue. On joint les
                             produits à leur catégorie, on prend uniquement les produits qui ne sont ni des boissons ni
-                            des
-                            desserts et on sélectionne leur Fournisseur. Enfin on prend les fournisseur qui
-                            n'apparaissent
-                            pas dans la table précédente qui sont enfaite les fournisseurs qui ne vendent que des
-                            boissons
-                            ou des desserts.</p>
+                            des desserts et on sélectionne leur fournisseur. Enfin, on prend les fournisseurs qui
+                            n'apparaissent pas dans la table précédente, qui sont en fait, les fournisseurs qui ne vendent que des
+                            boissons ou des desserts.</p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
                         <p class="SQL"><strong class="operateur">SELECT</strong> Fournisseur.NoFour, Fournisseur.Contact<br>
                             <strong class="operateur">FROM</strong> Fournisseur<br>
@@ -616,32 +611,17 @@
                         </table>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section>
+            <article>
 
                 <h2 id="Clientèle" class="Theme">Thème : La clientèle </h2>
                 <div class="seventh_indicateur">
                     <div class="presentation">
                         <h3><img src="assets/img/client.png" alt="=client" height="40" width="40"> Clients les plus
                             rentables</h3>
-                        <p>Dans cette requête, nous calculons le chiffre d'affaires global généré par chaque client pour
-                            déterminer les 5 clients ayant rapporté le plus de chiffre d'affaires à KDou. Cette requête
-                            permet une identification des clients les plus rentables il est crucial de les fidéliser
-                            pour
-                            garantir un revenu stable. Une fois les clients les plus rentables identifiés, KDou peut
-                            adapter
-                            ses actions commerciales, comme leur accorder des remises spéciales ou des offres
-                            exclusives,
-                            pour renforcer leur fidélité et les encourager à acheter davantage.
-                            On regroupe les produits, Commandes et Client pour pouvoir ensuite afficher le code client,
-                            la
-                            société client, et le chiffre d’affaire qui est calculé avec le prix unitaire des produits,
-                            les
-                            quantités commandées, et les remises accordées et enfin on trie le tout pour afficher les
-                            chiffres d’affaires de manière décroissante donc du plus haut au plus petit. A la fin, le
-                            TOP 5
-                            dans le SELECT va prendre les 5 premières lignes et les afficher.</p>
+                        <p>Dans cette requête, nous calculons le chiffre d'affaires global généré par chaque client pour déterminer les 5 clients ayant rapporté le plus de chiffre d'affaires à KDou. Cette requête permet une identification des clients les plus rentables, il est crucial de les fidéliser pour garantir un revenu stable. Une fois, les clients les plus rentables identifiés, KDou peut adapter ses actions commerciales, comme leur accorder des remises spéciales ou des offres exclusives, pour renforcer leur fidélité et les encourager à acheter davantage. On regroupe les produits, Commandes et Client pour pouvoir ensuite afficher le code client, la société cliente, et le chiffre d’affaires qui est calculé avec le prix unitaire des produits, les quantités commandées, et les remises accordées et enfin, on trie le tout pour afficher les chiffres d’affaires de manière décroissante donc du plus haut au plus petit. À la fin, le TOP 5 dans le SELECT va prendre les 5 premières lignes et les afficher.
+                        </p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
                         <p class="SQL"><strong class="operateur">SELECT TOP</strong> <span class="valeur">5</span> Cl.CodeCli,
                             Cl.SocieteCli, <span class="agregation">Sum</span><span class="ponctuation">(</span>DC.PrixUnitCli *
@@ -709,21 +689,8 @@
                             auprès
                             des
                             clients</h3>
-                        <p>On cherche les 5 premières sociétés qui ont généré le plus de commandes. On affiche le nom de
-                            la
-                            société , la ville ou elle est localisée ainsi que le total de commandes. Cette analyse nous
-                            permet de déterminer les fournisseurs les plus rentables ainsi que leur popularité auprès
-                            des
-                            clients . KDOU peut utiliser ces données pour revoir ces décisions sur la gestion des
-                            relations
-                            avec les fournisseurs ou le réapprovisionnement auprès d’eux.
-                            On regroupe les tables Fournisseurs, Produit, Détail Commande et commande à l’aide d'une
-                            triple
-                            jointures, On regroupe ensuite les résultats par Societe et Ville On calcule le nombre de
-                            lignes
-                            qui correspondra donc aux nombres de commandes réalisées. Enfin on affiche le nom ,la ville
-                            des
-                            10 premiers fournisseurs avec le plus gros nombre de commandes. </p>
+                        <p>On cherche les 5 premières sociétés qui ont généré le plus de commandes. On affiche le nom de la société, la ville où elle est localisée ainsi que le total de commandes. Cette analyse nous permet de déterminer les fournisseurs les plus rentables ainsi que leur popularité auprès des clients. KDOU peut utiliser ces données pour revoir ces décisions sur la gestion des relations avec les fournisseurs ou le réapprovisionnement auprès d’eux. On regroupe les tables Fournisseurs, Produit, Détail Commande et commande à l’aide d'une triple jointure, on regroupe ensuite les résultats par Société et Ville On calcule le nombre de lignes qui correspondra donc aux nombres de commandes réalisées. Enfin, on affiche le nom, la ville des 10 premiers fournisseurs avec le plus gros nombre de commandes.
+                        </p>
                         <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
                         <p class="SQL"><strong class="operateur">SELECT TOP</strong> <span class="valeur">5</span> <span
                                 class="agregation">COUNT</span><span
@@ -786,9 +753,9 @@
                         </table>
                     </div>
                 </div>
-            </section>
+            </article>
         </div>
-    </div>
+    </section>
 </main>
 
 <footer>
