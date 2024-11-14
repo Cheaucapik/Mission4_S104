@@ -24,12 +24,12 @@ h1{
     color: var(--primary-color);
 }
 
-#intro, #accueilm4{
+#intro, #accueilm4, #mission2m4{
     background: var(--secondary-background-color);
     padding: 40px 60px 60px 60px;
 }
 
-#header-footer, #mission1m4{
+#header-footer, #mission1m4, #mission2m4 {
     padding: 40px 60px 60px 60px;
 }
 
@@ -50,7 +50,7 @@ hr{
         padding: 30px 50px 50px 50px;
     }
 
-    #header-footer, #mission1m4{
+    #header-footer, #mission1m4, #mission2m4 {
         padding: 30px 50px 50px 50px;
     }
     hr{
@@ -71,7 +71,7 @@ hr{
         padding: 20px 40px 40px 40px;
     }
 
-    #header-footer, #mission1m4{
+    #header-footer, #mission1m4, #mission2m4 {
         padding: 20px 40px 40px 40px;
     }
     hr{

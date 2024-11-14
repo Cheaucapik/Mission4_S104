@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,900;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,900;1,900&family=Oswald:wght@200..700&display=swap');
 
-:root{
+:root {
     --primary-color: #A3B288;
     --hover-color: #7C8B66;
     --secondary-hover-color: #515c41;
@@ -10,7 +10,7 @@
     --secondary-background-color: #edf2e4;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,12 +18,12 @@
     scroll-margin-top: 100px;
 }
 
-body{
+body {
     background-color: var(--background-color);
     padding-top: 82px;
 }
 
-#missionfond{
+#missionfond {
     color: var(--background-color);
     font-family: oswald, sans-serif;
     font-size: 6vw;
@@ -31,7 +31,7 @@ body{
     position: absolute;
 }
 
-.image-container{
+.image-container {
     position: relative;
     display: flex;
     align-items: center;
@@ -39,31 +39,31 @@ body{
     width: 100%;
 }
 
-#fond{
+#fond {
     width: 100%;
     opacity: .7;
 }
 
-.secondaryBack{
+.secondaryBack {
     background-color: var(--secondary-background-color);
 }
 
 /* header */
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 4;
 }
 
-nav{
+nav {
     background-color: var(--primary-color);
     padding: 26px;
     display: flex;
 }
 
-#nav{
+#nav {
     list-style-type: none;
     display: flex;
     align-self: center;
@@ -71,38 +71,38 @@ nav{
     width: 100%;
 }
 
-#logo{
+#logo {
     align-self: center;
     border-radius: 7px;
     position: absolute;
     top: 10px;
 }
 
-.separator{
+.separator {
     height: 2px;
     background-color: var(--text-color);
     margin: 5px 10px !important;
     padding: 0;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
 }
 
-#accueil, #mission1, #mission2, #mission3, #mission4{
+#accueil, #mission1, #mission2, #mission3, #mission4 {
     text-decoration: underline;
     font-weight: bold;
 }
 
-#nav li:not(:first-child){
+#nav li {
     margin-left: 25px;
 }
 
-#accueilhov, #mission1hov, #mission2hov, #mission3hov, #mission4hov{
+#accueilhov, #mission1hov, #mission2hov, #mission3hov, #mission4hov {
     position: relative;
 }
 
-.navhov{
+.navhov {
     display: none;
     position: absolute;
     background-color: var(--primary-color);
@@ -115,18 +115,18 @@ nav ul{
     width: max-content;
 }
 
-.navhov li{
+.navhov li {
     margin: 10px 0;
     text-align: right;
 }
 
-#accueilhov:hover .navhov, #mission1hov:hover .navhov, #mission1hov:hover .navhov, #mission2hov:hover .navhov, #mission3hov:hover .navhov, #mission4hov:hover .navhov{
+#accueilhov:hover .navhov, #mission1hov:hover .navhov, #mission1hov:hover .navhov, #mission2hov:hover .navhov, #mission3hov:hover .navhov, #mission4hov:hover .navhov {
     display: flex;
     flex-direction: column;
     z-index: 4;
 }
 
-ul a{
+nav ul a {
     text-decoration: none;
     color: var(--text-color);
     font-family: merriweather, sans-serif;
@@ -137,21 +137,21 @@ ul a{
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-ul a:hover{
+nav ul a:hover {
     color: var(--background-color);
     background-color: var(--hover-color);
     text-decoration: underline;
 }
 
-ul a:active{
+nav a:active {
     background-color: var(--secondary-hover-color);
 }
 
-label, #toggle{
+label, #toggle {
     display: none;
 }
 
-nav a img{
+nav a img {
     width: 100%;
     max-width: 118px;
     height: auto;
@@ -159,30 +159,30 @@ nav a img{
 
 /* header mobile */
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
 
-    body{
+    body {
         padding-top: 72px;
     }
 
-    nav{
+    nav {
         padding: 16px;
     }
 
-    nav a img{
+    nav a img {
         max-width: 98px;
     }
 
-    ul a{
+    nav ul a {
         font-size: 1.3em;
     }
 
-    #nav li{
+    #nav li {
         padding: 15px;
         margin: 0 !important;
     }
 
-    label{
+    label {
         display: flex;
         color: white;
         font-size: 32px;
@@ -191,24 +191,24 @@ nav a img{
         position: relative;
     }
 
-    .navhov{
+    .navhov {
         border-radius: 0;
     }
 
-    .navhov li{
+    .navhov li {
         margin: 5px 0;
     }
 
-    #logo{
+    #logo {
         display: flex;
     }
 
-    nav{
+    nav {
         display: flex;
         justify-content: space-between;
     }
 
-    #nav{
+    #nav {
         display: none;
         flex-direction: column;
         position: fixed;
@@ -224,14 +224,14 @@ nav a img{
         background-color: var(--primary-color);
     }
 
-    .separator-nav{
+    .separator-nav {
         height: 2px;
         background-color: var(--text-color);
         margin: 5px 0;
         padding: 0 !important;
     }
 
-    .separator{
+    .separator {
         height: 0.1em;
         padding: 0 !important;
     }
@@ -239,34 +239,131 @@ nav a img{
 
 /* footer */
 
-footer{
-    background-color: var(--primary-color);
-    width: 100%;
-    padding: 26px;
-    color: var(--text-color);
-    font-family: merriweather, sans-serif;
+
+#logo-footer {
+    margin-bottom: 30px;
+    width: 10%;
+    height: 10%;
+}
+
+.footer ul li {
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 footer div {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
-footer div img{
+.footer {
+    background-color: var(--primary-color);
     width: 100%;
-    max-width: 118px;
-    height: auto;
+    padding-top: 26px;
+    color: var(--text-color);
+    font-family: merriweather, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    width: 50%;
+}
+
+.separator-footer{
+    margin: 20px 150px !important;
+    height: 2px;
+    width: auto;
+    background-color: var(--secondary-hover-color);
+}
+
+.Liens {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-family: Oswald, sans-serif;
+    font-size: 1.3em;
+    justify-content: center;
+}
+
+.suivre {
+    margin-bottom: 0 !important;
+    text-align: center;
+    font-size: 2em;
+    font-family: Oswald, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.footerLiens {
+    text-decoration: none;
+    color: var(--text-color);
+    align-items: center;
+    display: flex;
+}
+
+#copyright {
+    margin-top: 30px;
+    background-color: var(--hover-color);
+    width: 100%;
+    padding: 10px;
 }
 
 /* footer mobile */
 
-@media screen and (max-width: 768px){
-    footer{
-        font-size: .8em;
-        padding: 16px;
+@media screen and (max-width: 1900px) {
+    #logo-footer {
+        display: none;
     }
-    footer div img{
-        max-width: 98px;
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-links {
+        width: 100%;
+    }
+
+    .footer ul li {
+        margin: 15px;
+    }
+
+    #none, #none2{
+        display: none;
+    }
+    li img{
+        height: 1.5em;
+        width: 1.5em;
+    }
+    #copyright{
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .Liens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Liens {
+        font-size: 0.9em;
+    }
+
+    .suivre {
+        font-size: 1.7em;
     }
 }

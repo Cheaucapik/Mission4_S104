@@ -278,11 +278,11 @@ main article:nth-child(even){
         font-size: 1.6em;
     }
 
-    main article:nth-child(odd){
+    main section:nth-child(odd){
         padding: 15px 0;
     }
 
-    main article:nth-child(even){
+    main section:nth-child(even){
         padding: 15px 0;
     }
 
