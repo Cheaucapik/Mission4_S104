@@ -121,17 +121,16 @@
                 <h2 id="D&B" class="Theme">Thème : Desserts / boissons </h2>
                 <div class="first_indicateur">
                     <div class="presentation">
-                        <h3><img src="assets/img/des-pays.png" alt="=pays" height="35" width="35"> Les pays avec la
-                            meilleur offre</h3>
-                        <p>
-                            Déterminer les pays ayant une offre importante de produits permettrait à KDou de cibler les
-                            régions à fort potentiel d'approvisionnement. En identifiant les pays qui fournissent le
-                            plus de produits, KDou peut envisager des stratégies de partenariat, de logistique ou de
-                            marketing adaptées aux fournisseurs et produits de ces pays.<br>
-                            On relie chaque produit à son fournisseur pour obtenir le pays d’origine. Puis, on regroupe
-                            les produits par pays pour obtenir un décompte par pays. Enfin, on trie les pays par nombre
-                            de produits en ordre décroissant pour mettre en avant ceux avec une offre importante.</p>
-                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <h3><img src="assets/img/des-pays.png" alt="=pays"> chiffres d’affaires des produits de la catégorie "desserts" et "boissons"</h3>
+                        <p>Nous avons calculé plusieurs chiffres d’affaires. Celui de toutes les catégories, mais également celui de la catégorie
+                            boissons et la catégorie desserts.Un des intérêts de la requête est de maximiser les profits en augmentant la vente des
+                            produits les plus demandés et de diminuer celle des autres possédant une demande plus faible.<br>
+                            On regroupe les produit selon leur nom et leur référence. Puis on trie de manière à ce que les chiffres d’affaires
+                            les plus élévés soient en haut. Finalement, on affiche les 10 premières lignes correspondantes aux produits les plus vendus
+                            en effectuant le calcul du chiffre d’affaires. On affiche à côté le Nom et la Référence du produit pour savoir à quel produit sont
+                            associés les chiffres d’affaires.</p>
+
+                        <h3><img src="assets/img/code.png" alt="=code"> Code SQL généré :</h3>
                         <p class="SQL"><strong class="operateur">SELECT TOP</strong> <span class="valeur">10</span> <span
                                 class="agregation">Sum</span><span class="ponctuation">([</span>DC.PrixUnitCli<span
                                 class="ponctuation">]*[</span>DC.QteCom<span class="ponctuation">]*(</span><span class="valeur">1</span><span
@@ -158,52 +157,52 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td class="highlight">176236,934903448</td>
+                                <td>176236,93€</td>
                                 <td>38</td>
                                 <td>Côte de Blaye</td>
                             </tr>
                             <tr>
-                                <td class="highlight">108502,53194375</td>
+                                <td>108502,53€</td>
                                 <td>29</td>
                                 <td>Thüringer Rostbratwurst</td>
                             </tr>
                             <tr>
-                                <td class="highlight">82038,0748958401</td>
+                                <td>82038,07€</td>
                                 <td>59</td>
                                 <td>Raclette Courdavault</td>
                             </tr>
                             <tr>
-                                <td class="highlight">82038,0748958401</td>
+                                <td>82038,07€</td>
                                 <td>60</td>
                                 <td>Camembert Pierrot</td>
                             </tr>
                             <tr>
-                                <td class="highlight">53889,3199451491</td>
+                                <td>53889,32€</td>
                                 <td>62</td>
                                 <td>Sugar Pie</td>
                             </tr>
                             <tr>
-                                <td class="highlight">50365,8399599195</td>
+                                <td>50365,84€</td>
                                 <td>56</td>
                                 <td>Gnocchi di nonna Alice</td>
                             </tr>
                             <tr>
-                                <td class="highlight">49412,5399495184</td>
+                                <td>49412,54€</td>
                                 <td>51</td>
                                 <td>Manjimup Dried Apples</td>
                             </tr>
                             <tr>
-                                <td class="highlight">37254,179978317</td>
+                                <td>37254,18€</td>
                                 <td>17</td>
                                 <td>Alice Mutton</td>
                             </tr>
                             <tr>
-                                <td class="highlight">35531,2849606954</td>
+                                <td>35531,28€</td>
                                 <td>18</td>
                                 <td>Carnarvon Tigers</td>
                             </tr>
                             <tr>
-                                <td class="highlight">32272,5799703836</td>
+                                <td>32272,58€</td>
                                 <td>43</td>
                                 <td>Ipoh Coffee</td>
                             </tr>
@@ -213,7 +212,7 @@
                 </div>
                 <div class="second_indicateur">
                     <div class="presentation2">
-                        <h3><img src="assets/img/carte.png" alt="=carte" height="30" width="30"> Origine des
+                        <h3><img src="assets/img/carte.png" alt="=carte"> Origine des
                             produits de la catégorie "desserts" et "boissons"</h3>
                         <p>
                             Connaître les pays d'origine des produits de la catégorie "desserts" et "boissons"
@@ -227,7 +226,7 @@
                             chaque catégorie soit affiché une seule fois.
                         </p>
                         <p>
-                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <h3><img src="assets/img/code.png" alt="=code"> Code SQL généré :</h3>
                         <p class="SQL"><strong class="operateur">SELECT</strong> Fournisseur.Pays <br> <strong class="operateur">FROM</strong>
                             Fournisseur <strong class="operateur">INNER JOIN</strong> <span class="ponctuation">(</span> <strong
                                     class="operateur">INNER JOIN</strong> Produit <strong class="operateur">ON</strong>
@@ -292,7 +291,7 @@
                 <h2 id="Offre" class="Theme">Thème : l’offre de KDou </h2>
                 <div class="third_indicateur">
                     <div class="presentation">
-                        <h3><img src="assets/img/pas-de-commande.png" alt="=no-commande" height="40" width="40"> Nombre
+                        <h3><img src="assets/img/pas-de-commande.png" alt="=no-commande"> Nombre
                             de
                             produits
                             non commandés</h3>
@@ -309,7 +308,7 @@
                             lesquels aucune correspondance n’a été trouvée dans la table Commande) et on regroupe les
                             résultats par catégorie pour compter les produits non commandés par catégorie.</p>
                         <p>
-                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <h3><img src="assets/img/code.png" alt="=code"> Code SQL généré :</h3>
                         <p class="SQL"><strong class="operateur">SELECT</strong> <span class="agregation">Count</span><span
                                 class="ponctuation">(</span>Produit.NomProd<span class="ponctuation">)</span> <strong
                                 class="operateur">AS</strong> CompteDeNomProd, Categorie.CodeCateg,
@@ -339,27 +338,27 @@
 
                             <tbody>
                             <tr>
-                                <td class="highlight">27</td>
+                                <td>27</td>
                                 <td>1</td>
                                 <td>Boissons</td>
                             </tr>
                             <tr>
-                                <td class="highlight">2</td>
+                                <td>2</td>
                                 <td>2</td>
                                 <td>Condiments</td>
                             </tr>
                             <tr>
-                                <td class="highlight">3</td>
+                                <td>3</td>
                                 <td>3</td>
                                 <td>Desserts</td>
                             </tr>
                             <tr>
-                                <td class="highlight">2</td>
+                                <td>2</td>
                                 <td>5</td>
                                 <td>Pâtes et céréales</td>
                             </tr>
                             <tr>
-                                <td class="highlight">2</td>
+                                <td>2</td>
                                 <td>8</td>
                                 <td>Poissons et fruits de mer</td>
                             </tr>
@@ -369,7 +368,7 @@
                 </div>
                 <div class="fourth_indicateur">
                     <div class="presentation2">
-                        <h3><img src="assets/img/encheres.png" alt="=offre" height="40" width="40"> Pays ayant une
+                        <h3><img src="assets/img/encheres.png" alt="=offre"> Pays ayant une
                             offre
                             importante</h3>
                         <p class="SQL">Déterminer les pays ayant une offre importante de produits permettrait à KDou de cibler les
@@ -381,7 +380,7 @@
                             les
                             produits par pays pour obtenir un décompte par pays. Enfin, on trie les pays par nombre de
                             produits en ordre décroissant pour mettre en avant ceux avec une offre importante.</p>
-                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <h3><img src="assets/img/code.png" alt="=code"> Code SQL généré :</h3>
                         <p class="SQL"><strong class="operateur">SELECT</strong> Fournisseur.Pays, <span
                                 class="agregation">Count</span><span class="ponctuation">(</span>Produit.NomProd<span
                                 class="ponctuation">)</span> <strong class="operateur">AS</strong> CompteDeNomProd<br>
@@ -459,7 +458,7 @@
                 <h2 id="Provenance" class="Theme">Thème : Provenance des produits </h2>
                 <div class="fifth_indicateur">
                     <div class="presentation">
-                        <h3><img src="assets/img/promo.png" alt="=prix" height="35" width="35"> Desserts et
+                        <h3><img src="assets/img/promo.png" alt="=prix"> Desserts et
                             boissons
                             à moins de 100€</h3>
                         <p>Trouver les desserts et boissons allemandes vendus à moins de 100 euros, afin de mettre en
@@ -474,7 +473,7 @@
                             les
                             produits d’origine allemande et on se limite aux catégories "Dessert" et "Boisson". Enfin, on
                             sélectionne les produits dont le prix est inférieur à 100 euros.</p>
-                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <h3><img src="assets/img/code.png" alt="=code"> Code SQL généré :</h3>
                         <p class="SQL"><strong class="operateur">SELECT</strong> Fournisseur.Pays, Categorie.NomCateg,
                             Produit.PrixUnit<br>
                             <strong class="operateur">FROM</strong> Fournisseur
@@ -508,22 +507,22 @@
                             <tr>
                                 <td>Allemagne</td>
                                 <td>Desserts</td>
-                                <td class="highlight">11,67 €</td>
+                                <td>11,67 €</td>
                             </tr>
                             <tr>
                                 <td>Allemagne</td>
                                 <td>Desserts</td>
-                                <td class="highlight">26,03 €</td>
+                                <td>26,03 €</td>
                             </tr>
                             <tr>
                                 <td>Allemagne</td>
                                 <td>Desserts</td>
-                                <td class="highlight">36,58 €</td>
+                                <td>36,58 €</td>
                             </tr>
                             <tr>
                                 <td>Allemagne</td>
                                 <td>Desserts</td>
-                                <td class="highlight">86,46 €</td>
+                                <td>86,46 €</td>
                             </tr>
                             </tbody>
                         </table>
@@ -531,10 +530,7 @@
                 </div>
                 <div class="sixth_indicateur">
                     <div class="presentation2">
-                        <h3><img src="assets/img/pas-de-commande.png" alt="=no-commande" height="40" width="40"> Nombre
-                            de
-                            produits
-                            non commandés</h3>
+                        <h3><img src="assets/img/encheres.png" alt="=no-commande">Identification de fournisseurs spécialisés</h3>
                         <p>Identifier les fournisseurs qui se spécialisent uniquement dans les boissons ou uniquement
                             dans les desserts permettrait à KDou d'optimiser ses relations avec ces partenaires, mieux cibler
                             les produits à commander, et valoriser cette spécialisation dans son catalogue. On joint les
@@ -542,7 +538,7 @@
                             des desserts et on sélectionne leur fournisseur. Enfin, on prend les fournisseurs qui
                             n'apparaissent pas dans la table précédente, qui sont en fait, les fournisseurs qui ne vendent que des
                             boissons ou des desserts.</p>
-                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <h3><img src="assets/img/code.png" alt="=code"> Code SQL généré :</h3>
                         <p class="SQL"><strong class="operateur">SELECT</strong> Fournisseur.NoFour, Fournisseur.Contact<br>
                             <strong class="operateur">FROM</strong> Fournisseur<br>
                             <strong class="operateur">WHERE</strong> Fournisseur.NoFour <strong class="operateur">NOT
@@ -619,11 +615,11 @@
                 <h2 id="Clientèle" class="Theme">Thème : La clientèle </h2>
                 <div class="seventh_indicateur">
                     <div class="presentation">
-                        <h3><img src="assets/img/client.png" alt="=client" height="40" width="40"> Clients les plus
+                        <h3><img src="assets/img/client.png" alt="=client"> Clients les plus
                             rentables</h3>
                         <p>Dans cette requête, nous calculons le chiffre d'affaires global généré par chaque client pour déterminer les 5 clients ayant rapporté le plus de chiffre d'affaires à KDou. Cette requête permet une identification des clients les plus rentables, il est crucial de les fidéliser pour garantir un revenu stable. Une fois, les clients les plus rentables identifiés, KDou peut adapter ses actions commerciales, comme leur accorder des remises spéciales ou des offres exclusives, pour renforcer leur fidélité et les encourager à acheter davantage. On regroupe les produits, Commandes et Client pour pouvoir ensuite afficher le code client, la société cliente, et le chiffre d’affaires qui est calculé avec le prix unitaire des produits, les quantités commandées, et les remises accordées et enfin, on trie le tout pour afficher les chiffres d’affaires de manière décroissante donc du plus haut au plus petit. À la fin, le TOP 5 dans le SELECT va prendre les 5 premières lignes et les afficher.
                         </p>
-                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <h3><img src="assets/img/code.png" alt="=code"> Code SQL généré :</h3>
                         <p class="SQL"><strong class="operateur">SELECT TOP</strong> <span class="valeur">5</span> Cl.CodeCli,
                             Cl.SocieteCli, <span class="agregation">Sum</span><span class="ponctuation">(</span>DC.PrixUnitCli *
                             DC.QteCom * <span class="ponctuation">(</span><span class="valeur">1</span> - DC.Remise<span
@@ -649,36 +645,36 @@
                         <table>
                             <thead>
                             <tr>
-                                <th>nbCommande</th>
-                                <th>Société</th>
-                                <th>Ville</th>
+                                <th>CodeCli</th>
+                                <th>SocieteCli</th>
+                                <th>ChiffreAffaire</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td class="highlight">255</td>
-                                <td>Plusspar Lebensmittelgroßmärkte AG</td>
-                                <td>Frankfurt</td>
+                                <td>COMMI</td>
+                                <td>Pedro's house</td>
+                                <td>97666,14 €</td>
                             </tr>
                             <tr>
-                                <td class="highlight">163</td>
-                                <td>Specialty Biscuits, Ltd.</td>
-                                <td>Manchester</td>
+                                <td>FRANS</td>
+                                <td>Pâtes à succès</td>
+                                <td>95015,63 €</td>
                             </tr>
                             <tr>
-                                <td class="highlight">143</td>
-                                <td>Pavlova, Ltd.</td>
-                                <td>Melbourne</td>
+                                <td>FRANK</td>
+                                <td>Le pain bis</td>
+                                <td>92799,52 €</td>
                             </tr>
                             <tr>
-                                <td class="highlight">141</td>
-                                <td>Ma Maison</td>
-                                <td>Montréal</td>
+                                <td>CONSH</td>
+                                <td>Lille table</td>
+                                <td>87130,47 €</td>
                             </tr>
                             <tr>
-                                <td class="highlight">141</td>
-                                <td>Formaggi Fortini s.r.</td>
-                                <td>Ravenna</td>
+                                <td>EASTC</td>
+                                <td>Speedy plate</td>
+                                <td>83931,40 €</td>
                             </tr>
                             </tbody>
                         </table>
@@ -686,13 +682,13 @@
                 </div>
                 <div class="eighth_indicateur">
                     <div class="presentation">
-                        <h3><img src="assets/img/populaire.png" alt="=popularité" height="40" width="40"> Popularité
+                        <h3><img src="assets/img/populaire.png" alt="=popularité"> Popularité
                             auprès
                             des
                             clients</h3>
                         <p>On cherche les 5 premières sociétés qui ont généré le plus de commandes. On affiche le nom de la société, la ville où elle est localisée ainsi que le total de commandes. Cette analyse nous permet de déterminer les fournisseurs les plus rentables ainsi que leur popularité auprès des clients. KDOU peut utiliser ces données pour revoir ces décisions sur la gestion des relations avec les fournisseurs ou le réapprovisionnement auprès d’eux. On regroupe les tables Fournisseurs, Produit, Détail Commande et commande à l’aide d'une triple jointure, on regroupe ensuite les résultats par Société et Ville On calcule le nombre de lignes qui correspondra donc aux nombres de commandes réalisées. Enfin, on affiche le nom, la ville des 5 premiers fournisseurs avec le plus gros nombre de commandes.
                         </p>
-                        <h3><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h3>
+                        <h3><img src="assets/img/code.png" alt="=code"> Code SQL généré :</h3>
                         <p class="SQL"><strong class="operateur">SELECT TOP</strong> <span class="valeur">5</span> <span
                                 class="agregation">COUNT</span><span
                                 class="ponctuation">(</span>CMD.NoCom<span class="ponctuation">)</span> <strong
@@ -726,27 +722,27 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td class="highlight">255</td>
+                                <td>255</td>
                                 <td>Plusspar Lebensmittelgroßmärkte AG</td>
                                 <td>Frankfurt</td>
                             </tr>
                             <tr>
-                                <td class="highlight">163</td>
+                                <td>163</td>
                                 <td>Specialty Biscuits, Ltd.</td>
                                 <td>Manchester</td>
                             </tr>
                             <tr>
-                                <td class="highlight">143</td>
+                                <td>143</td>
                                 <td>Pavlova, Ltd.</td>
                                 <td>Melbourne</td>
                             </tr>
                             <tr>
-                                <td class="highlight">141</td>
+                                <td>141</td>
                                 <td>Ma Maison</td>
                                 <td>Montréal</td>
                             </tr>
                             <tr>
-                                <td class="highlight">141</td>
+                                <td>141</td>
                                 <td>Formaggi Fortini s.r.</td>
                                 <td>Ravenna</td>
                             </tr>

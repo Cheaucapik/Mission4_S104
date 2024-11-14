@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="4.4 fix warnings validateurs mission 2 + footer">
+    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="4.5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/header-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/header-footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/mission1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/mission2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mission1.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mission2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/mission4.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/carte.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/carte.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/client.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/client.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/code.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/code.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/des-pays.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/des-pays.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/encheres.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/encheres.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/pas-de-commande.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/pas-de-commande.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/populaire.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/populaire.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/promo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/promo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mission3.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mission4.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission4.html" afterDir="false" />
     </list>
@@ -37,12 +40,12 @@
     &quot;assignee&quot;: &quot;Cheaucapik&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Cheaucapik/Mission4_S104",
-    "accountId": "153cb730-154f-4281-bb24-8974481e0150"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Cheaucapik/Mission4_S104&quot;,
+    &quot;accountId&quot;: &quot;153cb730-154f-4281-bb24-8974481e0150&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -54,24 +57,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.accueil.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "disable.download.node.interpreter.editor.notification": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/ocean/Desktop/Travail BUT 1e année/Periode A/SAE/SAE - 01.04/Mission 4/Mission 4 SAE",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.accueil.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ocean/Desktop/Travail BUT 1e année/Periode A/SAE/SAE - 01.04/Mission 4/Mission 4 SAE&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="Z:\Z\Periode A\R1.02 WEB\Mission 4 - 3\assets\img" />
@@ -132,7 +135,8 @@
       <workItem from="1731585226564" duration="4137000" />
       <workItem from="1731590305101" duration="13709000" />
       <workItem from="1731604167622" duration="1130000" />
-      <workItem from="1731617285782" duration="1752000" />
+      <workItem from="1731617285782" duration="1953000" />
+      <workItem from="1731622767230" duration="296000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />
@@ -494,7 +498,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731617925812</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="4.5">
+      <option name="closed" value="true" />
+      <created>1731619149085</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1731619149085</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +524,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2.3&#10;Mission 1 + images dans le dossier img" />
     <MESSAGE value="2.4&#10;Mission 1, fix de l'affichage" />
     <MESSAGE value="2.4&#10;ajout du footer mission 1" />
     <MESSAGE value="2.5&#10;Amélioration de la page d'accueil (plus d'interractivité concernant les iamges)" />
@@ -537,6 +548,7 @@
     <MESSAGE value="4.1&#10;Footer + Fix des images de l'accueil" />
     <MESSAGE value="4.3 paufinement de la mission 4" />
     <MESSAGE value="4.4 fix warnings validateurs mission 2 + footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.4 fix warnings validateurs mission 2 + footer" />
+    <MESSAGE value="4.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.5" />
   </component>
 </project>
