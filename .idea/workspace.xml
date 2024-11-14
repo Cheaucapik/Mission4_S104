@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="4.1&#10;Footer + Fix des images de l'accueil">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/header-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/header-footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission4.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +29,12 @@
     &quot;assignee&quot;: &quot;Cheaucapik&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Cheaucapik/Mission4_S104&quot;,
-    &quot;accountId&quot;: &quot;30610fa4-a2b8-4047-aa72-9feb5ee97f86&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Cheaucapik/Mission4_S104",
+    "accountId": "153cb730-154f-4281-bb24-8974481e0150"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -47,24 +46,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.accueil.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;Z:/Z/Periode A/R1.02 WEB/Mission 4 - 3&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.accueil.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "disable.download.node.interpreter.editor.notification": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/ocean/Desktop/Travail BUT 1e année/Periode A/SAE/SAE - 01.04/Mission 4/Mission 4 SAE",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="Z:\Z\Periode A\R1.02 WEB\Mission 4 - 3\assets\img" />
@@ -125,6 +124,7 @@
       <workItem from="1731585226564" duration="4137000" />
       <workItem from="1731590305101" duration="13709000" />
       <workItem from="1731604167622" duration="1130000" />
+      <workItem from="1731617285782" duration="564000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />
