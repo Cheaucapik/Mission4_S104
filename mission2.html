@@ -139,21 +139,30 @@
                     </p>
                     <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
                     <p class="SQL">
-                        <span class ="operateur">SELECT TOP</span> <span class="valeur">3</span> Client<span class="ponctuation">.</span>VilleCli<span class="ponctuation">,</span> <span class="agregation">Count</span><span class="ponctuation">(</span>Client<span class="ponctuation">.</span>CodeCli<span class="ponctuation">)</span> <span class="operateur">AS</span> CompteDeCodeCli
+                        <span class="operateur">SELECT TOP</span> <span class="valeur">3</span> Client<span
+                            class="ponctuation">.</span>VilleCli<span class="ponctuation">,</span> <span
+                            class="agregation">Count</span><span class="ponctuation">(</span>Client<span
+                            class="ponctuation">.</span>CodeCli<span class="ponctuation">)</span> <span
+                            class="operateur">AS</span> CompteDeCodeCli
                         <br>
-                        <span class ="operateur">FROM</span> Client
+                        <span class="operateur">FROM</span> Client
                         <br>
-                        <span class ="operateur">GROUP BY</span> Client<span class="ponctuation">.</span>VilleCli
+                        <span class="operateur">GROUP BY</span> Client<span class="ponctuation">.</span>VilleCli
                         <br>
-                        <span class ="operateur">ORDER BY</span> <span class="agregation">Count</span><span class="ponctuation">(</span>Client<span class="ponctuation">.</span>CodeCli<span class="ponctuation">)</span> <span class="operateur">DESC</span><span class="ponctuation">;</span>
+                        <span class="operateur">ORDER BY</span> <span class="agregation">Count</span><span
+                            class="ponctuation">(</span>Client<span class="ponctuation">.</span>CodeCli<span
+                            class="ponctuation">)</span> <span class="operateur">DESC</span><span
+                            class="ponctuation">;</span>
                     </p>
                 </div>
                 <div class="resultat">
                     <h2>Résultat :</h2>
                     <table>
                         <thead>
-                        <th>VilleCli</th>
-                        <th>CompteDeCodeCli</th>
+                        <tr>
+                            <th>VilleCli</th>
+                            <th>CompteDeCodeCli</th>
+                        </tr>
                         </thead>
                         <tbody>
                         <tr>
@@ -189,15 +198,27 @@
                 <p>
                 <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
                 <p class="SQL">
-                    <span class ="operateur">SELECT</span> Produit<span class="ponctuation">.</span>NomProd<span class="ponctuation">,</span> Produit<span class="ponctuation">.</span>PrixUnit<span class="ponctuation">,</span> Fournisseur<span class="ponctuation">.</span>Pays
+                    <span class="operateur">SELECT</span> Produit<span class="ponctuation">.</span>NomProd<span
+                        class="ponctuation">,</span> Produit<span class="ponctuation">.</span>PrixUnit<span
+                        class="ponctuation">,</span> Fournisseur<span class="ponctuation">.</span>Pays
                     <br>
-                    <span class ="operateur">FROM</span> Fournisseur
+                    <span class="operateur">FROM</span> Fournisseur
                     <br>
-                    <span class ="operateur">INNER JOIN</span> Produit <span class ="operateur">ON</span> Fournisseur<span class="ponctuation">.</span>NoFour <span class="ponctuation">=</span> Produit<span class="ponctuation">.</span>NoFour
+                    <span class="operateur">INNER JOIN</span> Produit <span class="operateur">ON</span> Fournisseur<span
+                        class="ponctuation">.</span>NoFour <span class="ponctuation">=</span> Produit<span
+                        class="ponctuation">.</span>NoFour
                     <br>
-                    <span class ="operateur">WHERE</span> <span class="ponctuation">(((</span>Produit<span class="ponctuation">.</span>PrixUnit<span class="ponctuation">)&lt;=</span><span class="valeur">50</span><span class="ponctuation">)</span> <span class ="operateur">AND</span> <span class="ponctuation">((</span>Fournisseur<span class="ponctuation">.</span>Pays<span class="ponctuation">) = </span><span class="mot">"Italie"</span> <span class ="operateur">OR</span> <span class="ponctuation">(</span>Fournisseur<span class="ponctuation">.</span>Pays<span class="ponctuation">) = </span><span class="mot">"Allemagne"</span><span class="ponctuation">))</span>
+                    <span class="operateur">WHERE</span> <span class="ponctuation">(((</span>Produit<span
+                        class="ponctuation">.</span>PrixUnit<span class="ponctuation">)&lt;=</span><span class="valeur">50</span><span
+                        class="ponctuation">)</span> <span class="operateur">AND</span> <span
+                        class="ponctuation">((</span>Fournisseur<span class="ponctuation">.</span>Pays<span
+                        class="ponctuation">) = </span><span class="mot">"Italie"</span> <span
+                        class="operateur">OR</span> <span class="ponctuation">(</span>Fournisseur<span
+                        class="ponctuation">.</span>Pays<span class="ponctuation">) = </span><span class="mot">"Allemagne"</span><span
+                        class="ponctuation">))</span>
                     <br>
-                    <span class ="operateur">ORDER BY</span> Fournisseur<span class="ponctuation">.</span>Pays<span class="ponctuation">;</span>
+                    <span class="operateur">ORDER BY</span> Fournisseur<span class="ponctuation">.</span>Pays<span
+                        class="ponctuation">;</span>
                 </p>
             </div>
             <div class="resultat2">
@@ -247,20 +268,32 @@
                 <p>
                 <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
                 <p class="SQL">
-                    <span class="operateur">SELECT</span> <span class="agregation">Sum</span><span class="ponctuation">(</span>PrixUnitCli<span class="ponctuation">*</span>QteCom<span class="ponctuation">*</span><span class="ponctuation">(</span><span class="valeur">1</span><span class="ponctuation">-</span>Remise<span class="ponctuation">))</span> <span class="operateur">AS</span> <span class="ponctuation">[</span>Chiffre d'affaire<span class="ponctuation">]</span>
+                    <span class="operateur">SELECT</span> <span class="agregation">Sum</span><span
+                        class="ponctuation">(</span>PrixUnitCli<span class="ponctuation">*</span>QteCom<span
+                        class="ponctuation">*</span><span class="ponctuation">(</span><span class="valeur">1</span><span
+                        class="ponctuation">-</span>Remise<span class="ponctuation">))</span> <span
+                        class="operateur">AS</span> <span class="ponctuation">[</span>Chiffre d'affaire<span
+                        class="ponctuation">]</span>
                     <br>
                     <span class="operateur">FROM</span> Client
                     <br>
-                    <span class="operateur">INNER JOIN</span> <span class="ponctuation">(</span>Commande <span class="operateur">INNER JOIN</span> DetailCommande <span class="operateur">ON</span> Commande<span class="ponctuation">.</span>NoCom <span class="ponctuation">=</span> DetailCommande<span class="ponctuation">.</span>NoCom<span class="ponctuation">)</span>
+                    <span class="operateur">INNER JOIN</span> <span class="ponctuation">(</span>Commande <span
+                        class="operateur">INNER JOIN</span> DetailCommande <span class="operateur">ON</span>
+                    Commande<span class="ponctuation">.</span>NoCom <span class="ponctuation">=</span>
+                    DetailCommande<span class="ponctuation">.</span>NoCom<span class="ponctuation">)</span>
 
-                    <span class="operateur">ON</span> Client<span class="ponctuation">.</span>CodeCli <span class="ponctuation">=</span> Commande<span class="ponctuation">.</span>CodeCli<span class="ponctuation">;</span>
+                    <span class="operateur">ON</span> Client<span class="ponctuation">.</span>CodeCli <span
+                        class="ponctuation">=</span> Commande<span class="ponctuation">.</span>CodeCli<span
+                        class="ponctuation">;</span>
                 </p>
             </div>
             <div class="resultat">
                 <h2>Résultat :</h2>
                 <table>
                     <thead>
-                    <th>Chiffre d'affaire</th>
+                    <tr>
+                        <th>Chiffre d'affaire</th>
+                    </tr>
                     </thead>
                     <tbody>
                     <tr>
@@ -282,7 +315,18 @@
                 <p>
                 <h2><img src="assets/img/code.png" alt="=code" height="30" width="30"> Code SQL généré :</h2>
                 <p class="SQL">
-                    <span class="operateur">SELECT</span> <span class="agregation">Min</span><span class="ponctuation">(</span>Produit<span class="ponctuation">.</span>PrixUnit<span class="ponctuation">)</span> <span class="operateur">AS</span> <span class="ponctuation">[</span>Prix <span class="agregation">min</span><span class="ponctuation">]</span><span class="ponctuation">,</span> <span class="agregation">Max</span><span class="ponctuation">(</span>Produit<span class="ponctuation">.</span>PrixUnit<span class="ponctuation">)</span> <span class="operateur">AS</span> <span class="ponctuation">[</span>Prix <span class="agregation">max</span><span class="ponctuation">]</span><span class="ponctuation">,</span> <span class="agregation">Avg</span><span class="ponctuation">(</span>Produit<span class="ponctuation">.</span>PrixUnit<span class="ponctuation">)</span> <span class="operateur">AS</span> <span class="ponctuation">[</span>Prix moy<span class="ponctuation">]</span>
+                    <span class="operateur">SELECT</span> <span class="agregation">Min</span><span
+                        class="ponctuation">(</span>Produit<span class="ponctuation">.</span>PrixUnit<span
+                        class="ponctuation">)</span> <span class="operateur">AS</span> <span
+                        class="ponctuation">[</span>Prix <span class="agregation">min</span><span
+                        class="ponctuation">]</span><span class="ponctuation">,</span> <span
+                        class="agregation">Max</span><span class="ponctuation">(</span>Produit<span class="ponctuation">.</span>PrixUnit<span
+                        class="ponctuation">)</span> <span class="operateur">AS</span> <span
+                        class="ponctuation">[</span>Prix <span class="agregation">max</span><span
+                        class="ponctuation">]</span><span class="ponctuation">,</span> <span
+                        class="agregation">Avg</span><span class="ponctuation">(</span>Produit<span class="ponctuation">.</span>PrixUnit<span
+                        class="ponctuation">)</span> <span class="operateur">AS</span> <span
+                        class="ponctuation">[</span>Prix moy<span class="ponctuation">]</span>
                     <br>
                     <span class="operateur">FROM</span> Produit<span class="ponctuation">;</span>
                 </p>
@@ -291,9 +335,11 @@
                 <h2>Résultat :</h2>
                 <table>
                     <thead>
-                    <th>Prix min</th>
-                    <th>Prix max</th>
-                    <th>Prix moy</th>
+                    <tr>
+                        <th>Prix min</th>
+                        <th>Prix max</th>
+                        <th>Prix moy</th>
+                    </tr>
                     </thead>
                     <tbody>
                     <tr>

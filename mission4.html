@@ -118,7 +118,7 @@
             <br><br>
             Le footer est quant à lui composé que du logo et du copyright avec les crédits des auteurs du projet.
             <br><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous avons créé un fichier css rien que pour le header et le footer <strong>(header-footer.css)</strong> de manière à ce que cela nous évite de copier coller incessamment le même css. Sinon pour chaque page, nous avons un fichier css lui correspondant.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous avons créé un fichier css rien que pour le header et le footer <strong>(header-footer.css)</strong> de manière à ce que cela nous évite de copier coller incessamment le même css. Sinon pour chaque page, nous avons un fichier css lui correspondant. Par ailleurs, il est possible de retrouver dans ce même fichier css, des éléments récurrents dans les différentes pages, notamment avec les images de présentation de la page (<strong>"Kdou", "Mission 1", "Mission 2"</strong>...).
         </p>
     </section>
     <section id="accueilm4">
@@ -126,18 +126,21 @@
         <hr>
         <p>La page d’accueil est composée de 2 chapitres : <strong>Qui sommes</strong> nous et <strong>Notre travail</strong>.
             <br><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La partie qui sommes nous est constituée de la présentation de nos 4 membres. Les 4 premières photos sont cliquables permettant d’accéder plus rapidement à la présentation de chaque membre (possible par l’assignation d’un id à une section).
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La partie <strong>Qui sommes nous</strong> est constituée de la présentation de nos 4 membres. Les 4 premières photos sont cliquables permettant d’accéder plus rapidement à la présentation de chaque membre (possible par l’assignation d’un id à une section).
             <br><br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ce même principe est utilisé dans le header lors du hover au-dessus d’une certaine catégorie. Les images deviennent de plus en plus petites <strong>selon la taille de l’écran</strong>. Dépendant desquelles, nous avons fait le choix de plus ou moins les rétrécir, tout cela dans un but esthétique. On affecte donc une <strong>max-width</strong> de plus en plus petite selon la taille de l’écran. Par ailleurs, ayant commencé par l’écran le plus grand, nous avons décidé d'organiser le fichier css <strong>de la media query la plus grande à la plus petite</strong>. Outre les images, les textes ont également changé de taille s’adaptant à la taille de l’écran, tout comme les marges, toujours dans un but esthétique.
             <br><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La partie <strong>Notre travail</strong> comporte une courte introduction au travail que nous avons fait pour la SAE S104. Il y a également un bref plan des missions 1 à 4 avec les liens des autres pages pour pouvoir accéder aux missions. Comme pour le reste, la police devient plus petite <strong>s’adaptant à l’écran</strong> tout comme les “boutons” les autres missions qui eux sont mis l’un en dessous de l’autre.</p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La partie <strong>Notre travail</strong> comporte une courte introduction au travail que nous avons fait pour la SAE S104. Il y a également un bref plan des missions 1 à 4 avec les liens des autres pages pour pouvoir accéder aux missions. Comme pour le reste, la police devient plus petite <strong>s’adaptant à l’écran</strong> tout comme les “boutons” les autres missions qui eux sont mis l’un en dessous de l’autre.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le responsive a été possible par différentes propriétés. Notamment par le biais de flex-box, il était possible de faire des <strong>flex-wrap: wrap</strong>, pour les images mises à côté. On a lié à cela les marges pour pouvoir éviter que les éléments reviennent à la ligne au pixel près mais plutôt avec une marge prédéfinie, tout cela à nouveau dans un but esthétique. On aurait également pu avoir un <strong>flex-direction: row</strong>, puis dans la media query, on aurait utilisé un <strong>flex-direction-column</strong>, afin de mettre les éléments d'une ligne à une colonne lorsque l'écran devient plus petit.
+        </p>
     </section>
     <section id="mission1m4">
         <h1>Mission 1</h1>
         <hr>
         <p>
-            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Pour la conception de la mission de la mission 1.
-            Nous avons décidé de fragmenter notre étude des données sous formes de différentes vignettes :
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Pour la conception de la mission 1.
+            Nous avons décidé de fragmenter notre étude des données sous forme de différentes vignettes :
             <br>
             <br>-Clients
             <br>-Fournisseurs
@@ -145,17 +148,16 @@
             <br>-Cibles d'améliorations
             <br>-Conclusion
             <br><br>
-            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Pour améliorer la compréhension de l'étude de donée et rendre la lecture plus agréable.<br>
-            Nous avons accompagné chaque exemple d'illustration, émoticone permettant d'associer un élement clé à une image.
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Pour améliorer la compréhension de l'étude de données et rendre la lecture plus agréable.<br>
+            Nous avons accompagné chaque exemple d'illustration, par une émoticone, permettant d'associer, un élément clé à une image.
             <br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-            Nous avons eu recourt à plusieurs sites pour la mise en page.<br>
-            En premiers temps, les logos ont été désigné sur <strong>canva</strong> , redimensionner sur <strong>image reizer</strong>  et parfois convertit en svg pour obtenir une meilleure qualité.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pour désigné les tableaux, nous avons extrait les données présente sur <strong>Excel</strong>
+            Nous avons eu recours à plusieurs sites pour la mise en page.<br>
+            En premiers temps, les logos ont été fait sur <strong>canva</strong>, redimensionné sur <strong>image reizer</strong>  et parfois convertit en SVG pour obtenir une meilleure qualité.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pour désigner les tableaux, nous avons extrait les données présentes sur <strong>Excel</strong>
             pour ensuite les classer dans un tableau simplifié qui illustre un cas précis.
-            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les images ont été selectionné majoritairement sur <strong>Pinterest</strong>  et <strong>Flaticon</strong>.
-            <br>Deux sites intéressant
-            pour la recherche d'image, pinterest pour son design et son esthétisme et flaticon pour ses différentes fonctionnalités.
-            <br>La plateforme flaticon nous permettait direcetement de redemisensionner en pixel l'icon choisit.
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les images ont été selectionnées majoritairement sur <strong>Pinterest</strong>  et <strong>Flaticon</strong>.
+            <br>Deux sites intéressants pour la recherche d'image, Pinterest pour son design et son esthétisme et Flaticon pour ses différentes fonctionnalités.
+            <br>La plateforme Flaticon nous permettait directement de redimensionner en pixel l'icône choisit.
         </p>
     </section>
 </main>
