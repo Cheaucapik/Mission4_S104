@@ -24,7 +24,7 @@ h1{
     color: var(--primary-color);
 }
 
-#intro, #accueilm4, #mission2m4, #mission3m4{
+#intro, #accueilm4, #mission2m4{
     background: var(--secondary-background-color);
     padding: 40px 60px 60px 60px;
 }
