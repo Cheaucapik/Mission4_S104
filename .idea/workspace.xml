@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="4.1&#10;Footer + Fix des images de l'accueil">
+    <list default="true" id="66a38024-cd50-413d-bc05-5c4b860b3486" name="Changes" comment="4.4 fix warnings validateurs mission 2 + footer">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/header-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/header-footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/mission1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/mission2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/mission2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission1.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mission3.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mission4.html" beforeDir="false" afterPath="$PROJECT_DIR$/mission4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +132,7 @@
       <workItem from="1731585226564" duration="4137000" />
       <workItem from="1731590305101" duration="13709000" />
       <workItem from="1731604167622" duration="1130000" />
-      <workItem from="1731617285782" duration="564000" />
+      <workItem from="1731617285782" duration="1752000" />
     </task>
     <task id="LOCAL-00001" summary="premier commit">
       <option name="closed" value="true" />
@@ -470,7 +478,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731604718720</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="4.3 paufinement de la mission 4">
+      <option name="closed" value="true" />
+      <created>1731617874094</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1731617874094</updated>
+    </task>
+    <task id="LOCAL-00045" summary="4.3 paufinement de la mission 4">
+      <option name="closed" value="true" />
+      <created>1731617925812</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1731617925812</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,8 +512,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2.1&#10;Ajout des pfp + correctif taille de l'écran" />
-    <MESSAGE value="2.2&#10;Ajout Reda accueil" />
     <MESSAGE value="2.3&#10;Mission 1 + images dans le dossier img" />
     <MESSAGE value="2.4&#10;Mission 1, fix de l'affichage" />
     <MESSAGE value="2.4&#10;ajout du footer mission 1" />
@@ -513,6 +535,8 @@
     <MESSAGE value="3.9&#10;Fix des erreurs validateurs de pages + développement de la mission 4 (accueil) + correction des fautes d'orthographe" />
     <MESSAGE value="4.0&#10;Scroll fix, article au lieu de section" />
     <MESSAGE value="4.1&#10;Footer + Fix des images de l'accueil" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.1&#10;Footer + Fix des images de l'accueil" />
+    <MESSAGE value="4.3 paufinement de la mission 4" />
+    <MESSAGE value="4.4 fix warnings validateurs mission 2 + footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.4 fix warnings validateurs mission 2 + footer" />
   </component>
 </project>

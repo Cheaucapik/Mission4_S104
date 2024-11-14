@@ -166,10 +166,6 @@ p.SQL{
     text-align: left;
 }
 
-.highlight {
-    background-color: rgb(253, 202, 225);
-}
-
 main article:nth-child(odd){
     background-color: var(--secondary-background-color);
     padding: 50px 0;

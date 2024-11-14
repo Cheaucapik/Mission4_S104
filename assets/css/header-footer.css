@@ -48,6 +48,10 @@ body {
     background-color: var(--secondary-background-color);
 }
 
+.highlight {
+    background-color: var(--primary-color);
+}
+
 /* header */
 
 header {
