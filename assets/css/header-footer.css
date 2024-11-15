@@ -49,7 +49,7 @@ body {
 }
 
 .highlight {
-    background-color: var(--primary-color);
+    background-color: rgba(250, 208, 44, 0.8);
 }
 
 /* header */

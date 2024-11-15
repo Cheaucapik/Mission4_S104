@@ -13,7 +13,6 @@
 main {
     max-width: 100%;
     flex: 1;
-    padding-bottom: 20px;
 }
 
 table {
@@ -31,6 +30,47 @@ th, td {
 }
 
 /*KDOO DONNEE structure css*/
+/*.Kdoo-titrergba(250, 208, 44, 0.8){
+
+}*/
+
+.INTRO-DATA {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.C0 { /* bordure texte client à côte de la vignette*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: linear-gradient(#a0d874, #4bba74);
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    border: #f7f7f7 solid 3px;
+    justify-items: center;
+    margin: 40px;
+}
+
+#intro_photo {
+    grid-column: 1;
+    margin-top: 15px;
+    width: 40%;
+}
+
+.C0 p {
+    grid-column: span 2;
+    grid-row: span 2;
+    text-align: justify;
+    font-size: 1.6em;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    color: #fefefc;
+}
 
 /* CONTAINER DE CLIENT*/
 
@@ -60,10 +100,9 @@ th, td {
     font-size: 3em;
 }
 
-#clients{
+#clients {
     background-color: var(--secondary-background-color);
     padding: 50px;
-    scroll-margin-top: 100px;
 }
 
 #client_description, #Client { /* Description de la vignette client*/
@@ -78,7 +117,7 @@ th, td {
 
 #client_description {
     font-size: 1.3em;
-    bottom: 75px;
+    bottom: 145px;
 }
 
 .C_reponses { /* bordure texte client à côte de la vignette*/
@@ -91,7 +130,7 @@ th, td {
     box-shadow: 1px 3px 4px 5px #A3B288;
     border: #f7f7f7 solid 3px;
     justify-items: center;
-    padding: 20px;
+    padding: 65px;
 }
 
 .C_reponses h1 { /* Titre localisation : client s*/
@@ -104,7 +143,7 @@ th, td {
     grid-column: span 2;
 }
 
-.C_reponses .paris, .nantes{ /*tableau vignette client*/
+.C_reponses .paris, .nantes { /*tableau vignette client*/
     border: #fefefc solid 3px;
     color: #fefefc;
     grid-column: span 1;
@@ -126,7 +165,7 @@ th, td {
     text-align: center;
 }
 
-.logo_nantes{
+.logo_nantes {
     color: #fefefc;
     text-align: center;
     font-size: 1.4em;
@@ -134,7 +173,7 @@ th, td {
     list-style-position: inside;
 }
 
-.details{
+.details {
     grid-column: span 2;
     justify-items: center;
     padding-top: 35px;
@@ -157,7 +196,7 @@ h2 { /*titre details spécifiques*/
 /* deuxième vignette*/
 /*  Fournisseur container*/
 
-.F-DATA{
+.F-DATA {
     display: flex;
     gap: 50px;
     justify-content: space-between;
@@ -194,12 +233,11 @@ h2 { /*titre details spécifiques*/
 
 #fournisseur_description {
     font-size: 1.3em;
-    bottom: 75px;
+    bottom: 155px;
 }
 
-#fournisseursm1, #améliorationm1{
+#fournisseursm1, #améliorationm1, #Bilan {
     padding: 50px;
-    scroll-margin-top: 100px;
 }
 
 .F_reponses {
@@ -212,7 +250,7 @@ h2 { /*titre details spécifiques*/
     width: 75%;
     box-shadow: 1px 3px 4px 5px #A3B288;
     border: #f7f7f7 solid 3px;
-    padding: 20px;
+    padding: 60px;
     height: auto;
 }
 
@@ -224,18 +262,18 @@ h2 { /*titre details spécifiques*/
     margin: 22px;
 }
 
-.flags_fourni{
+.flags_fourni {
     border: #fefefc solid 3px;
     color: #fefefc;
     margin: 0;
 }
 
-.flags_fourni td, .flags_fourni th{
+.flags_fourni td, .flags_fourni th {
     padding: 29px;
     text-align: center;
 }
 
-h3{
+h3 {
     text-align: center;
     color: #fefefc;
     text-shadow: rgb(253, 202, 225) 2px 2px 2px;
@@ -248,13 +286,13 @@ h3{
     margin: 5px;
 }
 
-.detail{
+.detail {
     margin: 22px;
 }
 
 /* 3ème vignette produits */
 
-.P-DATA{
+.P-DATA {
     display: flex;
     gap: 50px;
     justify-content: space-between;
@@ -301,14 +339,15 @@ h3{
 
 #produits_description {
     font-size: 1.3em;
+    bottom: 25px;
 }
 
-#produitsm1{
+#produitsm1 {
     padding: 50px;
     background-color: var(--secondary-background-color);
 }
 
-.P_reponses{
+.P_reponses {
     display: flex;
     background: linear-gradient(#a0d874, #4bba74);
     border-radius: 15px;
@@ -318,7 +357,7 @@ h3{
     border: #f7f7f7 solid 3px;
     justify-content: center;
     align-content: center;
-    padding: 68px;
+    padding: 130px;
     flex-direction: column;
 }
 
@@ -331,7 +370,7 @@ h3{
     margin-bottom: 20px;
 }
 
-.produits_container{
+.produits_container {
     display: flex;
     max-width: 100%;
     color: #fefefc;
@@ -347,7 +386,7 @@ h3{
     list-style-position: inside;
 }
 
-#style_puce_s, #style_puce_sp{
+#style_puce_s, #style_puce_sp {
     list-style-image: none;
     list-style-type: none;
     margin-bottom: 20px;
@@ -357,7 +396,7 @@ h3{
     font-weight: bold;
 }
 
-.p_detail{
+.p_detail {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -368,10 +407,52 @@ h3{
 }
 
 
+.Cible_DATA {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
 
-/*4ème vignette*/
+.C4 {
+    position: relative;
+    display: inline-block;
+}
 
-.Cible_reponses {
+#cible_photo { /*Image*/
+    max-width: 100%;
+    z-index: -1;
+    border-radius: 5%;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    padding: 3px;
+}
+
+#Cible { /* Titre client*/
+    font-size: 2.5em;
+    margin-top: 15px;
+}
+
+#améliorationm1 {
+    padding: 50px;
+}
+
+#cible_description, #Cible { /* Description de la vignette client*/
+    position: absolute;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    left: 50%;
+    color: #fefefc;
+}
+
+#cible_description {
+    font-size: 1.3em;
+    bottom: 115px;
+}
+
+.Cible_reponses { /* bordure texte client à côte de la vignette*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: linear-gradient(#a0d874, #4bba74);
@@ -381,89 +462,293 @@ h3{
     box-shadow: 1px 3px 4px 5px #A3B288;
     border: #f7f7f7 solid 3px;
     justify-items: center;
-    padding: 20px;
+    padding: 100px;
 }
 
-.Cible-DATA {
+.Cible_reponses span {
+    text-align: center;
+    color: #fefefc;
+    text-shadow: rgb(253, 202, 225) 2px 2px 2px;
+    font-size: 3em;
+    height: max-content;
+    margin-bottom: 20px;
+    grid-column: span 2;
+
+}
+
+.Cible_reponses table {
+    border-collapse: separate;
+    border-radius: 7px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.exemple_image {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: span 2;
+    grid-row: span 2;
+    color: #fefefc;
+    gap: 20px;
+}
+
+.exemple_image table {
+    padding: 3px;
+    border: none;
+}
+
+.exemple_image th, td {
+    border: 1px solid #ccc;
+    text-align: center;
+
+
+}
+
+.style_caption {
+    color: rgba(128, 0, 0, 0.7);
+    border: #fad02c 3px solid;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+td strong {
+    background-color: rgba(250, 208, 44, 0.5);
+}
+
+
+.BILAN-DATA {
     display: flex;
     gap: 50px;
     justify-content: space-between;
     flex-direction: row;
     align-items: flex-start;
 }
-.C4 {
-    position: relative;
-    display: flex; /* Utilisation de flex pour le conteneur de l'image et des textes */
-    gap: 50px;
-    margin-top: 25px;
-    width: 100%;
-}
-#cible_photo{ /*Image*/
-    max-width: 100%;
-    z-index: -1;
-    border-radius: 5%;
-    box-shadow: 1px 3px 4px 5px #A3B288;
-    padding: 3px;
-}
 
-#Cible { /* Titre client*/
-    font-size: 2.4em;
-    margin-top: 25px;
-}
-
-#cible_description, #Cible { /* Description de la vignette client*/
-    position: absolute;
-    font-family: Oswald, sans-serif;
-    text-align: center;
-    transform: translate(-50%, 0%);
-    width: 80%;
-    left: 15%;
-    color: #fefefc;
-}
-
-#cible_description {
-    font-size: 1.3em;
-    bottom: 110px;
-    width: 25%;
-    justify-items: center;
-}
-
-.Cible_reponses span {
-    grid-column: span 4;
-    color: #fefefc;
-    text-shadow: rgb(253, 202, 225) 2px 2px 2px;
-    font-size: 2em;
-}
-.exemple_image {
-    display: flex; /* Utilisation de flexbox pour la mise en page interne */
-    flex-wrap: wrap; /* Organise les éléments en colonne */
-    align-items: center; /* Centre les éléments horizontalement */
-    grid-column: span 4; /* Positionne dans la première colonne de la grille */
-    grid-row: span 4; /* Permet de s'étendre sur 2 lignes */
-    color: #fefefc; /* Couleur du texte */
-    gap: 20px;
-}
-.exemple_image table {
-    width: 100%; /* S'assure que le tableau utilise la largeur complète */
-    padding: 3px; /* Espacement interne */
-    border: none; /* Pas de bordure pour le tableau */
-    margin-top: -40px;
-
-}
-.exemple_image th, td {
-    border: 1px solid #ccc;
-    text-align: left;
-
-}
-.style_caption{
-    color: rgba(128, 0, 0, 0.7);
-    border: #fad02c 3px solid;
-    font-weight: bold;
+.C5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: linear-gradient(#a0d874, #4bba74);
     border-radius: 15px;
+    height: auto;
+    width: 100%;
+    box-shadow: 1px 3px 4px 5px #A3B288;
+    border: #f7f7f7 solid 3px;
+    justify-items: center;
+    padding: 5%;
+    color: #fefefc;
+
 }
-td strong{
-    background-color: rgba(250, 208, 44, 0.5);
+
+.C5 span {
+    grid-column: span 3;
+    grid-row: 1;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: rgb(253, 202, 225) 2px 3px 2px;
 }
-.deuxieme_tableau{
+
+.C5 p {
+    grid-column: span 3;
     grid-row: 2;
+    font-size: 1.6em;
+    text-align: justify;
+}
+
+#conclusionm1 {
+    background-color: var(--secondary-background-color);
+    padding: 50px;
+}
+
+@media screen and (max-width: 1300px) {
+
+
+    .K-DATA, .F-DATA, .P-DATA, .Cible_DATA {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 35px;
+        width: 100%;
+    }
+
+    .C_reponses, .F_reponses {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .all > .Intro-mission1 {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 3.7em;
+    }
+
+    .exemple_image table {
+        max-width: 100%;
+    }
+
+    .tableau2 {
+        margin-left: 80px;
+    }
+
+    #style_puce_sp {
+        margin-left: 0;
+    }
+
+    .Cible_reponses span {
+        font-size: 2.4em;
+    }
+
+    .icone {
+        width: 1em;
+    }
+
+    .K-DATA, .F-DATA, .P-DATA, .BILAN-DATA, .Cible_DATA {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .icone {
+        width: 0.9em;
+    }
+
+    #intro_photo {
+        grid-column: span 3;
+        grid-row: 1;
+        margin-top: 15px;
+        width: 30%;
+    }
+
+    .C0 p {
+        grid-column: span 3;
+        grid-row: 2;
+        margin: 30px;
+        text-align: justify;
+        color: #fefefc;
+        font-size: 1.3em;
+    }
+
+    span {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .P_reponses {
+        width: 100%;
+    }
+
+    .exemple_image {
+        width: 100%;
+        margin-left: -50px;
+    }
+
+    .produits_container {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 15px;
+        text-align: left;
+        max-width: 40%;
+    }
+
+    .flags_fourni thead {
+        display: none;
+    }
+
+    .flags_fourni tr {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .flags_fourni td {
+        display: block;
+        text-align: right;
+        position: relative;
+    }
+
+    .flags_fourni td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .flags_fourni td.align {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+
+    }
+
+    .produits_container, .p_detail {
+        max-width: 100%;
+    }
+
+    .p_detail p, .produits_container {
+        font-size: 1em;
+    }
+
+    .Cible_DATA {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .C4 {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .Cible_reponses {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .C5 span {
+        font-size: 2.4em;
+    }
+
+    .C5 p {
+        font-size: 1.1em;
+        margin: 20px;
+    }
+
+    .Cible_reponses span, .P_reponses span {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .produits_container {
+        gap: 40px;
+    }
+
+    .p_detail {
+        gap: 10px;
+        font-size: 1.2em;
+    }
+
+    .exemple_image {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 0.8em;
+    }
+
+    .exemple_image table {
+        padding: 0;
+        border: none;
+    }
+
 }
